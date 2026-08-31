@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:4e44a6982afe7fc63fb8f5fc91d2c618c08c6f7c4d369a1aa955895e0046e81c",
+  "claims": [
+    {
+      "id": "claim_6be9d661279f4ad5b9106d9f25e06512",
+      "statement": "The research summary revises the original hypothesis from 'agent expertise comes from a well-structured data lake' to a four-factor model: coherent data lake + narrow explicit query interface + safe response filter + failure-derived prohibition rules.",
+      "evidence": [
+        {
+          "resource": "repo://agent-expertise-framework/01-research-summary.md#L13-L26",
+          "version": "repo-lines-v1:sha256:ac4aec6314298f4f76a35c23b12833506a154b6303179cf39389a925f8250e5f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE3MTU1YjNmNTNkZTlmYmI3OWJmNzA3NGY0MjFhNjMyYmMwMDhjYmQwNjY2YmJiNjQ4ZTZmZTJjZjM0NGI5OGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI2MzJmMTNjZDUwMTVjY2ZiNDI0OWZjYWZjNjAzZTBhNWFhNzZiMWZkMTFlYmQzY2I3ZGFlNzVhMmYyZmQ0ZWMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRkYzY0ZmI4ODYzMDJkMGQxZDczMmVmNWRhODhkY2E0ZDcwYzFhM2U0ZDRjZjAxNzA3ZDkwMjY0OWZhZDU4YTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImVmY2NhYTViODExMjY2OTQwZmVlMDJjNjk0MzUzNjlmYTk3ZWM4ODA1NzBjYzc4NDE4MTc3NjNiNjg1NTMxNjAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_7451e5d2a46943b89a56da24f00841b9",
+      "statement": "Apache Amoro was chosen as the first validation target because it is both a lakehouse management system and ships an agent-facing interface module (amoro-mcp-server), allowing the hypothesis to be tested directly.",
+      "evidence": [
+        {
+          "resource": "repo://agent-expertise-framework/01-research-summary.md#L7-L10",
+          "version": "repo-lines-v1:sha256:468a8ef2208d70e1a85d06a3bf36dc5e361f17ba5f2ebff29616368b288ff0ce:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOWRiODcwMTQyYjM0NmI4N2EyYTBhODgzZTlhNWZkNmJiNjA1YjM2NTg2MTkyNzIzZGVhYTVhMzM1N2NhYTBkNyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZmRiY2M5ODZlZjA1MzU1YmEzYTg2M2FmZDNhM2IyMTVmOTdlMzQzMmIzZmUyOWFkYjljNzI0M2FhNmVlNTBjNCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZmQxMzE5MmMxMTQ5MWU0NjVhOTgzOTQ3ZThmMWRkNDg5MGQ1Y2QxMjA0NjkwY2UwNDc4NWIzZTNmNTg2MzU0YyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTUzNGVkMGNkZTg5YjMwODgyNjAzMWUxYTUxZjJjODE2ODMzNGQzMjc0MDZhY2E5ZGFlMTg4NTY0Njk2MDJjOSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_c7f2c3c08dbd48b7be8dd4b14ed2f6b1",
+      "statement": "The fourth factor (failure-derived prohibition rules) was not part of the original hypothesis and emerged from comparing AGENTS.md density across Amoro, Iceberg, and Paimon.",
+      "evidence": [
+        {
+          "resource": "repo://agent-expertise-framework/01-research-summary.md#L26-L26",
+          "version": "repo-lines-v1:sha256:b632f13cd5015ccfb4249fcafc603e0a5aa76b1fd11ebd3cb7dae75a2f2fd4ec:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYjYzMmYxM2NkNTAxNWNjZmI0MjQ5ZmNhZmM2MDNlMGE1YWE3NmIxZmQxMWViZDNjYjdkYWU3NWEyZjJmZDRlYyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYjYzMmYxM2NkNTAxNWNjZmI0MjQ5ZmNhZmM2MDNlMGE1YWE3NmIxZmQxMWViZDNjYjdkYWU3NWEyZjJmZDRlYyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNjc4OTkyZDM4OGMzN2U2YTg4OGJiOTIwNTRlOTBlNDYwNzhiZjFiN2NjYmVkNTY2Zjg5YzgzMzY2ODgwMGQxMCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZWZjY2FhNWI4MTEyNjY5NDBmZWUwMmM2OTQzNTM2OWZhOTdlYzg4MDU3MGNjNzg0MTgxNzc2M2I2ODU1MzE2MCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_5c6601706fd54a0a87111d6cfad6fb34",
+      "statement": "All three repositories (Amoro, Iceberg, Paimon) were shallow-cloned locally (--depth 1) for direct verification; Apache Hudi was not cloned because its packed size (2.9GB) is over 20x the other two, so Hudi-related statements are marked unverified.",
+      "evidence": [
+        {
+          "resource": "repo://agent-expertise-framework/01-research-summary.md#L36-L38",
+          "version": "repo-lines-v1:sha256:b560b7060297f69d24609618e865aa7d4c5af450f99dab60be1acc256f1addcf:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiY2JmYmJlMDBmOGE1YmM1MGI3OTJiMTVjMWZiZDFkMTQ4MWNlMjM5MGRiNDUzZjE1YzMyYmE4MmUyZDY2NWU3NSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMGM2ZmE4OTJmMTM4OWQyYzJmMDZhN2Q0NjEzNGM2YjczNDI0NjU0MzE3NzM4NzQ0MGI0ZmE3Y2ZjM2YyNjAxZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYmZiZTMzZWQwODFiOTE2NmNhYWU5ZTk4YzIwZjhjMGZjNTU5NjhiYmFiOTI1YjU5MGQ0OTEwMDdiZGJiMTFjYSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMDZhZTVlN2FhMTFmOGVhMTJjYWNkYjA2M2Q4ZThjZTQ5NTgxNWYzZjE5ZDk4NTI4N2E2MWMzYTMwMTFmYTgzZCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_ab852a9c067344409cf1782658724cf4",
+      "statement": "Open questions noted at the end of the research summary are: the verification-loop principle (framework principle 12) was only applied to static documentation production and not tested in an actual agent code-editing loop, and Hudi was not directly cloned/analyzed.",
+      "evidence": [
+        {
+          "resource": "repo://agent-expertise-framework/01-research-summary.md#L40-L43",
+          "version": "repo-lines-v1:sha256:33077d4abd912fa81143b4c2955e37de70741e69a9a032606aab9de56ffbfe26:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMmNkOGVlYzNlMGNmNTcyMmI4M2M0MjU5MTg0YzZjZTViOWRiMDBlYTRlODEzOGIxZGFkN2IwODk3NGVlYzc0MiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTA4OGFkMDE5NjJiMmJkODg4MjE4N2MzYzNkNTBmYWU5MzVmMDFjZTRlNzc4NGY4MTdjNWE1MjViMzJkZTE0OSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNTAxZjc4NGYzNDEzOTQ2YTdlMWM3OGU4ZTBlZDYyZWYyODJiMTI3OWFhYjU1ZGNhN2M4N2FjM2Y3YmU1ZmFhOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.4.3",
+    "at": "2026-08-30T15:41:00.038Z"
+  }
+}

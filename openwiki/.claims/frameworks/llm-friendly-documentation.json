@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:74f49a8a277acad3c3095ab2cfff75850ae6a87d62bbda41417798784691dabc",
+  "claims": [
+    {
+      "id": "claim_67351b60f066404b830cf86ee6e0349d",
+      "statement": "The framework's core statement is that a document is easy for an LLM to read when the structure, relationships, and conditions of its information are written explicitly enough that the LLM never has to reconstruct them by inference.",
+      "evidence": [
+        {
+          "resource": "repo://agent-expertise-framework/00-llm-friendly-docs-framework.md#L5-L7",
+          "version": "repo-lines-v1:sha256:cdc101f880905948fb493759695497f9f95d1ae16c07bf60e1eb0d3e25491b97:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNmE2Nzk0ODRhMDc2MTMxODA4NGY5M2ZlMDBlMjJhOGMxNWQ2ODA2ZjU2YWYxZWNmNzYzMmU3ZTc0ODQyMTE0MCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZmRiYzBmYmI2NDI5MDFiMzRkM2M3MzNkMzY5MjIzZjcwOTUxMDliZjJhMWVhNTU2NDcyYjlmMzZmYmIxZWUzOSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYTgzNjMwYmRhZDUzZThiYWY1NjdlOGY5OGI1YTZmMGQ1NjM4YjUzN2MxMDllNzRlOGJmYTAxYzI0ZGM3MTFhYSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYTc3ZDhlZWFmNzY1ZDc2OGI4OWIwZTg4OWIxMDQ5Y2EzZDYwOTlkNTQ1NWQ4ZTFkOGViNTZhNDMxMTAwOTlmZSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_df93dbfb1e694291a424727a165583b3",
+      "statement": "The framework consists of 12 principles: explicitness; writing why not just what; separating current vs target state; a glossary with explicitly excluded terms; describing file structure as responsibility rather than listing; making prohibitions explicit as Constraints; precise numeric conditions; explicit code-doc-DB-cache relationships; splitting documentation by topic instead of one giant document; ADRs; a PROJECT-to-CODE document hierarchy; and a verification system as the final and most critical principle.",
+      "evidence": [
+        {
+          "resource": "repo://agent-expertise-framework/00-llm-friendly-docs-framework.md#L9-L54",
+          "version": "repo-lines-v1:sha256:5d770b6b609f94643adfb9f67c58cbf536ae0c81b5814803baaee1fe3861f57c:eyJzZWxlY3RlZExpbmVDb3VudCI6NDYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmOTgwZjc1MWMyZjhmNmJmNzNiYzRhZTgxNjc1OTY1YTJkNTk5YTZlZDJhMjkyZTNmNGNiYzdjNTIyZWE3YjEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVlMDM3ZDlkZmRjNmVkNzk0NDgyMDcyYmJhZGI1N2QyZDc5NmRlYjc5MjIyZjI4NTlkNjNiYzY4YjM2MGYyY2YiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBlNTMxNzhiZDU3YjBlNTc1ZmM5YTQ2NDAzNGVjNGM1ZGJmZDg3NzE5MDU2MGM0ZWY1MTY0OTU0YWExZjMyZjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk1YjBhMTE2MjYyNmM5MWZlYWNhMzZjMDk5ZDQxMjZjMGUzZGU0MDM5MzM3M2FhZTI1MDQ3NTA5OTQzNTQyOGYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5ae24fedde594534bcf546682bdc3ff5",
+      "statement": "Principle 12 argues documentation alone is insufficient; an agent must be forced through a verification loop (search docs, search code, confirm current implementation, check doc/code agreement, report on mismatch instead of modifying, plan, modify, test, re-verify) before and after making changes.",
+      "evidence": [
+        {
+          "resource": "repo://agent-expertise-framework/00-llm-friendly-docs-framework.md#L56-L66",
+          "version": "repo-lines-v1:sha256:aed1678b2ea2ae471a16eb802fe36b254def19ad0aa59a65dfc167d33269f2be:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUwYzUyOWRlMTY0YTk2MDRkZmU1MTcxYWEyY2ZjZGUxMzVjYzAwMDRhM2YwYjAxYjJkY2Y0MTlhZWUzM2IyNzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJjNTRkYTk0ZjJlYzc4NTRkMTU0ZmI2ODgzY2Y3ZGViM2UyYWNhZmMzYjhjYmM1MDFmNzg3NjZmOWY5NmJhNjgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdkZWY3ZWIwYmFmZDA2OGUxY2I0YWQ0ZGE3NzI1ZmI3MTExZDU0ZjA1MWRlOGUzMGYyZGMwMzFjYjkwMGY1MmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_41026ab4e45146e1a4bc9bac3157ee8b",
+      "statement": "The framework states that documentation is the knowledge that tells an LLM about the project, while the verification system is the mechanism that prevents the LLM from freely inventing that knowledge, and that this is the core mechanism for suppressing hallucination in large projects.",
+      "evidence": [
+        {
+          "resource": "repo://agent-expertise-framework/00-llm-friendly-docs-framework.md#L66-L66",
+          "version": "repo-lines-v1:sha256:2c54da94f2ec7854d154fb6883cf7deb3e2acafc3b8cbc501f78766f9f96ba68:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMmM1NGRhOTRmMmVjNzg1NGQxNTRmYjY4ODNjZjdkZWIzZTJhY2FmYzNiOGNiYzUwMWY3ODc2NmY5Zjk2YmE2OCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMmM1NGRhOTRmMmVjNzg1NGQxNTRmYjY4ODNjZjdkZWIzZTJhY2FmYzNiOGNiYzUwMWY3ODc2NmY5Zjk2YmE2OCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYjA3MTk5MDQ0MGRiMTkxMWU3MjM1NTJkNjM2OTE1NTdjZWIyZmIxMTZjZGUxM2ZiM2IzNTc2OTMyN2I0MjdjMiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.4.3",
+    "at": "2026-08-30T15:41:00.038Z"
+  }
+}
