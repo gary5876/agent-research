@@ -1,6 +1,7 @@
 # LLM 친화적 문서 작성 프레임워크
 
 **Status:** ACTIVE
+**Layer:** 2 (설계) — 층 구분 기준: [CATALOG.md](../CATALOG.md)
 
 이 세션의 출발점이 된 원본 원칙. "환각이 심해지는 문제"를 문서 설계로 완화하는 방법론이다. 이후 진행한 모든 분석(`../../data-lake/amoro-analysis`, `../../data-lake/iceberg-analysis`, `../../data-lake/paimon-analysis`)이 이 프레임워크를 실제 오픈소스 프로젝트로 검증/보완한 결과다 — 요약은 [01-research-summary.md](01-research-summary.md).
 

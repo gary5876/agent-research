@@ -2,9 +2,13 @@
 
 에이전트 전문성은 어디서 나오는가에 대한 연구 노트. "LLM이 읽기 좋은 문서를 어떻게 쓸까"에서 시작해서, 지시문 해석 오류 사례, 자기개선 루프, 오케스트레이터 패턴, Hook을 통한 강제까지 이어지는 기록이다.
 
+## 뭔가 찾고 있다면
+
+제목으로 뒤지지 말고 [CATALOG.md](CATALOG.md)부터 열 것. "이게 원본 사건인지, 그걸로 만든 설계인지, 실제 구현체인지, 자동 생성된 뷰인지"로 층을 나눠뒀다 (`data-lake/me-data-lake`와 같은 방식).
+
 ## 시작점
 
-[agent-expertise-framework/README.md](agent-expertise-framework/README.md)가 전체 문서 인덱스다. 순서대로 읽으면 아래 흐름을 따라가게 된다.
+순서대로 처음부터 읽고 싶으면 [agent-expertise-framework/README.md](agent-expertise-framework/README.md)가 전체 문서 인덱스다. 순서대로 읽으면 아래 흐름을 따라가게 된다.
 
 1. LLM 친화적 문서 작성 원칙 수립 (`00`)
 2. 그 원칙을 Apache Amoro/Iceberg/Paimon 세 오픈소스로 검증 (`01`)

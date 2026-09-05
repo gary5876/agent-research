@@ -1,6 +1,7 @@
 # 연구 요약: "에이전트 전문성은 어디서 나오는가"
 
 **Status:** ACTIVE
+**Layer:** 2 (설계) — 층 구분 기준: [CATALOG.md](../CATALOG.md)
 
 [00-llm-friendly-docs-framework.md](00-llm-friendly-docs-framework.md)에서 출발해서, 실제 오픈소스 3개(Apache Amoro, Iceberg, Paimon)를 clone해서 검증한 기록이다.
 

@@ -1,5 +1,8 @@
 # 목적 명세와 자체개선 루프 — 4요소에 원칙 3·4·6·10·12를 결합한다
 
+**Status:** ACTIVE
+**Layer:** 2 (설계, §8·§9는 Layer 1 실행기록) — 층 구분 기준: [CATALOG.md](../CATALOG.md)
+
 `01-research-summary.md`의 4요소(정합적인 data lake, 좁고 명시적인 인터페이스, 안전한 응답 필터, 실패 사례 기반 금지 규칙)는 "무엇이 있어야 하는가"를 말한다. 이 문서는 그 위에 `00-llm-friendly-docs-framework.md`의 12원칙 중 실제로 확인 결과 약하거나 빠져 있던 5개(3: 상태분리, 4: 용어집, 6: Constraints, 10: ADR, 12: 검증 시스템)를 채워 넣는다.
 
 이 문서의 근거는 이번 세션에서 두 개의 실제 OpenWiki 인스턴스를 직접 조사해서 얻었다 — 이 레포(연구노트)와 `Team18_BE`(실제 Spring Boot 백엔드). 두 인스턴스 비교로 확인된 것: OpenWiki의 Claims 사이드카(문장을 `repo://파일#L범위` + 라인 해시로 앵커링)는 원칙 2·5·7·8·9를 강하게 충족하지만, 3·4·6·10·12는 충족하지 않거나 다른 방식으로 우회한다. 오픈소스 서베이 결과(DeepEval/Promptfoo/Arize Phoenix/Presidio/NeMo Guardrails)도 이 문서의 재료다.
