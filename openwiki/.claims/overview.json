@@ -1,51 +1,7 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:c4097aa2ff14ded2f12e1107e54b787c4ed34383229e570eb5a7bc89bf42d576",
+  "pageVersion": "sha256:67ca238a0b34fcfa76fb5c6b2aa34bc5243845e95136f191a6447888b648aa37",
   "claims": [
-    {
-      "id": "claim_b75f648582294ae991eac8b370838524",
-      "statement": "The repository's root research directory is agent-expertise-framework/, described in its own README as the root directory for the entire topic covered in the session, tracing an inquiry from LLM-friendly documentation to where agent expertise comes from.",
-      "evidence": [
-        {
-          "resource": "repo://agent-expertise-framework/README.md#L1-L3",
-          "version": "repo-lines-v1:sha256:9d00d76a85a2900f07f10a0e83436eb0ee55fc94f7626642dc72275c483cbfab:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTdlMGQxNDE3Nzg4OWMxYjExZjJkZmFmNDJjNTE4ODZmMjJiNDgzMWE0N2E1NGRmYjcwY2U0MDlkYmZjN2JmYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZTQwZmQ4MGQ0NTAwMzAxMWZkNzA3ZTZkMDBjZDFiODg4MjE1ZjNiMGIxYjA1NTUzYmZjNzUxYTAxYjU4MzNiMyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNjMxYWFiZDQ3YWVjYjdhZDZiYWYzZmE2ZTA1YTVmMWUzODhkZDI4ZDkxNzYwZWYxMDc2ZDFmZDUzOTI5YjYzOSJ9"
-        }
-      ]
-    },
-    {
-      "id": "claim_16ae6551e2304a31b12646b1d7639761",
-      "statement": "The agent-expertise-framework directory contains four numbered notes (00 through 03) plus a README that indexes them and recommends reading them roughly in numeric order.",
-      "evidence": [
-        {
-          "resource": "repo://agent-expertise-framework/README.md#L5-L20",
-          "version": "repo-lines-v1:sha256:b19e43bad9c8b86122513430c693146022f6a8d7653fb179d0db2be9b54e1f49:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJkNzM4NDk5NzBjNWRjNWRlNTA2OGY0YmU1NzVlNDFjYjBlMDBiMDFmYjVmNWI1OWRkOTFjMTg5ODFiYzlkOTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjcxNjk2MTY3MzkyNjAzYTU4YjI4NDJhNzE4MGExMDkwMWU3MWI1MzRlMmE5MmI0MGJiNTNiMDBjZjgwODIyOGUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVlMDZiNTNiNTJjYTA3YTQwNTBhNWEwNTYyMDliZDk5N2Q3ZWZmYTI0NTE3YjU3MzYwOTM1YjA5YmFiY2U5NzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
-        }
-      ]
-    },
-    {
-      "id": "claim_c5c4063831724c46b9e52c31b643a5d9",
-      "statement": "The agent-expertise-framework README references three sibling analysis directories (amoro-analysis, iceberg-analysis, paimon-analysis) located outside this repository in the same workspace, which were cloned and analyzed as part of the same research session.",
-      "evidence": [
-        {
-          "resource": "repo://agent-expertise-framework/README.md#L12-L16",
-          "version": "repo-lines-v1:sha256:5990fe62c4e8e5cc658baa89caf3e6b708e1693bbb770eeb7234eb296b9c1f59:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiM2JjODY2OGJmZTc5MmEwZGM1ZDZmOTNkMTZjMWQ2Y2JjOTJiM2U1ZjZhZWU2MDZlYTRkNjBjNTZjNjQ0Yzc1ZSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNjZiNzNjNDM4MjE1Zjg5NTQxNDMwMzY3MmY3ZmM1Y2Y5ZmNmZDhmZTE4ZmIxYTZjNWQzMWRiNmVhOWJiOGYzZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNTMyYjc0MTExZmFlNTdiNDEwNjI5YjE2MjRhZmNhM2Q2MjZhOTJjMDY3MGFlMDgyYTU5YTM4NjRmODhjY2RiZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMWZkYWU4NGVlZWY2NmYwOTQ0NWRjNTkwYjhjZGY2MGNhYTM1NWRhY2NlODFkYzMwNzZhMTg3MjE2NzY3OTYwOSJ9"
-        }
-      ]
-    },
-    {
-      "id": "claim_3dceac6ce7e94d6784d961a290b8ad81",
-      "statement": "AGENTS.md and CLAUDE.md each contain only an OpenWiki-managed block describing the generated openwiki/ directory as optional just-in-time context and instructing not to hand-edit generated OpenWiki pages.",
-      "evidence": [
-        {
-          "resource": "repo://AGENTS.md#L1-L12",
-          "version": "repo-lines-v1:sha256:e196ae5aef70399b7f4cd655c0440c5c589dbecac5863d6178aa1c195d5a4325:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVmMTgwZjljMTI2OTAzYmNjMzMxYWE5NTQ1NmU0OTQ0NGE3ZDRkMDExZThhMmE4M2Y1ZGM4NzAyMzkxODEyZDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA5Zjc4NzE0ODkzYWE3Nzk0MmNlYTFjNGEyZTAyMzFkYmI3ZmEyYTQxYTcwYzgxNDYwYTNjNjc1NjJkYTNhYWEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
-        },
-        {
-          "resource": "repo://CLAUDE.md#L1-L7",
-          "version": "repo-lines-v1:sha256:31060379798cd019458c941e0c10846d7b7ad856616f025414ea67f326bfe1d6:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNWYxODBmOWMxMjY5MDNiY2MzMzFhYTk1NDU2ZTQ5NDQ0YTdkNGQwMTFlOGEyYTgzZjVkYzg3MDIzOTE4MTJkMCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDlmNzg3MTQ4OTNhYTc3OTQyY2VhMWM0YTJlMDIzMWRiYjdmYTJhNDFhNzBjODE0NjBhM2M2NzU2MmRhM2FhYSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
-        }
-      ]
-    },
     {
       "id": "claim_af198f52c7ea4e27922354938774366d",
       "statement": ".mcp.json registers an openwiki MCP server invoked as `openwiki mcp --host claude`, which is the mechanism an interactive session uses to run the OpenWiki page-job lifecycle.",
@@ -55,20 +11,10 @@
           "version": "repo-lines-v1:sha256:1217fe8aff83c5e31c83d562c6e21d66cc6745e870d49c737cf8a32df7c39ef3:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2ZmIwOGZkYTFhY2I5NTdiNjExNmJkMzc4MTFhMWZlNDFhMDE2MTFjMDYzMWVkYmY3ODZkNjg4OWEyN2E1NWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
         }
       ]
-    },
-    {
-      "id": "claim_3b3fad98361a4deebbb6cced6b3c0991",
-      "statement": "A scheduled GitHub Actions workflow (.github/workflows/openwiki-update.yml) runs `openwiki code --update` daily via cron (and on manual dispatch) using an OpenAI-backed provider, and opens a pull request updating openwiki/, AGENTS.md, CLAUDE.md, and the workflow file.",
-      "evidence": [
-        {
-          "resource": "repo://.github/workflows/openwiki-update.yml#L1-L62",
-          "version": "repo-lines-v1:sha256:74496ffab25d5e013e02720edb2f1a47fd3e85679260853121a7e71019aae2c1:eyJzZWxlY3RlZExpbmVDb3VudCI6NjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA2MDI3ODdhZjZkY2MwODM0ZGUxMjFjYmIxY2I5NWY5NDU5YjcyMWVhYjAzNDlmMTA1MDFiOTk2YzFjNzdmZmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY0Nzc5NmQzMTczMmZiY2U4OTk4YTJmN2U3YjFiYjk3NTVjMjNlNTg1MDMyMGI5MDkzN2Q4MmMzZmQwZTYyYTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
-        }
-      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.4.3",
-    "at": "2026-08-30T15:41:00.038Z"
+    "at": "2026-09-05T20:17:03.290Z"
   }
 }

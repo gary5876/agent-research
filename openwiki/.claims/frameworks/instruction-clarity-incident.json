@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:6ed818d5edca0f1206d970f7a8bc63417f05721b2023a2f92c5162eaedf329f1",
+  "pageVersion": "sha256:ea50fc86f3e6aab740f38e147948641b8ac92b7bd050f019f019b6a04b55f6bb",
   "claims": [
     {
       "id": "claim_3ed1df33eaf64ffea04dc4233afba40d",
       "statement": "The agent already had the user's GitHub account in memory and a tool (gh api) capable of resolving the ambiguous 'starred repo' reference in a single call, but asked the user to name the repo twice instead of running the lookup first.",
       "evidence": [
         {
-          "resource": "repo://agent-expertise-framework/02-instruction-clarity-incident.md#L7-L11",
+          "resource": "repo://agent-expertise-framework/01-narrow-interface/02-instruction-clarity-incident.md#L10-L14",
           "version": "repo-lines-v1:sha256:7069311877b55fdc38bf92fdff0734022d07e3e8fb75e7d98d2bcd2c7e9a1bd6:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjY0NmEzMWE3YTExZjkwMGRiMTQxNDZlZmRjZmVhOTY1ZGRjMWViMTdmN2VkODdkNTQ3ZDk1MDY5MmE5NjM0NiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiODU0MTNkZGJmOGJhNDQyM2I1YWFhNDNiMWQ4NGU1NjEwNDFlYmRjOWE2NjM0YWRkYTcyODQ3NTRhZDE2YmU2NSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYmRiMzQ0ODBlM2NjZDExYWUwOTAyMTlkNDZkYzFhOTNmOTg0OTEyY2ViOGZkOTg1MzYzOTBkNDYzZDlkOGE3ZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZDNhNjdmZWFmNDFhZTIzZThiMGY3MjQyOTVkMzZkMDIwMDQ2NTczOWFhNmQyY2JkNTgzMjkyNTMwNDkwYzcyMiJ9"
         }
       ]
@@ -17,7 +17,7 @@
       "statement": "The root cause was identified as a Korean clause-hierarchy parsing habit: the agent treats the subordinate clause (ending in -는데) as background and weights the main clause heavily, which normally works but here buried the referent of the main clause's demonstrative pronoun inside the discarded subordinate clause.",
       "evidence": [
         {
-          "resource": "repo://agent-expertise-framework/02-instruction-clarity-incident.md#L15-L22",
+          "resource": "repo://agent-expertise-framework/01-narrow-interface/02-instruction-clarity-incident.md#L18-L25",
           "version": "repo-lines-v1:sha256:3970891a80c5391cfeb4ca6b1096f7de6678c63b13c3d51435b1ae2ec42473dc:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOGQ5ZjE1ZDdlN2NjNzM0OGJhNmUwMjhiYWY4NDQ1NzA2ZTYyMmQwNTFmNWZmOTRhOTliMjU2NmJkZWYzYjllZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYzI3NjM5YzRiM2RkMDhlZDIyOWJiNzkxZWQ3MDY4OWIxNjdjNDlmYzE5ZjcyYTBlNzRlZDUxNDJmMjZhZjQwNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDNhNjdmZWFmNDFhZTIzZThiMGY3MjQyOTVkMzZkMDIwMDQ2NTczOWFhNmQyY2JkNTgzMjkyNTMwNDkwYzcyMiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZWYxOTdlMThkZDlkYmExNTA0ZDkxODgxNjJlZTk4OWVlMTZiY2RlYjE2OWUyOWExOTQ4MjlkN2FjNmRhYjA3NiJ9"
         }
       ]
@@ -27,7 +27,7 @@
       "statement": "A secondary cause was that the sentence contained no explicit imperative lookup verb, and the agent tends to only recognize clauses with imperative verbs as executable instructions, so it did not connect the descriptive lookup cue to an action.",
       "evidence": [
         {
-          "resource": "repo://agent-expertise-framework/02-instruction-clarity-incident.md#L24-L26",
+          "resource": "repo://agent-expertise-framework/01-narrow-interface/02-instruction-clarity-incident.md#L27-L29",
           "version": "repo-lines-v1:sha256:aacf71fc66e9be1e2490528b13a5791f1543283c77abc450d9de27f45d986bd7:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOTQzMzA3NDUzNjA2ZDM4YzllMDhlN2NmZTA3ZWY2Y2YyYWY0YzgwOTg2YjUxNjRiY2ZjYzBjMjkzYzJmMmU0OSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjZmMzM1ZjQ0MWVkOTg3NjhkYzE4MTA4YzZmZWI5OTYxYWFiODIwMWNlMGJhMjkwOTg3ZTkxZmE1ZTE2ZjAxYiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiM2RlMTkwMGY4YzY1NjVkM2Q0NWFmNmI1MzE3NTNhYzI4ZjVmODU3NGU0MmM3NjM1MDVjZGViOGY1YjhjMTFhMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYWRhMmZlMDZhNmY1NzJlYTBkNmJjYjZhZjFmYjk2NDRmMDUyNjc0YTllMjhiMWQ5MzU4ZWUzYjg2NDQzOTM3NSJ9"
         }
       ]
@@ -37,7 +37,7 @@
       "statement": "When the agent's first clarifying question was rejected by the tool for a schema violation (forcing a free-text answer into a single-option structured question), the agent discarded only that malformed question and repeated the same underlying mistake as plain text, rather than reconsidering its approach.",
       "evidence": [
         {
-          "resource": "repo://agent-expertise-framework/02-instruction-clarity-incident.md#L28-L30",
+          "resource": "repo://agent-expertise-framework/01-narrow-interface/02-instruction-clarity-incident.md#L31-L33",
           "version": "repo-lines-v1:sha256:cb32eafd9ed95dee0c79f3f7b3a6f01d5c9a7d387c45e6640a69fbaa5eeec89d:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNDQyODRkOTg0ZDBiYjgxODJjZjRiZDcxNGQ1NDY3ZmVkYzdlMTM3YTUwYzA4NjcyYmM5MDAwNmMwM2MxZWY0OCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZTM1M2M1OWU2ZmZmZTAzMWQxN2YwZjRkNzdiY2M2NGNkNmMwNzE2ZDRlMTkzOTgyMzI5YzQ2MWU1OTA5MjkxYSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTBhZTk5MmE2Njk0NGYwOThlYjAxMDQ3NjhjOGZhYjc0MmRlZTMxMDI0OTc2Mjc3YzMyYjZmYTQ5NzkyNGI1MyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZmIxODA4NDQ5MTJkYWU2NTEyY2E1ZmNjNTJiYzA3YzFhNzQ0ODgwMmQ0MTA2MjlkM2I3Y2VlNzMyMGRmMjk2YSJ9"
         }
       ]
@@ -47,14 +47,14 @@
       "statement": "Four instruction-writing guidelines are derived from the incident: place demonstrative referents in the instruction clause, use distinct verbs for 'look it up yourself' vs 'you decide', avoid relying on implicit justification for omitted information, and verify each bundled request's completeness separately.",
       "evidence": [
         {
-          "resource": "repo://agent-expertise-framework/02-instruction-clarity-incident.md#L36-L50",
-          "version": "repo-lines-v1:sha256:e9efaeff80139bf9fd411a146032c87ba2dbebaae1c44982dde1d38e004a0ec8:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBlZDEzODJmNjhjMjBiNGZiY2NmNzRmNzY3YzNmZGFlMjFjMTljNWYzYjY5NWI2Mjc3YzY3ZGFkOGIzYWFmZmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJmNzQyMTA0MzcyMjY2MmFkZmYzMjAwZGQwZTUzNmNjMzJmNzdhODc0ZGU3ZWNmOWI3NGI5Zjk4MTEwYWYwNGEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVhYWIxZDA1MjNlNzU0MTBkOTc4YWMyMzA3YjAyYzliMWVkZjc3MGY2YTk2MjEwOTRiZDExYTYwNDUzNDljYjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjViYzNkYjQ2YWQ2NmRhMjVhZjBhMTMyZmJiZDJiNTgzZTBjNTQzYTJhNGY2ZjBhYzhlYTJlMjA1NWQ2MDgyM2YifQ"
+          "resource": "repo://agent-expertise-framework/01-narrow-interface/02-instruction-clarity-incident.md#L37-L53",
+          "version": "repo-lines-v1:sha256:e8cb45554c46f1123e93b020332e159760d352bc8abaff80b0747c01e23b180a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNkMzIyYjBjNDllOGY3OGY2MjcyNWI5MzcwZDM0ZGI2NzI2YTZiY2UyYjk4ZWM1NmIyYjJiZGUzMzBhOWU2YzIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJmNzQyMTA0MzcyMjY2MmFkZmYzMjAwZGQwZTUzNmNjMzJmNzdhODc0ZGU3ZWNmOWI3NGI5Zjk4MTEwYWYwNGEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZiMTgwODQ0OTEyZGFlNjUxMmNhNWZjYzUyYmMwN2MxYTc0NDg4MDJkNDEwNjI5ZDNiN2NlZTczMjBkZjI5NmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjViYzNkYjQ2YWQ2NmRhMjVhZjBhMTMyZmJiZDJiNTgzZTBjNTQzYTJhNGY2ZjBhYzhlYTJlMjA1NWQ2MDgyM2YifQ"
         }
       ]
     }
   ],
   "verification": {
     "by": "openwiki/0.4.3",
-    "at": "2026-08-30T15:41:00.038Z"
+    "at": "2026-09-05T20:17:03.290Z"
   }
 }

@@ -5,10 +5,10 @@ description: A proposed natural-language-to-execution interpretation layer that 
 tags: [design, instruction-clarity, ambiguity, agent-architecture, gate]
 verified:
   - by: openwiki/0.4.3
-    at: 2026-08-30T15:41:00.038Z
+    at: 2026-09-05T20:17:03.290Z
 sources:
-  - id: openwiki-source-4c9b36f8ca0998a4d922aea5
-    resource: repo://agent-expertise-framework/03-instruction-resolution-gate.md
+  - id: openwiki-source-91448ba35a9bcef35027f4b1
+    resource: repo://agent-expertise-framework/01-narrow-interface/03-instruction-resolution-gate.md
 generated: { by: "claude-code", at: "2026-08-30T15:41:00.038Z" }
 ---
 

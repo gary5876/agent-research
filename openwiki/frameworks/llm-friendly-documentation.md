@@ -5,10 +5,10 @@ description: A 12-principle framework for writing documentation that an LLM can 
 tags: [methodology, documentation, hallucination, llm, framework]
 verified:
   - by: openwiki/0.4.3
-    at: 2026-08-30T15:41:00.038Z
+    at: 2026-09-05T20:17:03.290Z
 sources:
-  - id: openwiki-source-a697a5cd10cd677ae649f99d
-    resource: repo://agent-expertise-framework/00-llm-friendly-docs-framework.md
+  - id: openwiki-source-6a8850bd107a3ccc222eec42
+    resource: repo://agent-expertise-framework/00-data-lake/00-llm-friendly-docs-framework.md
 generated: { by: "claude-code", at: "2026-08-30T15:41:00.038Z" }
 ---
 

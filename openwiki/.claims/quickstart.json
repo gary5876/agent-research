@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:ff69923ab881f703b823129040f4c7b3236ffe56be88d5c1678375e34cf297ed",
+  "pageVersion": "sha256:1b65df2919c65135bf3c65b77dbfc7efc35f130b89bb1ee4ff274da82d405a68",
   "claims": [
     {
       "id": "claim_7faca76aff3a4db4bc6665df1e9283d4",
-      "statement": "AGENTS.md and CLAUDE.md at the repository root each contain only an OpenWiki-managed block that points to the generated openwiki/ directory as optional context and instructs not to hand-edit generated pages.",
+      "statement": "CLAUDE.md at the repository root contains only an OpenWiki-managed block that points to the generated openwiki/ directory as optional context and instructs not to hand-edit generated pages; AGENTS.md contains that same block plus a documentation convention section requiring Status/Layer header tags on new research documents.",
       "evidence": [
         {
-          "resource": "repo://AGENTS.md#L1-L12",
-          "version": "repo-lines-v1:sha256:e196ae5aef70399b7f4cd655c0440c5c589dbecac5863d6178aa1c195d5a4325:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVmMTgwZjljMTI2OTAzYmNjMzMxYWE5NTQ1NmU0OTQ0NGE3ZDRkMDExZThhMmE4M2Y1ZGM4NzAyMzkxODEyZDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA5Zjc4NzE0ODkzYWE3Nzk0MmNlYTFjNGEyZTAyMzFkYmI3ZmEyYTQxYTcwYzgxNDYwYTNjNjc1NjJkYTNhYWEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+          "resource": "repo://AGENTS.md#L1-L22",
+          "version": "repo-lines-v1:sha256:97f1b6d68a13722bf0644fa1b52bdb050bcdfad4f7ce6cb74d246c3cb90f8d2b:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVmMTgwZjljMTI2OTAzYmNjMzMxYWE5NTQ1NmU0OTQ0NGE3ZDRkMDExZThhMmE4M2Y1ZGM4NzAyMzkxODEyZDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZmMmIzNmI1YTUwNmIwZTEzZGYyM2NmZTdmMGQ2N2I5MGFmODRjMGVjOGY0NTliZWY4YjkxMzY0MGNjYjJiMzQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
         },
         {
           "resource": "repo://CLAUDE.md#L1-L7",
@@ -18,17 +18,17 @@
     },
     {
       "id": "claim_478210324b414132ba0d219272e48eda",
-      "statement": "The source notes in agent-expertise-framework/ are numbered 00 through 03 and are intended to be read in that order, with each note continuing the inquiry begun by the previous one.",
+      "statement": "The source material in agent-expertise-framework/ is organized into four numbered subfolders (00-data-lake, 01-narrow-interface, 02-self-improvement-loop, 03-orchestration-and-enforcement), each covering one factor of the four-factor model, under a root synthesis document (08-agent-implementation-schema.md); this wiki currently documents only the 00-data-lake and 01-narrow-interface material.",
       "evidence": [
         {
-          "resource": "repo://agent-expertise-framework/README.md#L18-L20",
-          "version": "repo-lines-v1:sha256:e8370da39b8129324638b85586eee32c0baf356782204496d0d820437f5b0a46:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOTNjMGVkMWVjYjhlNjY1NGMxMGU0ZTZiMDczMDVjNjE4ODQzNWM0ZDZmOTU1N2EwZGZkNjIxNTg3NmFiZWE4NyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzE2OTYxNjczOTI2MDNhNThiMjg0MmE3MTgwYTEwOTAxZTcxYjUzNGUyYTkyYjQwYmI1M2IwMGNmODA4MjI4ZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNDk1YjNkN2ZhZTkyMDM3NGEyZTk3MDQxNTI4MTEyYTc5OGViZjY3YjQ0NjJmMGUxYzQ3MDllMzBiN2U2YTNhZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+          "resource": "repo://agent-expertise-framework/README.md#L5-L33",
+          "version": "repo-lines-v1:sha256:f475b3a8c2bf1677b2adee96e92ea237bbfb2290b33251fce33ed9834a48818e:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ3YzA2YzU2MWQ1YzMyNzM0MzY4NTI2OGE0NmIzMzkxZjM5OThlZWU4OTBkMmJlNTFmMGQyMWNjNGE1M2FlNmQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRlNWE4YmM4YzQ3OTRlMjcyODY5MjBhOWIwMzViOGY0ZTU2OWY3MDVkZWZlOWJkNDExYTY3ZDZmOWRlMGU1YjMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA0MjUwMjllNWJhMTE3ODM4ZWQ3OWJiOTk0NDM4NjYwMzVmZWZlYmZlZWNmNzJmZTE1ZjA2ZGIzMWM2NjM0NGUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU2M2I4ZjQ4ZjNjMDcxZjY0YzZmMWVjNmE1YjJkMzYzNjQ3MTg2ODBmZDI2ZGU1MmE3NmE4YTAyNjFkNDY0OGQifQ"
         }
       ]
     }
   ],
   "verification": {
     "by": "openwiki/0.4.3",
-    "at": "2026-08-30T15:41:00.038Z"
+    "at": "2026-09-05T20:17:03.290Z"
   }
 }
