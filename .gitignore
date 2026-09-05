@@ -1,1 +1,4 @@
 .ask-gate/
+agent-expertise-framework/eval/.venv/
+agent-expertise-framework/eval/**/__pycache__/
+agent-expertise-framework/eval/.pytest_cache/
