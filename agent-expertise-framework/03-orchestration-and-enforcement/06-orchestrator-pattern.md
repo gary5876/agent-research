@@ -1,7 +1,7 @@
 # 관리자/오케스트레이터 에이전트 패턴 — 이 세션에서 이미 검증된 것
 
 **Status:** ACTIVE
-**Layer:** 2 (설계, 실패 사례 인용부는 Layer 1) — 층 구분 기준: [CATALOG.md](../CATALOG.md)
+**Layer:** 2 (설계, 실패 사례 인용부는 Layer 1) — 층 구분 기준: [CATALOG.md](../../CATALOG.md)
 
 `04`의 ADR-8(지속상태+재시도)과 사용자가 직접 지적한 문제("병렬처리·감시·검증 역할이 없으면 하나의 작업으로 처리되어 사람보다 못한 효율")는 같은 지점을 가리킨다. 이 문서는 그 역할을 처음부터 설계하지 않는다 — **이 세션 자체가 이미 그 역할을 여러 번 실제로 수행했으므로, 먼저 일어난 일을 그대로 기록한다.**
 
@@ -147,7 +147,7 @@ flowchart TD
 
 ## 관련 문서
 
-- [04-purpose-and-self-improvement-loop.md](04-purpose-and-self-improvement-loop.md) — ADR-8(지속상태+재시도), §5 Constraints(이 문서 ①·④단계의 규칙화 버전)
+- [04-purpose-and-self-improvement-loop.md](../02-self-improvement-loop/04-purpose-and-self-improvement-loop.md) — ADR-8(지속상태+재시도), §5 Constraints(이 문서 ①·④단계의 규칙화 버전)
 - [07-harness-and-hook-enforcement.md](07-harness-and-hook-enforcement.md) — `supervisor` 추가 배경(카카오페이 Supervisor 개념), §2-1의 HOOK 노드가 실제로 검증된 기록
-- [03-instruction-resolution-gate.md](03-instruction-resolution-gate.md) — "판단을 구조적 게이트로 강제해야 한다"는 원칙의 출처
+- [03-instruction-resolution-gate.md](../01-narrow-interface/03-instruction-resolution-gate.md) — "판단을 구조적 게이트로 강제해야 한다"는 원칙의 출처
 - `.claude/agents/researcher.md`, `.claude/agents/verifier.md`, `.claude/agents/doc-writer.md`, `.claude/agents/supervisor.md` — §6에서 정의한 실제 워커 에이전트

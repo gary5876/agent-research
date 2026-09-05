@@ -13,15 +13,10 @@ The scheduled OpenWiki GitHub Actions workflow refreshes the repository wiki. Do
 
 ## 문서 정리 컨벤션
 
-목적: 나중에 뭔가 찾을 때 제목을 하나씩 뒤지지 않고, 층(Layer)으로 바로 찾게 하는 것. `data-lake/me-data-lake`와 같은 방식 — 원본 문서는 옮기거나 병합하지 않고, 분류만 한다.
-
 새 연구 문서를 `agent-expertise-framework/`(또는 새 하위 주제 폴더)에 추가할 때:
 
-1. 제목 바로 아래에 `**Status:**`(DRAFT/ACTIVE/PLANNED/DEPRECATED)와 `**Layer:**`를 반드시 남긴다.
-   - Layer 1 = 원본 관찰·사건·실행 기록 (재해석 없이 그대로 근거로 쓸 수 있는 것)
-   - Layer 2 = Layer 1을 재료로 만든 설계·프레임워크·비교
-   - Layer 3 = 설계를 실제 코드/설정으로 옮긴 구현체
-   - Layer 4 = 자동 생성되거나 배포된 뷰 (openwiki/, 루트 README)
-2. 문서 하나가 여러 층을 섞어 쓰면, 대표 층을 `**Layer:**`에 적고 괄호로 예외 구간(예: "§8·9는 Layer 1")을 명시한다.
-3. 새 문서를 추가하거나 층이 바뀌면 [CATALOG.md](CATALOG.md)의 해당 표도 같이 갱신한다 — 인덱스(각 폴더 README.md)와 카탈로그(CATALOG.md)는 항상 동기화 상태를 유지한다.
-4. **정리(로컬 수정)와 배포(git push)는 분리된 요청으로 취급한다.** "정리해서 올려"처럼 같이 지시받아도, 변경사항을 먼저 보여주고 확인받은 뒤에 push한다.
+1. 제목 바로 아래에 `**Status:**`(DRAFT/ACTIVE/PLANNED/DEPRECATED)와 `**Layer:**`(1=원본 관찰·사건·실행기록, 2=그걸 재료로 만든 설계, 3=구현체, 4=자동생성·배포 뷰)를 남긴다. 여러 층이 섞이면 대표 층 + 괄호로 예외 구간을 설명한다. 이 태그가 그 문서의 분류에 대한 **유일한 원본**이다 — 다른 파일에 다시 옮겨 적지 않는다. 확인은 `grep -n "Layer:" agent-expertise-framework/*.md agent-expertise-framework/*/*.md`.
+2. 해당 폴더 `README.md` 색인에 "언제 이 문서를 찾을지" 한 줄을 추가하고, 관련 기존 문서와 상호링크한다.
+3. **정리(로컬 수정)와 배포(git push)는 분리된 요청으로 취급한다.** 같이 지시받아도 변경사항을 먼저 보여주고 확인받은 뒤에 push한다.
+
+이 세 줄로 될 만큼 좁게 유지하는 이유, 그리고 에이전트 자체를 어떻게 구현할지의 일반형은 [agent-expertise-framework/08-agent-implementation-schema.md](agent-expertise-framework/08-agent-implementation-schema.md)에 있다. 이 스키마를 이 저장소에 완전히 채워 넣는 작업(예: 문서 접근용 Skill)은 아직 없다 — 미리 만들지 않는다, 필요해지면 그때 08을 기준으로 설계한다.

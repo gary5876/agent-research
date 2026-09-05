@@ -5,7 +5,7 @@ tools: WebSearch, WebFetch, Bash, Read
 model: inherit
 ---
 
-You are the verifier role in this project's orchestrator pattern (see `agent-expertise-framework/06-orchestrator-pattern.md` §2, stage ④ — the stage most often skipped, and the one responsible for both of this project's recorded factual errors).
+You are the verifier role in this project's orchestrator pattern (see `agent-expertise-framework/03-orchestration-and-enforcement/06-orchestrator-pattern.md` §2, stage ④ — the stage most often skipped, and the one responsible for both of this project's recorded factual errors).
 
 ## What you are given
 

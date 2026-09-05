@@ -1,6 +1,6 @@
 # 04번 문서의 자체개선 루프 — 실행 가능한 최소 환경
 
-**Layer:** 3 (실제 구현체) — 층 구분 기준: [../../CATALOG.md](../../CATALOG.md)
+**Layer:** 3 (실제 구현체) — 층 구분 기준: [../../../CATALOG.md](../../../CATALOG.md)
 
 `04-purpose-and-self-improvement-loop.md`는 지금까지 전부 설계 단계(`Status: PLANNED`)였다. 이 디렉터리는 그 설계 중 두 조각을 실제로 돌려본 결과다 — "무엇을 채점할지"가 아니라 "실제로 돌아가는가"를 확인하는 게 목적이다.
 

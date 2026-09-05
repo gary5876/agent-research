@@ -1,7 +1,7 @@
 # 목적 명세와 자체개선 루프 — 4요소에 원칙 3·4·6·10·12를 결합한다
 
 **Status:** ACTIVE
-**Layer:** 2 (설계, §8·§9는 Layer 1 실행기록) — 층 구분 기준: [CATALOG.md](../CATALOG.md)
+**Layer:** 2 (설계, §8·§9는 Layer 1 실행기록) — 층 구분 기준: [CATALOG.md](../../CATALOG.md)
 
 `01-research-summary.md`의 4요소(정합적인 data lake, 좁고 명시적인 인터페이스, 안전한 응답 필터, 실패 사례 기반 금지 규칙)는 "무엇이 있어야 하는가"를 말한다. 이 문서는 그 위에 `00-llm-friendly-docs-framework.md`의 12원칙 중 실제로 확인 결과 약하거나 빠져 있던 5개(3: 상태분리, 4: 용어집, 6: Constraints, 10: ADR, 12: 검증 시스템)를 채워 넣는다.
 
@@ -205,6 +205,6 @@ A(자기주장/성과 보고의 그라운딩)와 B(반복 실행 간 재현성/�
 
 ## 관련 문서
 
-- [00-llm-friendly-docs-framework.md](00-llm-friendly-docs-framework.md) — 여기서 보완하는 12원칙의 원본
-- [01-research-summary.md](01-research-summary.md) — 여기서 목적을 명시하는 4요소의 원본
-- [02-instruction-clarity-incident.md](02-instruction-clarity-incident.md), [03-instruction-resolution-gate.md](03-instruction-resolution-gate.md) — "판단을 구조적으로 강제해야 한다"는 §7 설계 원칙의 출처
+- [00-llm-friendly-docs-framework.md](../00-data-lake/00-llm-friendly-docs-framework.md) — 여기서 보완하는 12원칙의 원본
+- [01-research-summary.md](../00-data-lake/01-research-summary.md) — 여기서 목적을 명시하는 4요소의 원본
+- [02-instruction-clarity-incident.md](../01-narrow-interface/02-instruction-clarity-incident.md), [03-instruction-resolution-gate.md](../01-narrow-interface/03-instruction-resolution-gate.md) — "판단을 구조적으로 강제해야 한다"는 §7 설계 원칙의 출처

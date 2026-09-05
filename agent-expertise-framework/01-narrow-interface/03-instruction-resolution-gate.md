@@ -1,7 +1,7 @@
 # 요구사항 해석 게이트 — 전문화된 에이전트를 위한 자연어→실행 지시 변환 레이어
 
 **Status:** ACTIVE
-**Layer:** 2 (설계) — 층 구분 기준: [CATALOG.md](../CATALOG.md)
+**Layer:** 2 (설계) — 층 구분 기준: [CATALOG.md](../../CATALOG.md)
 
 `02-instruction-clarity-incident.md`에서 다룬 사건을 재료로, 전문화된 에이전트들을 쓰기 위해 사용자와 에이전트 사이에 둬야 할 레이어를 설계한다. 사용자의 결론: "정말 전문화된 agent를 쓰려면, 내 자연어를 LLM이 받아들이기 좋은 형태로 분석·재조립하는 레이어가 필요하다." 이 문서는 그 레이어가 뭘 해야 하는지, 왜 모델의 판단에만 맡기면 안 되는지를 정리한다.
 
@@ -55,4 +55,4 @@
 ## 관련 문서
 
 - [02-instruction-clarity-incident.md](02-instruction-clarity-incident.md) — 이 설계의 재료가 된 실패 사례
-- [00-llm-friendly-docs-framework.md](00-llm-friendly-docs-framework.md) — 대칭 문제(LLM이 읽을 문서를 명시적으로 쓰기)
+- [00-llm-friendly-docs-framework.md](../00-data-lake/00-llm-friendly-docs-framework.md) — 대칭 문제(LLM이 읽을 문서를 명시적으로 쓰기)

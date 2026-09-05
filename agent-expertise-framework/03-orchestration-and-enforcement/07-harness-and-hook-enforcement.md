@@ -1,7 +1,7 @@
 # Harness Engineering과 Hook — 규칙을 프롬프트가 아니라 구조로 강제하기
 
 **Status:** ACTIVE
-**Layer:** 2 (해결방안 설계, §1·§7-2는 Layer 1) — 층 구분 기준: [CATALOG.md](../CATALOG.md)
+**Layer:** 2 (해결방안 설계, §1·§7-2는 Layer 1) — 층 구분 기준: [CATALOG.md](../../CATALOG.md)
 
 출처: [카카오페이 기술블로그 "AI Agent 아키텍처와 구성요소"](https://tech.kakaopay.com/post/ai-agent-1/) (WebFetch로 원문 확인, 2026-09-05). **1차 정리는 너무 얕았다** — WebFetch가 작은 모델로 원문을 압축해서 요약하는데, 한 번의 요약 요청으로는 긴 글의 디테일(예시 스키마, 인용문, 문제 목록, 단계별 고도화 경로)이 거의 다 날아갔다. §1~§3은 "기본틀"/"문제점·주의점"/"해결방법·고도화방법" 세 갈래로 나눠 다시 WebFetch한 결과로 재작성했다. **본문 다이어그램 2장도 WebFetch는 텍스트만 뽑아서 아예 안 봤다** — `curl`로 원본 `.webp` 이미지를 직접 받아 확인한 내용을 §1-1a에 추가했다.
 
@@ -163,7 +163,8 @@
 
 ## 관련 문서
 
-- [04-purpose-and-self-improvement-loop.md](04-purpose-and-self-improvement-loop.md) — §5 Constraints(이번에 하나를 Hook으로 전환), §9(Supervisor가 대응하는 실패 유형 E)
-- [05-pipeline-options-and-plan.md](05-pipeline-options-and-plan.md) — §3의 5단계 고도화 경로가 대응하는 파이프라인 A→D 스펙트럼
+- [04-purpose-and-self-improvement-loop.md](../02-self-improvement-loop/04-purpose-and-self-improvement-loop.md) — §5 Constraints(이번에 하나를 Hook으로 전환), §9(Supervisor가 대응하는 실패 유형 E)
+- [05-pipeline-options-and-plan.md](../02-self-improvement-loop/05-pipeline-options-and-plan.md) — §3의 5단계 고도화 경로가 대응하는 파이프라인 A→D 스펙트럼
 - [06-orchestrator-pattern.md](06-orchestrator-pattern.md) — §6 워커 에이전트 세트에 Supervisor 추가, "Subagent=컨텍스트 격리 장치" 재확인
-- [03-instruction-resolution-gate.md](03-instruction-resolution-gate.md) — Hook 원칙의 이 프로젝트 내 최초 출처
+- [03-instruction-resolution-gate.md](../01-narrow-interface/03-instruction-resolution-gate.md) — Hook 원칙의 이 프로젝트 내 최초 출처
+- [08-agent-implementation-schema.md](../08-agent-implementation-schema.md) — §4의 대응관계 표를 `01`의 4요소와 합쳐 일반형 스키마로 종합

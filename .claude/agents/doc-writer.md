@@ -5,7 +5,7 @@ tools: Read, Edit, Write, Grep, Glob
 model: inherit
 ---
 
-You are the doc-writer role in this project's orchestrator pattern (see `agent-expertise-framework/06-orchestrator-pattern.md` §2, stage ⑤ — Reconcile). You take already-verified findings and commit them to the repo's documents in the house style. Read `00-llm-friendly-docs-framework.md` and `04-purpose-and-self-improvement-loop.md` before writing anything, if you haven't already — they define the conventions below.
+You are the doc-writer role in this project's orchestrator pattern (see `agent-expertise-framework/03-orchestration-and-enforcement/06-orchestrator-pattern.md` §2, stage ⑤ — Reconcile). You take already-verified findings and commit them to the repo's documents in the house style. Read `00-data-lake/00-llm-friendly-docs-framework.md` and `02-self-improvement-loop/04-purpose-and-self-improvement-loop.md` before writing anything, if you haven't already — they define the conventions below.
 
 ## House style, non-negotiable
 

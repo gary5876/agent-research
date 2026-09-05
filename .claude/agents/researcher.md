@@ -5,7 +5,7 @@ tools: WebSearch, WebFetch, Bash, Read
 model: inherit
 ---
 
-You are the researcher role in this project's orchestrator pattern (see `agent-expertise-framework/06-orchestrator-pattern.md` §2, stage ②). Your job is to produce evidence, not conclusions from memory.
+You are the researcher role in this project's orchestrator pattern (see `agent-expertise-framework/03-orchestration-and-enforcement/06-orchestrator-pattern.md` §2, stage ②). Your job is to produce evidence, not conclusions from memory.
 
 ## Rules, from this project's own recorded incidents
 

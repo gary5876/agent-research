@@ -1,7 +1,7 @@
 # 사건 기록: "내 깃허브에 스타해놓은 레포가 있는데" — 조회 대상을 질문 대상으로 오판한 사례
 
 **Status:** ACTIVE
-**Layer:** 1 (원본 사건) — 층 구분 기준: [CATALOG.md](../CATALOG.md)
+**Layer:** 1 (원본 사건) — 층 구분 기준: [CATALOG.md](../../CATALOG.md)
 
 `00-llm-friendly-docs-framework.md`가 "LLM이 읽을 문서를 어떻게 쓸까"를 다뤘다면, 이 문서는 반대 방향이다. "LLM에게 지시를 어떻게 내려야 LLM이 오판하지 않는가"를 실제 실패 사례로 정리한다.
 
@@ -61,5 +61,5 @@
 
 ## 관련 문서
 
-- [00-llm-friendly-docs-framework.md](00-llm-friendly-docs-framework.md) — LLM이 읽을 문서를 명시적으로 쓰는 원칙 (이 사건과 대칭 관계: 저건 문서 쓰기, 이건 지시 쓰기)
-- [01-research-summary.md](01-research-summary.md) — 프레임워크를 실제 프로젝트로 검증한 결과
+- [00-llm-friendly-docs-framework.md](../00-data-lake/00-llm-friendly-docs-framework.md) — LLM이 읽을 문서를 명시적으로 쓰는 원칙 (이 사건과 대칭 관계: 저건 문서 쓰기, 이건 지시 쓰기)
+- [01-research-summary.md](../00-data-lake/01-research-summary.md) — 프레임워크를 실제 프로젝트로 검증한 결과
