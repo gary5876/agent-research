@@ -11,10 +11,11 @@
 | ID | 상태 | 질문 | 결정 | 날짜 | 근거 |
 |---|---|---|---|---|---|
 | D01 | open | 실행 중에 새 모호함이 생기면 멈추고 다시 물을지, superpowers처럼 결정하고 기록할지, 섞을지(예: 명세 의도는 멈추고 구현 세부는 결정 후 기록) | | | [16 끝 절](notes/16-superpowers-study.md), D07과 충돌 |
-| D02 | open | 마스터 설계 1절, 자비스의 역할과 권한 최종 확인 | | | [JOURNEY.md](JOURNEY.md) 6절 |
+| D02 | open | 마스터 설계 1절, 자비스의 역할과 권한 최종 확인 | | | [JOURNEY.md](JOURNEY.md) 6절, [17 1~4절](notes/17-orchestration-news-2026-10.md)(역할 분배보다 과제별 모델 라우팅, 승인 우회 대비) |
 | D03 | open | 마스터 오케스트레이터 구현을 이 저장소에서 할지 별도 저장소에서 할지 | | | [09](notes/09-repo-structure-and-pipeline.md) |
-| D04 | open | 첫 번째로 만들 "한 부서의 한 작업"을 무엇으로 할지 | | | [12 열린 질문](notes/12-orchestration-application.md) |
+| D04 | open | 첫 번째로 만들 "한 부서의 한 작업"을 무엇으로 할지 | | | [12 열린 질문](notes/12-orchestration-application.md), [17 1절](notes/17-orchestration-news-2026-10.md)(단일 에이전트와 스킬로 시작하는 근거) |
 | D05 | open | 평가 세트 20개를 어디서 구할지 | | | [12 열린 질문](notes/12-orchestration-application.md) |
+| D17 | open | 부서를 에이전트 단위로 나눌지, 스킬을 가진 단일 에이전트로 시작해 필요할 때만 나눌지 | | | [17 1절](notes/17-orchestration-news-2026-10.md), [12 3절](notes/12-orchestration-application.md) |
 
 ## 확정된 결정
 

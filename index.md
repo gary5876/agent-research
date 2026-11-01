@@ -67,6 +67,7 @@
 | [11-orchestration-current-2026.md](notes/11-orchestration-current-2026.md) | ACTIVE | 1 | 10번 결론을 2026년 모델 기준으로 재검증한 판정표와 2026년 가이드, 운영 사례. 10과 다르면 11을 따름 |
 | [12-orchestration-application.md](notes/12-orchestration-application.md) | DRAFT | 2 | 10, 11번 근거를 부서별 에이전트 조직 구상에 적용한 설계 판단 |
 | [16-superpowers-study.md](notes/16-superpowers-study.md) | ACTIVE | 1 | superpowers v6.3.0을 설치본 원문으로 공부한 노트. 요청 흐름, 위험 검증, 비용, 보안, 가져올 것 |
+| [17-orchestration-news-2026-10.md](notes/17-orchestration-news-2026-10.md) | ACTIVE | 1 | 2026-10-01 ~ 11-02 에이전트 오케스트레이션 소식. 검증한 17개 주장 중심으로 마스터 설계에 미치는 영향과 11번 판정표 갱신 |
 
 ### master: 마스터 에이전트 (자비스형)
 
@@ -74,6 +75,7 @@
 |---|---|---|---|
 | [15-master-orchestrator-research.md](notes/15-master-orchestrator-research.md) | ACTIVE | 1 | 마스터 에이전트(자비스형) 설계를 위한 원문 조사 3개의 목차와 세 조사가 겹치는 결론 |
 | [16-superpowers-study.md](notes/16-superpowers-study.md) | ACTIVE | 1 | superpowers v6.3.0을 설치본 원문으로 공부한 노트. 요청 흐름, 위험 검증, 비용, 보안, 가져올 것 |
+| [17-orchestration-news-2026-10.md](notes/17-orchestration-news-2026-10.md) | ACTIVE | 1 | 2026-10-01 ~ 11-02 에이전트 오케스트레이션 소식. 검증한 17개 주장 중심으로 마스터 설계에 미치는 영향과 11번 판정표 갱신 |
 
 ### baseline: 카카오페이 바닥선
 
@@ -96,6 +98,7 @@
 |---|---|---|
 | [sources/kakaopay/](sources/kakaopay/) | 24 | [07](notes/07-harness-and-hook-enforcement.md), [13](notes/13-kakaopay-tech-blog-study.md), [14](notes/14-kakaopay-baseline-and-target.md) |
 | [sources/master-orchestrator/](sources/master-orchestrator/) | 3 | [15](notes/15-master-orchestrator-research.md) |
+| [sources/news-2026-10/](sources/news-2026-10/) | 6 | [17](notes/17-orchestration-news-2026-10.md) |
 | [sources/superpowers/](sources/superpowers/) | 1 | [15](notes/15-master-orchestrator-research.md), [16](notes/16-superpowers-study.md) |
 
 ## 실험 (experiments/)
@@ -104,7 +107,7 @@
 
 ## 다음에 할 일
 
-- 열린 결정 5개: [decisions.md](decisions.md)
+- 열린 결정 6개: [decisions.md](decisions.md)
 - 열린 질문이 남은 문서 (문서 안의 "열린 질문" 절, 숫자는 남은 항목 수):
 
   - [01-research-summary.md](notes/01-research-summary.md): 2개
@@ -114,5 +117,6 @@
   - [07-harness-and-hook-enforcement.md](notes/07-harness-and-hook-enforcement.md): 4개
   - [09-repo-structure-and-pipeline.md](notes/09-repo-structure-and-pipeline.md): 2개
   - [12-orchestration-application.md](notes/12-orchestration-application.md): 3개
+  - [17-orchestration-news-2026-10.md](notes/17-orchestration-news-2026-10.md): 3개
 
 <!-- index:end -->
