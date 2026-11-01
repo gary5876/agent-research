@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:389562f6cf0b9fb0494202871cc9952ad0eca18fa84c927fa9193a3325d032bf",
+  "pageVersion": "sha256:d4aa31ad5254e31acf58f010dd109120c02ec9fa2b403293639d2541edc01b9e",
   "claims": [
     {
       "id": "claim_7b958aab9ff246959073bb06eb94f6d0",
@@ -54,17 +54,47 @@
     },
     {
       "id": "claim_474ab30af3cc40179eef4cf29f2fdc28",
-      "statement": "Five direction-level decisions are open in decisions.md, covering mid-run ambiguity handling, the master's role and authority, implementation location, the first department task, and the evaluation set source.",
+      "statement": "Six direction-level decisions are open in decisions.md, covering mid-run ambiguity handling, the master's role and authority, implementation location, the first department task, the evaluation set source, and whether to split departments into agents at all.",
       "evidence": [
         {
-          "resource": "repo://decisions.md#L13-L17",
-          "version": "repo-lines-v1:sha256:c5f05702bb453819d6927295007cd7832f0188baa33a8633ec1ff4dfea512e0a:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2FjOGJjYTJhMGI3ZmRhMGFjNjIzY2UzYzhmY2M3YzRiMWRjNTlmNDVlZWUzODNhM2ZjZmI2MGY2ZjUwODUxNCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYWUzMjNmZjIwODRhYTNiMjBhOTgxODk4NjJlYTA1MDIwZDM4M2ZmYjkxOGIyMTZhZDE0YWMyNTU5OWJiYjNiOSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMjVhNjlhZWYwNmM5ZmI0ODI3NjAwOTM1N2Y4YTg4ZDg4N2RjZjY0MThjOWFhY2RiOGY3MTk2NDA5ZTI4M2YxOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjMzMWMzMDc0ZThhMmEzNDc1ZDRhYTEyMTljMzM5ODRhNTIxMjU0MWFiNzllMjczNzdiOThhZDk0ZjcyN2JmOCJ9"
+          "resource": "repo://decisions.md#L13-L18",
+          "version": "repo-lines-v1:sha256:9730e327fbd32485f3c1a423527e1fbc7358aa1cddba72be60efd5fd5302ae51:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2FjOGJjYTJhMGI3ZmRhMGFjNjIzY2UzYzhmY2M3YzRiMWRjNTlmNDVlZWUzODNhM2ZjZmI2MGY2ZjUwODUxNCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMzFjOTU5ZWIyOTdhMmYyNTk2NWYzMzIwZWY4NWYyMDc5ZmYwOTUxMDg5YjM4MDFhNDZhN2ZkMDM3ZDc3ZDExMyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMjVhNjlhZWYwNmM5ZmI0ODI3NjAwOTM1N2Y4YTg4ZDg4N2RjZjY0MThjOWFhY2RiOGY3MTk2NDA5ZTI4M2YxOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjMzMWMzMDc0ZThhMmEzNDc1ZDRhYTEyMTljMzM5ODRhNTIxMjU0MWFiNzllMjczNzdiOThhZDk0ZjcyN2JmOCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_2169b545803f4b2abcdddb6f54062ddf",
+      "statement": "notes/17 records that Anthropic's 2026-10-22 article found a single agent with skills often outperformed subagent designs and warned against architectures copying the org chart, and that a pre-registered tau2-bench study and a pipeline cost study found multi-agent setups worse or more expensive without solving more.",
+      "evidence": [
+        {
+          "resource": "repo://notes/17-orchestration-news-2026-10.md#L19-L27",
+          "version": "repo-lines-v1:sha256:935a08e533262ce507fcd69c27c6b076e500a1ca1ef0b4bf59a07c11150e50a2:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYjZkNTEzZDhiNWRkYmRlMTFjYTYzYjk5ZDg3YTg0NjUyMDIyM2QxMjdiN2VjYmUxZDlmNDFhNDdlN2I2OTlkOSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYjY4ZWM0NzM5ZmE3OWU0ZjM2OTAzYTE1OGY5ZmZkZTk3NWIyNmU4NTkxYWEwZjY4OWRjMzYxMTI5OGNjYTcwZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMjFjMjRiMTM2YmYxMmM1ZWE0NTk1NWI5NTYyMzk2YjEzOWZkNDM1NTc2NjU1N2ZiY2NkYjFlZjBmN2ZjYmJhZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjU0ODI4YTUxZmQwNzRhNmY4NzQyZDk3NzJjODY2NjJjYzhkYjVhNGE3ZGU2NmQyYjVlMmUzYTQ3NTNjYzg2MCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_2e5c9f7897114f6ab96f338e74a54b05",
+      "statement": "Managed Agents dynamic workflows (beta, 2026-10-09) allow program-driven multi-agent runs, but runs do not nest and subagent delegation remains one level deep.",
+      "evidence": [
+        {
+          "resource": "repo://notes/17-orchestration-news-2026-10.md#L33-L33",
+          "version": "repo-lines-v1:sha256:98d98ba03b275faa017e2e443617993e5095f3d5ee02f117d239b9a06ac229e7:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOThkOThiYTAzYjI3NWZhYTAxN2UyZTQ0MzYxNzk5M2U1MDk1ZjNkNWVlMDJmMTE3ZDIzOWI5YTA2YWMyMjllNyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOThkOThiYTAzYjI3NWZhYTAxN2UyZTQ0MzYxNzk5M2U1MDk1ZjNkNWVlMDJmMTE3ZDIzOWI5YTA2YWMyMjllNyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZjJlNzhjNjQ4YjM0NDBlNWUzN2EwMTUwNzgxMWNmNDg2MThlNTBiOTZjMDNkMzQ2OGFkODg2NTQ5OTA3NzZiNSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzM5ZTdiNGY4MDhhNzkzMGJjZWExMjE1OTQzMWRhZTIzMzViZWViN2FkMGEyN2FlYTgyOTlhNzRmZjk5OTNlNSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_a1d6190d767749a0ab3a5ef8868db523",
+      "statement": "superpowers v7.0.1 responded to a session that lost its five-round fix cap after compaction by moving step rules into separately loaded reference files, and gstack's Captain uses a single merger over disjoint lanes and had its archive permission narrowed after archiving threads outside its crew.",
+      "evidence": [
+        {
+          "resource": "repo://notes/17-orchestration-news-2026-10.md#L63-L65",
+          "version": "repo-lines-v1:sha256:78b153b8745c0e6a0711d145e952f131892f99913ceca77bee697c13ad96faab:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYWMxNjI1NzQ0OWMyODJiY2M5MDlkNTg3YWI1YzBkMjRhNzRkNGU0MTVjN2E1YjkyOTY3NmEyNWM3ZmM1ZjgxOSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjA2NDYxNjFhMGZiNzAyNmY4NDQ0YTgwZjllMTcwMjgxODEwZmM5ZDMzNzI2NTlkZTE0NTZkZWZmNGZmYjA2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZjJlNzhjNjQ4YjM0NDBlNWUzN2EwMTUwNzgxMWNmNDg2MThlNTBiOTZjMDNkMzQ2OGFkODg2NTQ5OTA3NzZiNSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDE2YTlmNjZjNmFjM2U2MDJmZDY1MTdlN2Q0NjMwNzk5NmIzZDVmNTNkM2IyYWEwYmFiY2VmOTVjZmVlZDJhZCJ9"
         }
       ]
     }
   ],
   "verification": {
     "by": "openwiki/0.4.3",
-    "at": "2026-11-01T16:09:17.598Z"
+    "at": "2026-11-01T16:48:28.899Z"
   }
 }

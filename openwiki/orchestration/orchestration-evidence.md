@@ -5,7 +5,7 @@ description: External evidence on multi-agent orchestration from mostly 2023 to 
 tags: [orchestration, multi-agent, evidence, evaluation, design]
 verified:
   - by: openwiki/0.4.3
-    at: 2026-11-01T16:09:17.598Z
+    at: 2026-11-01T16:48:28.899Z
 sources:
   - id: openwiki-source-b59005f0f903d10c3bb60923
     resource: repo://decisions.md
@@ -15,7 +15,9 @@ sources:
     resource: repo://notes/11-orchestration-current-2026.md
   - id: openwiki-source-d62f0766d3a66d0a636a5646
     resource: repo://notes/12-orchestration-application.md
-generated: { by: "claude-code", at: "2026-11-01T16:09:17.598Z" }
+  - id: openwiki-source-c14bb42577beb1d920ff82a4
+    resource: repo://notes/17-orchestration-news-2026-10.md
+generated: { by: "claude-code", at: "2026-11-01T16:48:28.899Z" }
 ---
 
 ## Three documents, one rule
@@ -39,6 +41,22 @@ generated: { by: "claude-code", at: "2026-11-01T16:09:17.598Z" }
 | Lost in the middle of long inputs | Weakened for simple retrieval |
 
 notes/11 §7 also lists figures that circulate but must not be cited because their sources could not be traced.
+
+## October 2026 refresh (notes/11 section 9, notes/17)
+
+A sweep of 2026-10-01 to 11-02, with 17 design-relevant claims re-checked against primary sources, reversed none of the verdicts above. Three got stronger and one row was added:
+
+| Verdict | October evidence | Result |
+|---|---|---|
+| Start with a single agent | Anthropic, 2026-10-22: a single agent with skills often beat subagent designs in enterprise deployments | Strengthened |
+| Splitting by job role is risky | The same article warns against architectures that copy the org chart. A planner, coder, reviewer pipeline cost 3.22x and solved no more (arXiv 2610.37700) | Strengthened |
+| Single beats multi at equal cost | Pre-registered tau2-bench study: multi-agent worse in 12 of 13 valid cells (arXiv 2610.27655) | Strengthened |
+| Handoffs leak information | LLM summaries kept at most 16.0% of recurring details, mechanical extraction 79.1% (arXiv 2610.31710) | Kept |
+| Same-model supervisors oversee poorly | Hiding the worker's success report from the verifier raised recall of dangerous misreports by 13.3 to 43.4 points (arXiv 2610.29609) | Kept, with a remedy: give the verifier traces, not claims |
+| New: agents can route around human approval | Planted repository context got agents to propose overly broad allow-rules in 58% of cases, and 81.0% of approved cases completed silently (arXiv 2610.22987) | Approval points must sit outside the agent's reach |
+| Delegation is one level deep | Managed Agents dynamic workflows (2026-10-09) keep one-level delegation and do not nest runs | Kept |
+
+notes/17 lists the corrections the verifiers made and the items that were not verified. The raw reports are in `sources/news-2026-10/`.
 
 ## Applied to the department idea (notes/12)
 

@@ -3,9 +3,6 @@ type: quickstart
 title: Quickstart
 description: Task-routing map for this repository. Where to start for each kind of question, using the notes, sources, and experiments layout, the generated index, the decisions list, and the wiki sections.
 tags: [quickstart, navigation, routing]
-verified:
-  - by: openwiki/0.4.3
-    at: 2026-11-01T16:09:17.598Z
 sources:
   - id: openwiki-source-8037e2358a2c4f9b2c722a11
     resource: repo://AGENTS.md
@@ -13,7 +10,10 @@ sources:
     resource: repo://CLAUDE.md
   - id: openwiki-source-78adcd79964049a8d458e647
     resource: repo://index.md
-generated: { by: "claude-code", at: "2026-11-01T16:09:17.598Z" }
+generated: { by: "claude-code", at: "2026-11-01T16:48:28.899Z" }
+verified:
+  - by: openwiki/0.4.3
+    at: 2026-11-01T16:48:28.899Z
 ---
 
 ## First stops
@@ -37,6 +37,7 @@ generated: { by: "claude-code", at: "2026-11-01T16:09:17.598Z" }
 | What external evidence says about multi-agent systems | [Orchestration Evidence and Design Judgment](orchestration/orchestration-evidence.md) |
 | What "at least as good as KakaoPay" means | [KakaoPay Baseline](orchestration/kakaopay-baseline.md) |
 | The state of the master (Jarvis-style) agent design | [Master Orchestrator Research](orchestration/master-orchestrator.md) |
+| What changed in the field recently | `notes/17-orchestration-news-2026-10.md` (October 2026, verified), summarized in [Orchestration Evidence and Design Judgment](orchestration/orchestration-evidence.md) |
 
 ## Reading the notes
 

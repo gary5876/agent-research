@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:53ef44919f0cd8e0da14b680dfc02f15e2ac99874bb6131cb9bd59d3fb6ffe4f",
+  "pageVersion": "sha256:da3afd517753ae1aaea003de57c058bf6dc1e51d28ba1f6228749f73b598d89f",
   "claims": [
     {
       "id": "claim_cc1d9ed8dff7479ebbab77914ae8b2b3",
@@ -67,14 +67,48 @@
       "statement": "When notes/10 and notes/11 disagree, notes/11 is followed.",
       "evidence": [
         {
-          "resource": "repo://decisions.md#L27-L27",
+          "resource": "repo://decisions.md#L28-L28",
           "version": "repo-lines-v1:sha256:56604aabf4684cf40b03ce6158c8129bc5822bca46950f7533e1da180b98d427:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTY2MDRhYWJmNDY4NGNmNDBiMDNjZTYxNThjODEyOWJjNTgyMmJjYTQ2OTUwZjc1MzNlMWRhMTgwYjk4ZDQyNyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTY2MDRhYWJmNDY4NGNmNDBiMDNjZTYxNThjODEyOWJjNTgyMmJjYTQ2OTUwZjc1MzNlMWRhMTgwYjk4ZDQyNyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMTRmOTZhNzc3OWI0MWUwMjc0YThiOWVmODE3MTI0NzQ2ODIxNDZmYjU5NzU4NTRkNjNiZDdkYTBkNDc2OTg3OCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMTYxZTE0NTMxMGNiMWFiZTkwZWY5ZjgwOTc5ZWE3ZTdkOGQ0NjdhMGE5NGY0OTA5N2NjMzRiZDhmZTcyOTY2MCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_803b7944c842462895eaee76ddb5cca2",
+      "statement": "notes/11 section 9 (2026-11-02) reverses no earlier verdict, strengthens 'start with a single agent', the warning against role splitting, and single-over-multi at equal cost, and adds a new conclusion that human approval points must sit outside the agent's reach.",
+      "evidence": [
+        {
+          "resource": "repo://notes/11-orchestration-current-2026.md#L329-L341",
+          "version": "repo-lines-v1:sha256:203a4c42056f2e5861e4a22304b03a12d9e57a61db015fe0a9b7c4f9310143cb:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhkYjJhMjIwNzMyYjUyYmY3ZjZhZWY3NWMzMmRmM2IxODEzNDkyMmM5NjM4YjJjOGFhMzA0MWVmZmE1NjA2MDQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQzM2I1ZTI4NmU1ODM3YmFhODY1OTRjMTc3YWEzZThmY2Q1ZTE5NjlhODIxZTZhMjRmYjZkNjA1MjAzYTllNzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjUwNjEzNGRhOTlhMzI4NDFhNjk1NzE5YzAzYWYyNzgyMjE4MjNlNmExYTE4ODQ3MDY2ZTY2OTZmZGY0MTVlOTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_bde75427091f4bd29c8aceb33aa3d9d2",
+      "statement": "notes/17 was built by three researcher agents and three verifier agents that re-checked 17 design-relevant claims, with raw reports and verification results kept in sources/news-2026-10.",
+      "evidence": [
+        {
+          "resource": "repo://notes/17-orchestration-news-2026-10.md#L13-L13",
+          "version": "repo-lines-v1:sha256:9f56cc4e3efabe2433fb8993df498b2e84da701230ffca9e28aa533cc10a8664:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOWY1NmNjNGUzZWZhYmUyNDMzZmI4OTkzZGY0OThiMmU4NGRhNzAxMjMwZmZjYTllMjhhYTUzM2NjMTBhODY2NCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOWY1NmNjNGUzZWZhYmUyNDMzZmI4OTkzZGY0OThiMmU4NGRhNzAxMjMwZmZjYTllMjhhYTUzM2NjMTBhODY2NCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMGQwYTBhNGFjNTgzMjYxZWZmOTY5NGJlZjQ3NTMwYmFiZTVlYzAzM2JlY2JlYTYxYTk3MzNjOTA3ODY5MGNlZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYWU4YjFhMmEzYjRkMTM5NGFhYTIwZmZjMjlkYWZlZThkNThhMTU3NTZhNGYwN2I1OTljODU3NjgxNzUyYzk4YiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_f759c252524d401c97053e80cdceeb4d",
+      "statement": "Withholding the worker's own success report from the verifier raised recall of dangerous misreports by 43.4 and 13.3 percentage points on two models, and planted repository context led agents to propose overly broad allow-rules in 58% of instances with 81.0% of approved cases completing silently.",
+      "evidence": [
+        {
+          "resource": "repo://notes/17-orchestration-news-2026-10.md#L44-L44",
+          "version": "repo-lines-v1:sha256:c0a683f771a7b41efd3410eeeedbcdc27075f80965734f81a7e49395add6b61f:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYzBhNjgzZjc3MWE3YjQxZWZkMzQxMGVlZWVkYmNkYzI3MDc1ZjgwOTY1NzM0ZjgxYTdlNDkzOTVhZGQ2YjYxZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYzBhNjgzZjc3MWE3YjQxZWZkMzQxMGVlZWVkYmNkYzI3MDc1ZjgwOTY1NzM0ZjgxYTdlNDkzOTVhZGQ2YjYxZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZjJlNzhjNjQ4YjM0NDBlNWUzN2EwMTUwNzgxMWNmNDg2MThlNTBiOTZjMDNkMzQ2OGFkODg2NTQ5OTA3NzZiNSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYTExZGVlZDdjYTBhZDk4OTY1OGFkMDIzMDEwODgyNzQyYTAxNDRjMTEwYTVlZWQyYjllOGU4ODcwM2UyNzE4OCJ9"
+        },
+        {
+          "resource": "repo://notes/17-orchestration-news-2026-10.md#L54-L54",
+          "version": "repo-lines-v1:sha256:fc93ea9f2fc895d5b0f29a5b54e8824bec37a7bc2be20358390b81ae7603e987:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZmM5M2VhOWYyZmM4OTVkNWIwZjI5YTViNTRlODgyNGJlYzM3YTdiYzJiZTIwMzU4MzkwYjgxYWU3NjAzZTk4NyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZmM5M2VhOWYyZmM4OTVkNWIwZjI5YTViNTRlODgyNGJlYzM3YTdiYzJiZTIwMzU4MzkwYjgxYWU3NjAzZTk4NyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZjJlNzhjNjQ4YjM0NDBlNWUzN2EwMTUwNzgxMWNmNDg2MThlNTBiOTZjMDNkMzQ2OGFkODg2NTQ5OTA3NzZiNSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMzVmZTY2NTAwYzk2Y2UwZmYxNWFjMDUyMmI2ZDgxYzE1ODk5MTE0MGEzZDk3ZmFlNGQ5NzFlOTEwY2JkNTU3YyJ9"
         }
       ]
     }
   ],
   "verification": {
     "by": "openwiki/0.4.3",
-    "at": "2026-11-01T16:09:17.598Z"
+    "at": "2026-11-01T16:48:28.899Z"
   }
 }

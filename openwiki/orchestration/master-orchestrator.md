@@ -5,7 +5,7 @@ description: Research toward a master ("Jarvis-style") agent that coordinates de
 tags: [master-agent, orchestration, superpowers, magentic-one, decisions]
 verified:
   - by: openwiki/0.4.3
-    at: 2026-11-01T16:09:17.598Z
+    at: 2026-11-01T16:48:28.899Z
 sources:
   - id: openwiki-source-b59005f0f903d10c3bb60923
     resource: repo://decisions.md
@@ -13,7 +13,9 @@ sources:
     resource: repo://notes/15-master-orchestrator-research.md
   - id: openwiki-source-71fc76818520c29ee761d856
     resource: repo://notes/16-superpowers-study.md
-generated: { by: "claude-code", at: "2026-11-01T16:09:17.598Z" }
+  - id: openwiki-source-c14bb42577beb1d920ff82a4
+    resource: repo://notes/17-orchestration-news-2026-10.md
+generated: { by: "claude-code", at: "2026-11-01T16:48:28.899Z" }
 ---
 
 ## Where this fits
@@ -48,15 +50,25 @@ The flow for one request is brainstorming, an isolated worktree, a written plan 
 
 notes/16 lists seven things to take into the master design: the ledger file, the five-part delegation with a single brief file, the report contract, reviewer rules (do not trust reports, do not pre-trim findings, do not use a cheap model for review), a five-round fix cap with stronger models from round four, a table-based contradiction check before starting, and mandatory model assignment per role.
 
+## What October 2026 adds (notes/17)
+
+The 2026-11-02 news sweep, with 17 claims re-checked against primary sources, bears on the master in four ways:
+
+- **Against org-chart splitting.** Anthropic's 2026-10-22 article reports that a single agent with skills often beat subagent designs in enterprise deployments and warns against an agent architecture that copies the org chart. A pre-registered tau2-bench study found multi-agent worse in 12 of 13 valid cells, and a planner, coder, reviewer pipeline cost 3.22x without solving more. notes/17 suggests the master's first job may be routing each task to the right model rather than distributing roles.
+- **Delegation depth is still one.** Managed Agents dynamic workflows (beta, 2026-10-09) let a coordinator run many agents from a program, but runs do not nest and subagent delegation stays one level deep.
+- **Rules must survive compaction.** superpowers v7.0.1 records a session that lost its five-round fix cap after compaction and ran 18 rounds, because Claude Code re-attaches each skill only up to 20,000 characters. The fix moved step rules into files read when needed.
+- **Limit what the master can delete.** gstack's `/captain` uses a single merger over lanes on disjoint files, and a Captain once archived threads outside its own crew, which led to a narrower rule. Its throughput figures are self-reported.
+
 ## Open decisions blocking the design
 
-These are rows D01 to D05 in `decisions.md`:
+These are rows D01 to D05 and D17 in `decisions.md`:
 
 - **D01**: when new ambiguity appears mid-run, stop and ask, or decide and log. superpowers asks only for four kinds of risky actions and logs everything else, citing a nine-hour stall. This conflicts with the user's 2026-09-28 decision (D07) to keep asking until the plan is clear.
 - **D02**: the final role and authority of the master.
 - **D03**: whether the master is implemented in this repository or a separate one.
 - **D04**: which single department task to build first.
 - **D05**: where to get an evaluation set of 20 cases.
+- **D17**: whether to split departments into agents at all, or start with one agent plus skills and split only when needed. Opened on 2026-11-02 from the October evidence.
 
 The overall shape is already decided (D12): the master makes judgments, and workflow code owns the execution flow.
 

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:b7e94c49a3b85b8879ec07ec3973faeeccaaa3f039be72f85a4173cdbbbb84ed",
+  "pageVersion": "sha256:7c9ca94be5fbbe55305605d163d770aa582259a564c02537558648d8a0e4924a",
   "claims": [
     {
       "id": "claim_7faca76aff3a4db4bc6665df1e9283d4",
@@ -21,8 +21,8 @@
       "statement": "index.md's generated block lists notes by topic with status, layer, and summary, the sources folders, the experiments, and a next-steps list of open decisions and notes with open questions.",
       "evidence": [
         {
-          "resource": "repo://index.md#L31-L118",
-          "version": "repo-lines-v1:sha256:835c43a1e5594d8b8aceab2d2745f23f4865cc22cb8a72c5f8bac70d1a2c5a1c:eyJzZWxlY3RlZExpbmVDb3VudCI6ODgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQwZTEwYTgzYzE0MTM4YTg2NmE0YjdjMjQ0MmQwMWJjYzc3MDhiY2ViZGFmOGMyMTE1ZWZkYzA1YzU0NTQ2MjIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFmN2UzZGVmZTQ2ZDI2OWRlNDU4NWI1OGRmN2ZkYjJlNDIwODY3ZTZmMzljNWZhZWE1MTllOTY5Njc3ODg1ODAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZlODNiNGE1YTRmYWNmMzEyNDIzYWY5NzgzZDUyYjViYWJkMGI2MzRlOTY5MDg4MmNhMGNhNDFlMTkxOGU4YTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+          "resource": "repo://index.md#L31-L122",
+          "version": "repo-lines-v1:sha256:c544d82f80ca24bbfc696dd8ba03fb12a69540ff2dcad7cbdae9406b7ee8e028:eyJzZWxlY3RlZExpbmVDb3VudCI6OTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQwZTEwYTgzYzE0MTM4YTg2NmE0YjdjMjQ0MmQwMWJjYzc3MDhiY2ViZGFmOGMyMTE1ZWZkYzA1YzU0NTQ2MjIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFmN2UzZGVmZTQ2ZDI2OWRlNDU4NWI1OGRmN2ZkYjJlNDIwODY3ZTZmMzljNWZhZWE1MTllOTY5Njc3ODg1ODAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZlODNiNGE1YTRmYWNmMzEyNDIzYWY5NzgzZDUyYjViYWJkMGI2MzRlOTY5MDg4MmNhMGNhNDFlMTkxOGU4YTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
         }
       ]
     },
@@ -39,6 +39,6 @@
   ],
   "verification": {
     "by": "openwiki/0.4.3",
-    "at": "2026-11-01T16:09:17.598Z"
+    "at": "2026-11-01T16:48:28.899Z"
   }
 }
