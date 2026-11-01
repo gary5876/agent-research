@@ -1,4 +1,5 @@
 .ask-gate/
-agent-expertise-framework/02-self-improvement-loop/eval/.venv/
-agent-expertise-framework/02-self-improvement-loop/eval/**/__pycache__/
-agent-expertise-framework/02-self-improvement-loop/eval/.pytest_cache/
+.DS_Store
+experiments/eval/.venv/
+experiments/eval/**/__pycache__/
+experiments/eval/.pytest_cache/
