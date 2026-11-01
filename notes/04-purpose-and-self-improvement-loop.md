@@ -1,7 +1,12 @@
+---
+status: ACTIVE
+layer: 2
+layer_note: "§8과 §9는 Layer 1 실행기록"
+topic: [self-improvement]
+date: 2026-09-05
+summary: "12원칙의 약점 보완과 평가, 원인 진단, 개선으로 도는 자체개선 루프 설계. 일부는 experiments/eval에서 실행"
+---
 # 목적 명세와 자체개선 루프 — 4요소에 원칙 3·4·6·10·12를 결합한다
-
-**Status:** ACTIVE
-**Layer:** 2 (설계, §8·§9는 Layer 1 실행기록) — 층 구분 기준: [CATALOG.md](../../CATALOG.md)
 
 `01-research-summary.md`의 4요소(정합적인 data lake, 좁고 명시적인 인터페이스, 안전한 응답 필터, 실패 사례 기반 금지 규칙)는 "무엇이 있어야 하는가"를 말한다. 이 문서는 그 위에 `00-llm-friendly-docs-framework.md`의 12원칙 중 실제로 확인 결과 약하거나 빠져 있던 5개(3: 상태분리, 4: 용어집, 6: Constraints, 10: ADR, 12: 검증 시스템)를 채워 넣는다.
 
@@ -145,7 +150,7 @@ Iceberg AGENTS.md가 PR 리뷰 코멘트에서 규칙을 역추출한 것과 같
 
 ## 8. 실행 기록 — §7 루프 중 실제로 돌려본 조각 (`eval/`)
 
-이 문서는 여기까지 전부 설계였다. `eval/`에 두 조각을 실제로 구현하고 돌렸다 — 상세 재현 방법은 [eval/README.md](eval/README.md).
+이 문서는 여기까지 전부 설계였다. `eval/`에 두 조각을 실제로 구현하고 돌렸다 — 상세 재현 방법은 [eval/README.md](../experiments/eval/README.md).
 
 - **§7 ②의 그라운딩 metric**: `eval/grounding_metric.py`가 §1 표의 "정합적인 data lake" 성공기준을 DeepEval 커스텀 metric(결정론적, LLM 호출 없음)으로 그대로 구현했다. `eval/test_grounding.py`가 이 레포의 `openwiki/.claims/**/*.json`에 실제로 있는 Claim-evidence 30개 전부에 대해 돌렸고, **30개 전부 통과**했다. 인위적으로 존재하지 않는 파일/라인/형식 오류를 넣으면 정확히 0.0으로 실패하는 것도 확인했다(타당성 검증, 항상 통과하는 무의미한 metric이 아님을 확인).
 - **§7 ⑤c의 필터**: `eval/test_filter.py`가 ADR-3에서 "아직 안 함"으로 남겨뒀던 Presidio 커스텀 recognizer(PEM private key 패턴)를 실제로 등록하고, 이번 세션 사건과 같은 모양의 합성 서비스 계정 JSON에 대해 실행해 `PEM_PRIVATE_KEY`와 `EMAIL_ADDRESS`를 정확히 탐지했다(실제 유출 키는 쓰지 않음).
@@ -205,6 +210,6 @@ A(자기주장/성과 보고의 그라운딩)와 B(반복 실행 간 재현성/�
 
 ## 관련 문서
 
-- [00-llm-friendly-docs-framework.md](../00-data-lake/00-llm-friendly-docs-framework.md) — 여기서 보완하는 12원칙의 원본
-- [01-research-summary.md](../00-data-lake/01-research-summary.md) — 여기서 목적을 명시하는 4요소의 원본
-- [02-instruction-clarity-incident.md](../01-narrow-interface/02-instruction-clarity-incident.md), [03-instruction-resolution-gate.md](../01-narrow-interface/03-instruction-resolution-gate.md) — "판단을 구조적으로 강제해야 한다"는 §7 설계 원칙의 출처
+- [00-llm-friendly-docs-framework.md](00-llm-friendly-docs-framework.md) — 여기서 보완하는 12원칙의 원본
+- [01-research-summary.md](01-research-summary.md) — 여기서 목적을 명시하는 4요소의 원본
+- [02-instruction-clarity-incident.md](02-instruction-clarity-incident.md), [03-instruction-resolution-gate.md](03-instruction-resolution-gate.md) — "판단을 구조적으로 강제해야 한다"는 §7 설계 원칙의 출처

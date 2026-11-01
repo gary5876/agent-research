@@ -7,8 +7,8 @@ corpus, see compare_filters.py instead — this file just checks the one
 incident-shaped sample end to end.
 
 Usage:
-    source agent-expertise-framework/eval/.venv/bin/activate
-    python agent-expertise-framework/eval/test_filter.py
+    source experiments/eval/.venv/bin/activate
+    python experiments/eval/test_filter.py
 """
 
 from filters.presidio_filter import PresidioFilter

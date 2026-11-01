@@ -1,9 +1,14 @@
+---
+status: ACTIVE
+layer: 1
+layer_note: "외부 시스템 조사 기록"
+topic: [master, orchestration]
+date: 2026-09-29
+summary: "superpowers v6.3.0을 설치본 원문으로 공부한 노트. 요청 흐름, 위험 검증, 비용, 보안, 가져올 것"
+---
 # 오케스트레이션 공부 1: superpowers
 
-**Status:** ACTIVE
-**Layer:** 1 (외부 시스템 조사 기록). 층 구분 기준: [CATALOG.md](../../../CATALOG.md)
-**공부일:** 2026-09-29
-**읽은 것:** 이 컴퓨터에 설치된 v6.3.0 파일 원본(`~/.claude/plugins/cache/superpowers-marketplace/superpowers/6.3.0/`), 특히 `skills/subagent-driven-development/SKILL.md`, `implementer-prompt.md`, `task-reviewer-prompt.md`, `skills/writing-plans/SKILL.md`, `skills/verification-before-completion/SKILL.md`, `hooks/`. 개발 과정 기록(설계 문서, 평가 결과, 릴리스 노트, 이슈)은 [superpowers-design-history.md](superpowers-design-history.md)에 따로 있다. 이 문서의 숫자 중 `[재확인]`은 원본 파일에서 직접 확인한 것.
+**읽은 것:** 이 컴퓨터에 설치된 v6.3.0 파일 원본(`~/.claude/plugins/cache/superpowers-marketplace/superpowers/6.3.0/`), 특히 `skills/subagent-driven-development/SKILL.md`, `implementer-prompt.md`, `task-reviewer-prompt.md`, `skills/writing-plans/SKILL.md`, `skills/verification-before-completion/SKILL.md`, `hooks/`. 개발 과정 기록(설계 문서, 평가 결과, 릴리스 노트, 이슈)은 [sources/superpowers/design-history.md](../sources/superpowers/design-history.md)에 따로 있다. 이 문서의 숫자 중 `[재확인]`은 원본 파일에서 다시 확인한 것.
 
 평가 틀: 무엇이고 왜 인기인가, 요청 하나의 흐름, 마스터가 하는 일, 위험 검증, 비용, 보안, 가져올 것.
 
@@ -15,7 +20,7 @@
 
 ## 2. 요청 하나가 들어와서 끝날 때까지
 
-한 화면 그림: [../diagrams/superpowers-flow.png](../diagrams/superpowers-flow.png)
+한 화면 그림: [../diagrams/superpowers-flow.png](diagrams/superpowers-flow/superpowers-flow.png)
 
 1. **brainstorming**: 코드 전에 요청을 분류(탐색, 소규모, 설계급)하고, 질문은 한 번에 하나, 접근법 2~3개를 비교하고, 설계를 절 단위로 보여주며 매번 승인받는다. 설계급이면 설계 문서를 저장한다. 승인 전에는 구현 행동 금지(HARD-GATE).
 2. **using-git-worktrees**: 격리된 작업 공간(새 브랜치)을 만든다. main 브랜치에서 사람 동의 없이 구현 금지.

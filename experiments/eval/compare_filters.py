@@ -3,8 +3,8 @@ corpus and reports recall + false positives per backend — the "레퍼런스
 갈아끼워가면서 테스트" harness for the 안전한 응답 필터 element.
 
 Usage:
-    source agent-expertise-framework/eval/.venv/bin/activate
-    python agent-expertise-framework/eval/compare_filters.py
+    source experiments/eval/.venv/bin/activate
+    python experiments/eval/compare_filters.py
 """
 
 from filters.baseline_filter import BaselineRegexFilter

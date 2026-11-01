@@ -8,7 +8,7 @@
 
 ## 시작점
 
-순서대로 처음부터 읽고 싶으면 [agent-expertise-framework/README.md](agent-expertise-framework/README.md)가 전체 문서 인덱스다. 순서대로 읽으면 아래 흐름을 따라가게 된다.
+순서대로 처음부터 읽고 싶으면 [agent-expertise-framework/README.md](index.md)가 전체 문서 인덱스다. 순서대로 읽으면 아래 흐름을 따라가게 된다.
 
 1. LLM 친화적 문서 작성 원칙 수립 (`00`)
 2. 그 원칙을 Apache Amoro/Iceberg/Paimon 세 오픈소스로 검증 (`01`)

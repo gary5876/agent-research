@@ -1,11 +1,16 @@
+---
+status: DRAFT
+layer: 2
+layer_note: "13과 12를 재료로 한 판단"
+topic: [baseline]
+date: 2026-09-27
+summary: "영역 10개별로 카카오페이 바닥선과 그 이상을 정한 설계와 한 화면 흐름도"
+---
 # 바닥선과 목표: 카카오페이 수준의 에이전트 시스템, 그리고 그 이상
 
-**Status:** DRAFT
-**Layer:** 2 (설계, 13과 12를 재료로 한 판단). 층 구분 기준: [CATALOG.md](../../CATALOG.md)
-**작성일:** 2026-09-27
-**성격:** 설계 판단. 근거는 [13-kakaopay-tech-blog-study.md](13-kakaopay-tech-blog-study.md)(카카오페이 글별 노트 목차)와 [../03-orchestration-and-enforcement/12-orchestration-application.md](../03-orchestration-and-enforcement/12-orchestration-application.md)(외부 조사 적용)에 있다. `(kp: 파일명)`은 `posts/파일명.md`, `(11 §x)`는 [../03-orchestration-and-enforcement/11-orchestration-current-2026.md](../03-orchestration-and-enforcement/11-orchestration-current-2026.md), `(12 §x)`는 [../03-orchestration-and-enforcement/12-orchestration-application.md](../03-orchestration-and-enforcement/12-orchestration-application.md)를 가리킨다.
+**성격:** 설계 판단. 근거는 [13-kakaopay-tech-blog-study.md](13-kakaopay-tech-blog-study.md)(카카오페이 글별 노트 목차)와 [12-orchestration-application.md](12-orchestration-application.md)(외부 조사 적용)에 있다. `(kp: 파일명)`은 `../sources/kakaopay/파일명.md`, `(11 §x)`는 [11-orchestration-current-2026.md](11-orchestration-current-2026.md), `(12 §x)`는 [12-orchestration-application.md](12-orchestration-application.md)를 가리킨다.
 
-**한 화면 요약:** [diagrams/system-flow.png](diagrams/system-flow.png) (원본 [system-flow.html](diagrams/system-flow.html), 이 문서를 고치면 그림도 같이 고치고 `diagrams/render.sh`로 다시 뽑는다)
+**한 화면 요약:** [diagrams/system-flow/system-flow.png](diagrams/system-flow/system-flow.png) (원본 [system-flow.html](diagrams/system-flow/system-flow.html), 이 문서를 고치면 그림도 같이 고치고 `diagrams/system-flow/render.sh`로 다시 뽑는다)
 
 ## 사용자 결정 (2026-09-27)
 

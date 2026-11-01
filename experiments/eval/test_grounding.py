@@ -2,8 +2,8 @@
 into this repo's openwiki/.claims/ sidecar — real data, not a synthetic fixture.
 
 Usage:
-    source agent-expertise-framework/eval/.venv/bin/activate
-    pytest agent-expertise-framework/eval/test_grounding.py -q
+    source experiments/eval/.venv/bin/activate
+    pytest experiments/eval/test_grounding.py -q
 """
 
 import glob

@@ -1,8 +1,14 @@
+---
+status: DRAFT
+layer: 2
+layer_note: "10과 11을 재료로 한 판단"
+topic: [orchestration]
+date: 2026-09-25
+summary: "10, 11번 근거를 부서별 에이전트 조직 구상에 적용한 설계 판단"
+---
 # 오케스트레이션 설계 판단 (10, 11번 근거 적용)
 
-**Status:** DRAFT
-**Layer:** 2 (설계, 10과 11을 재료로 한 판단). 층 구분 기준: [CATALOG.md](../../CATALOG.md)
-**작성일:** 2026-09-25 (같은 날 2026년 근거 반영)
+**보강:** 같은 날 2026년 근거 반영
 **성격:** 판단과 제안. 근거 원문은 [10-orchestration-evidence-2023-2025.md](10-orchestration-evidence-2023-2025.md)(주로 2023~2025년)와 [11-orchestration-current-2026.md](11-orchestration-current-2026.md)(2026년 재확인)에 있고, 여기서는 `(10 A-2)`, `(11 §2-1)`처럼 절 번호로 가리킨다. 두 문서가 다르면 11을 따른다. 출처 없이 추론한 문장은 **[추론]**으로 표시한다.
 
 ## 출발점: 처음 구상

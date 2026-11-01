@@ -1,8 +1,12 @@
+---
+status: ACTIVE
+layer: 1
+layer_note: "외부 출처 조사 기록, 본문은 sources/master-orchestrator/"
+topic: [master]
+date: 2026-09-28
+summary: "마스터 에이전트(자비스형) 설계를 위한 원문 조사 3개의 목차와 세 조사가 겹치는 결론"
+---
 # 마스터 오케스트레이터(자비스형) 조사 목차
-
-**Status:** ACTIVE
-**Layer:** 1 (외부 출처 조사 기록, 본문은 sources/). 층 구분 기준: [CATALOG.md](../../CATALOG.md)
-**조사일:** 2026-09-28
 
 개별 에이전트(04 폴더의 13, 14번)보다 한 층 위, 여러 부서 에이전트를 조율하는 마스터 에이전트를 설계하기 위한 조사다. 사용자 요구: "오케스트레이션을 담당하는 마스터 에이전트가 있어야 한다. 보통 자비스라는 이름이 붙는다." 설계 판단은 아직 없고, 이 폴더의 다음 번호 문서에서 한다.
 
@@ -12,9 +16,9 @@
 
 | 파일 | 다루는 것 | 크기 |
 |---|---|---|
-| [sources/master-internals.md](sources/master-internals.md) | 마스터 내부 설계. Magentic-One(작업 기록과 진행 기록, 막힘 감지와 재계획), Microsoft Agent Framework, Anthropic 리드 에이전트와 2026년 글 3편, Managed Agents 코디네이터, Devin, Cursor, OpenAI, LangChain, Google ADK, 연구 논문 4편. 끝에 마스터 해부도 표와 마스터 고유 실패 모드 | 약 83KB |
-| [sources/jarvis-named-systems.md](sources/jarvis-named-systems.md) | 자비스라는 이름의 시스템. Microsoft JARVIS(HuggingGPT), JARVIS-1, 오픈소스 Jarvis 저장소 15개, Anthropic cookbook chief of staff, xAI Grok Bot, 회사 사례. 끝에 반복되는 설계 요소 11가지 | 약 67KB |
-| [sources/oss-orchestrators.md](sources/oss-orchestrators.md) | Claude Code 위의 오픈소스 오케스트레이터 13개(superpowers, harness, oh-my-openagent, oh-my-claudecode, ruflo, gastown, GSD, BMAD, SuperClaude, claude-squad, shogun, Ralph, ccpm). 끝에 비교표, 공통 관찰, 가져올 것과 피할 것 | 약 86KB |
+| [sources/master-internals.md](../sources/master-orchestrator/master-internals.md) | 마스터 내부 설계. Magentic-One(작업 기록과 진행 기록, 막힘 감지와 재계획), Microsoft Agent Framework, Anthropic 리드 에이전트와 2026년 글 3편, Managed Agents 코디네이터, Devin, Cursor, OpenAI, LangChain, Google ADK, 연구 논문 4편. 끝에 마스터 해부도 표와 마스터 고유 실패 모드 | 약 83KB |
+| [sources/jarvis-named-systems.md](../sources/master-orchestrator/jarvis-named-systems.md) | 자비스라는 이름의 시스템. Microsoft JARVIS(HuggingGPT), JARVIS-1, 오픈소스 Jarvis 저장소 15개, Anthropic cookbook chief of staff, xAI Grok Bot, 회사 사례. 끝에 반복되는 설계 요소 11가지 | 약 67KB |
+| [sources/oss-orchestrators.md](../sources/master-orchestrator/oss-orchestrators.md) | Claude Code 위의 오픈소스 오케스트레이터 13개(superpowers, harness, oh-my-openagent, oh-my-claudecode, ruflo, gastown, GSD, BMAD, SuperClaude, claude-squad, shogun, Ralph, ccpm). 끝에 비교표, 공통 관찰, 가져올 것과 피할 것 | 약 86KB |
 
 ## 세 조사가 겹치는 결론 (요약, 근거는 각 원문)
 
@@ -32,4 +36,4 @@
 
 | 공부 노트 | 개발 과정 기록 | 한 화면 흐름도 |
 |---|---|---|
-| [studies/superpowers.md](studies/superpowers.md) | [studies/superpowers-design-history.md](studies/superpowers-design-history.md) | [diagrams/superpowers-flow.png](diagrams/superpowers-flow.png) |
+| [16-superpowers-study.md](16-superpowers-study.md) | [sources/superpowers/design-history.md](../sources/superpowers/design-history.md) | [diagrams/superpowers-flow/superpowers-flow.png](diagrams/superpowers-flow/superpowers-flow.png) |

@@ -1,7 +1,11 @@
+---
+status: PLANNED
+layer: 2
+topic: [self-improvement]
+date: 2026-09-05
+summary: "자체개선 루프를 실제로 연결하는 파이프라인 4안 비교와 실행 계획"
+---
 # 전체 파이프라인 옵션과 실행 계획
-
-**Status:** PLANNED
-**Layer:** 2 (설계) — 층 구분 기준: [CATALOG.md](../../CATALOG.md)
 
 `04-purpose-and-self-improvement-loop.md` §7이 자체개선 루프의 단계(①~⑥)를 정의했지만, 그 단계들을 실제로 어떤 아키텍처로 연결할지는 정하지 않았다. 이 문서는 (1) 전체 파이프라인을 연결하는 4가지 방식을 검증된 도구 목록(04 ADR-2~5)을 기준으로 정리하고, (2) "레퍼런스를 갈아끼우며 테스트"할 수 있는 환경을 실제로 만들어 돌려보고, (3) 그 결과를 근거로 실행 계획을 세운다.
 
@@ -67,4 +71,4 @@ presidio (regex + spaCy NER)    -> recall=1.00 (4/4), false_positives=0
 ## 관련 문서
 
 - [04-purpose-and-self-improvement-loop.md](04-purpose-and-self-improvement-loop.md) — §7 루프 정의, ADR-2~8(도구 선정 근거)
-- [eval/README.md](eval/README.md), [eval/filters/](eval/filters/) — 이 문서 §2의 실행 환경
+- [eval/README.md](../experiments/eval/README.md), [eval/filters/](../experiments/eval/filters/) — 이 문서 §2의 실행 환경

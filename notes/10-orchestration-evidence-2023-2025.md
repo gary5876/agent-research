@@ -1,8 +1,13 @@
+---
+status: ACTIVE
+layer: 1
+layer_note: "외부 출처 조사 기록"
+topic: [orchestration]
+date: 2026-09-25
+summary: "오케스트레이션 외부 근거 모음(Anthropic, OpenAI, MS, Google, MAST 등). 주로 2023~2025년 출처, 연도 표시"
+---
 # 오케스트레이션 근거 모음 (주로 2023~2025년 출처)
 
-**Status:** ACTIVE
-**Layer:** 1 (외부 출처 조사 기록). 층 구분 기준: [CATALOG.md](../../CATALOG.md)
-**작성일:** 2026-09-25
 **성격:** 조사 기록. 판단과 설계 제안은 [12-orchestration-application.md](12-orchestration-application.md)에 따로 둔다.
 
 ## 이 문서를 읽는 법

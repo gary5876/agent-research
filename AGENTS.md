@@ -19,4 +19,4 @@ The scheduled OpenWiki GitHub Actions workflow refreshes the repository wiki. Do
 2. 해당 폴더 `README.md` 색인에 "언제 이 문서를 찾을지" 한 줄을 추가하고, 관련 기존 문서와 상호링크한다.
 3. **정리(로컬 수정)와 배포(git push)는 분리된 요청으로 취급한다.** 같이 지시받아도 변경사항을 먼저 보여주고 확인받은 뒤에 push한다.
 
-이 세 줄로 될 만큼 좁게 유지하는 이유, 그리고 에이전트 자체를 어떻게 구현할지의 일반형은 [agent-expertise-framework/08-agent-implementation-schema.md](agent-expertise-framework/08-agent-implementation-schema.md)에 있다. 이 스키마를 이 저장소에 완전히 채워 넣는 작업(예: 문서 접근용 Skill)은 아직 없다 — 미리 만들지 않는다, 필요해지면 그때 08을 기준으로 설계한다.
+이 세 줄로 될 만큼 좁게 유지하는 이유, 그리고 에이전트 자체를 어떻게 구현할지의 일반형은 [agent-expertise-framework/08-agent-implementation-schema.md](notes/08-agent-implementation-schema.md)에 있다. 이 스키마를 이 저장소에 완전히 채워 넣는 작업(예: 문서 접근용 Skill)은 아직 없다 — 미리 만들지 않는다, 필요해지면 그때 08을 기준으로 설계한다.

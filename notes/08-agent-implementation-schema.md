@@ -1,7 +1,12 @@
+---
+status: ACTIVE
+layer: 2
+layer_note: "01과 07의 종합"
+topic: [expert-agent]
+date: 2026-09-06
+summary: "4요소와 Agent 해부학을 하나로 합친 에이전트 구현 일반형(스키마)"
+---
 # 에이전트 구현 기본틀 — 01의 4요소를 임의의 agent에 적용 가능한 일반형으로
-
-**Status:** ACTIVE
-**Layer:** 2 (설계 — 01/07의 종합) — 층 구분 기준: [CATALOG.md](../CATALOG.md)
 
 `00`에서 시작해 `07`까지 오는 동안, "에이전트 전문성"을 다루는 두 개의 서로 다른 어휘가 이 저장소 안에 따로 존재했다 — `01`의 4요소(정합적 data lake / 좁고 명시적인 인터페이스 / 안전한 응답 필터 / 실패 사례 기반 금지 규칙)와 `07`이 카카오페이 원문에서 가져온 Agent 정의(LLM/몸/Tools·Context·Skills) 및 능력 계층(Tool→MCP→Skill→Plugin→Marketplace). `07 §4`가 이미 이 둘을 대응관계로 연결해뒀었는데(`Tool→MCP→Skill→...`는 요소2의 어휘를 세분화한 것), 이 저장소 자신의 문서 카탈로그(CATALOG.md)를 설계하는 과정에서 그 사실을 놓치고 두 어휘를 별개 문제처럼 다루다가 같은 실수를 세 번 반복했다(§1 참고). 이 문서는 그 둘을 하나의 일반형으로 명시적으로 합친다.
 
@@ -41,10 +46,10 @@
 
 ## 3. 이 문서의 범위 — 일반형까지만
 
-이 문서는 **스키마**만 정의한다. `agent-research` 저장소 자신을 이 스키마의 Context(data lake)로 놓고, `CATALOG.md`/`write-docs`/`find-docs` 스킬을 이 스키마의 Skills(요소2) 칸에 실제로 채워 넣는 작업은 **다음 문서(09번, 아직 미작성)의 몫**이다. 이번에 그것까지 같이 하려다가 §1의 실패가 반복됐다 — 스키마와 인스턴스를 같은 문서에서 동시에 설계하지 않는다.
+이 문서는 **스키마**만 정의한다. `agent-research` 저장소 자신을 이 스키마의 Context(data lake)로 놓고, `CATALOG.md`/`write-docs`/`find-docs` 스킬을 이 스키마의 Skills(요소2) 칸에 실제로 채워 넣는 작업은 **다음 문서([09-repo-structure-and-pipeline.md](09-repo-structure-and-pipeline.md))의 몫**이다. 이번에 그것까지 같이 하려다가 §1의 실패가 반복됐다 — 스키마와 인스턴스를 같은 문서에서 동시에 설계하지 않는다.
 
 ## 관련 문서
 
-- [01-research-summary.md](00-data-lake/01-research-summary.md) — 4요소의 최초 출처, Amoro/Iceberg/Paimon 검증 결과
-- [06-orchestrator-pattern.md](03-orchestration-and-enforcement/06-orchestrator-pattern.md) — 이 세션이 실제로 수행한 오케스트레이터 패턴(요소4의 "축적" 절차가 실제로 작동한 사례 중 하나: 비평 에이전트 dispatch)
-- [07-harness-and-hook-enforcement.md](03-orchestration-and-enforcement/07-harness-and-hook-enforcement.md) — Agent 해부학과 능력 계층의 원 출처(카카오페이 기술블로그), §4의 대응관계 표
+- [01-research-summary.md](01-research-summary.md) — 4요소의 최초 출처, Amoro/Iceberg/Paimon 검증 결과
+- [06-orchestrator-pattern.md](06-orchestrator-pattern.md) — 이 세션이 실제로 수행한 오케스트레이터 패턴(요소4의 "Never 규칙 쌓기" 절차가 실제로 작동한 사례 중 하나: 비평 에이전트 dispatch)
+- [07-harness-and-hook-enforcement.md](07-harness-and-hook-enforcement.md) — Agent 해부학과 능력 계층의 원 출처(카카오페이 기술블로그), §4의 대응관계 표

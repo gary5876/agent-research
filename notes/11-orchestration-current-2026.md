@@ -1,8 +1,13 @@
+---
+status: ACTIVE
+layer: 1
+layer_note: "외부 출처 조사 기록"
+topic: [orchestration]
+date: 2026-09-25
+summary: "10번 결론을 2026년 모델 기준으로 재검증한 판정표와 2026년 가이드, 운영 사례. 10과 다르면 11을 따름"
+---
 # 오케스트레이션 2026년 현재 기준 (10번 근거 재검증)
 
-**Status:** ACTIVE
-**Layer:** 1 (외부 출처 조사 기록). 층 구분 기준: [CATALOG.md](../../CATALOG.md)
-**작성일:** 2026-09-25
 **성격:** 조사 기록. [10-orchestration-evidence-2023-2025.md](10-orchestration-evidence-2023-2025.md)의 2023~2025년 근거가 지금도 맞는지 다시 확인하고, 2026년 자료를 새로 모은 것. 판단은 [12-orchestration-application.md](12-orchestration-application.md)에 반영한다.
 
 ## 이 문서를 읽는 법

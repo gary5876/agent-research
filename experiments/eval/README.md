@@ -1,6 +1,6 @@
 # 04번 문서의 자체개선 루프 — 실행 가능한 최소 환경
 
-**Layer:** 3 (실제 구현체) — 층 구분 기준: [../../../CATALOG.md](../../../CATALOG.md)
+**Layer:** 3 (실제 구현체) — 층 구분 기준: [index.md](../../index.md)
 
 `04-purpose-and-self-improvement-loop.md`는 지금까지 전부 설계 단계(`Status: PLANNED`)였다. 이 디렉터리는 그 설계 중 두 조각을 실제로 돌려본 결과다 — "무엇을 채점할지"가 아니라 "실제로 돌아가는가"를 확인하는 게 목적이다.
 
@@ -14,12 +14,12 @@
 ## 재현 방법
 
 ```bash
-python3.12 -m venv agent-expertise-framework/eval/.venv   # 3.9로는 deepeval import가 실패함(union-type 문법)
-source agent-expertise-framework/eval/.venv/bin/activate
-pip install -r agent-expertise-framework/eval/requirements.txt
+python3.12 -m venv experiments/eval/.venv   # 3.9로는 deepeval import가 실패함(union-type 문법)
+source experiments/eval/.venv/bin/activate
+pip install -r experiments/eval/requirements.txt
 python -m spacy download en_core_web_sm  # requirements.txt의 wheel URL로 이미 설치되지만, 안 될 경우 대비
 
-cd agent-expertise-framework/eval
+cd experiments/eval
 pytest test_grounding.py -q      # 그라운딩 검증
 python test_filter.py            # 필터 스모크 테스트 (Presidio 하나)
 python compare_filters.py        # 필터 백엔드 교체 비교 (baseline vs presidio)
@@ -33,7 +33,7 @@ python compare_filters.py        # 필터 백엔드 교체 비교 (baseline vs p
 
 ## 아직 안 한 것
 
-전체 파이프라인을 어떻게 연결할지(옵션 4가지)와 단계별 계획은 [../05-pipeline-options-and-plan.md](../05-pipeline-options-and-plan.md) 참고.
+전체 파이프라인을 어떻게 연결할지(옵션 4가지)와 단계별 계획은 [../05-pipeline-options-and-plan.md](../../notes/05-pipeline-options-and-plan.md) 참고.
 
 - Promptfoo(배포 전 회귀 게이트), Arize Phoenix(배포 후 모니터링), NeMo Guardrails는 설치도 실행도 안 했다.
 - `grounding_metric.py`는 OpenWiki의 실제 해시 알고리즘(`repo-lines-v1:sha256:...`)을 재구현한 게 아니라, "파일/라인이 지금 존재하고 비어있지 않은가"만 본다 — OpenWiki처럼 "내용이 바뀌었는지"(해시 불일치)까지는 검증하지 않는다. 더 엄격하게 하려면 evidence의 `version` 필드(base64로 인코딩된 라인 해시 메타데이터)를 디코딩해서 재계산한 해시와 비교해야 한다.
