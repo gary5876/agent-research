@@ -19,6 +19,7 @@ grep -n "Status:\|Layer:" agent-expertise-framework/*.md agent-expertise-framewo
 | [.claude/hooks/block-openwiki-generated-edits.py](.claude/hooks/block-openwiki-generated-edits.py) + `.claude/settings.json` | `04`§5 Never 규칙을 `07`이 실제 Hook으로 전환한 것 | 적용됨. cwd 버그는 `07`§7-2에서 발견·수정 완료 |
 | [openwiki/](openwiki/) | OpenWiki가 연구 문서에서 자동 생성한 근거 인덱스 | 손으로 수정 금지(Hook으로 강제) — 재생성 대상 |
 | [README.md](README.md) | 사람이 이 저장소에 처음 들어왔을 때 보는 진입점 | — |
+| [JOURNEY.md](JOURNEY.md) | 에이전트 오케스트레이션을 만들어 보려고 한 과정(2026-08-30 ~), 본인 발언 원문과 산출물을 날짜순으로 | 계속 갱신 |
 
 ## 사용 규칙
 

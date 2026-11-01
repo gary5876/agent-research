@@ -1,0 +1,128 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>superpowers 흐름</title>
+<style>
+  :root {
+    --human-bg:#FFE8CC; --human-bd:#D9480F;
+    --agent-bg:#DBE4FF; --agent-bd:#364FC7;
+    --code-bg:#E9ECEF;  --code-bd:#343A40;
+    --doc-bg:#FFF9DB;   --doc-bd:#E67700;
+    --store-bg:#D3F9D8; --store-bd:#2B8A3E;
+    --beyond-bg:#F3F0FF; --beyond-bd:#7048E8;
+    --line:#495057;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; padding:24px 28px; width:1600px; background:#fff;
+         font-family:"Apple SD Gothic Neo","AppleGothic",sans-serif; color:#111; }
+  h1 { font-size:24px; margin:0 0 4px; }
+  .sub { font-size:14px; color:#555; margin-bottom:14px; }
+  .legend { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; margin-bottom:16px; }
+  .legend span { display:inline-flex; align-items:center; gap:6px; }
+  .sw { width:18px; height:14px; border:2px solid; border-radius:3px; display:inline-block; }
+
+  .grid { display:grid; grid-template-columns: 300px 1fr 330px; gap:22px; align-items:start; }
+  .panel { border:1.5px solid #ced4da; border-radius:10px; padding:12px; background:#fafbfc; }
+  .panel h2 { font-size:15px; margin:0 0 10px; }
+  .panel .note { font-size:12px; color:#555; margin-top:8px; line-height:1.45; }
+
+  .box { border:2px solid; border-radius:7px; padding:8px 10px; font-size:14px; line-height:1.4;
+         margin-bottom:8px; background:#fff; }
+  .box b { display:block; font-size:14.5px; margin-bottom:2px; }
+  .box small { font-size:12.5px; color:#333; }
+  .human  { background:var(--human-bg);  border-color:var(--human-bd); border-width:3px; }
+  .agent  { background:var(--agent-bg);  border-color:var(--agent-bd); }
+  .code   { background:var(--code-bg);   border-color:var(--code-bd); }
+  .doc    { background:var(--doc-bg);    border-color:var(--doc-bd); }
+  .store  { background:var(--store-bg);  border-color:var(--store-bd); border-radius:16px; }
+  .beyond { background:var(--beyond-bg); border-color:var(--beyond-bd); border-style:dashed; }
+  .gate   { border-color:#C92A2A; background:#FFF5F5; }
+
+  /* 가운데 흐름 */
+  .spine { display:flex; flex-direction:column; align-items:stretch; }
+  .stage { border:1.5px solid #ced4da; border-radius:10px; padding:10px 12px; background:#fafbfc; position:relative; }
+  .stage h3 { font-size:15px; margin:0 0 8px; }
+  .row { display:flex; gap:8px; align-items:stretch; }
+  .row > .box { flex:1; margin-bottom:0; }
+  .row .arrow-r { align-self:center; font-size:18px; color:var(--line); }
+  .down { text-align:center; font-size:20px; line-height:26px; color:var(--line); position:relative; }
+  .down em { position:absolute; left:calc(50% + 16px); top:3px; font-size:12px; font-style:normal;
+             color:#333; background:#fff; padding:0 4px; }
+  .loop { font-size:12px; color:#C92A2A; margin-top:6px; }
+  .pill { border-radius:999px; text-align:center; }
+  .center { text-align:center; }
+
+  .bottom { margin-top:22px; }
+  .bottom .row > .box { margin-bottom:0; }
+  .feedback { font-size:13px; color:#5F3DC4; margin-top:8px; }
+  .side-link { font-size:12.5px; color:#333; margin:6px 0 0; }
+</style>
+</head><body>
+  <h1>superpowers: 요청 하나가 끝날 때까지</h1>
+  <div class="sub">v6.3.0 설치본 원문 기준. 마스터(컨트롤러)는 메인 세션이고 직접 구현하지 않는다. 근거: studies/superpowers.md</div>
+  <div class="legend">
+    <span><i class="sw" style="background:var(--human-bg);border-color:var(--human-bd)"></i>사람</span>
+    <span><i class="sw" style="background:var(--agent-bg);border-color:var(--agent-bd)"></i>에이전트(LLM)</span>
+    <span><i class="sw" style="background:var(--code-bg);border-color:var(--code-bd)"></i>스크립트, 규칙</span>
+    <span><i class="sw" style="background:var(--doc-bg);border-color:var(--doc-bd)"></i>파일(설계, 계획, 보고)</span>
+    <span><i class="sw" style="background:var(--store-bg);border-color:var(--store-bd)"></i>장부</span>
+  </div>
+  <div class="grid">
+    <div class="panel">
+      <h2>상태는 파일에 (압축돼도 남음)</h2>
+      <div class="box store"><b>장부 progress.md</b><small>계획마다 하나. 첫 줄에 어느 계획인지. 태스크 완료, 수정 라운드, 결정(Ruling), 미뤄둔 사소한 지적</small></div>
+      <div class="box doc"><b>task-N-brief.md</b><small>태스크 요구사항의 유일한 원본. 지시문엔 경로만</small></div>
+      <div class="box doc"><b>task-N-report.md</b><small>구현자의 전체 보고와 테스트 증거. 컨트롤러에겐 15줄만</small></div>
+      <div class="box doc"><b>리뷰 패키지</b><small>커밋 목록 + 변경 요약 + diff 전체를 파일 하나로</small></div>
+      <div class="note">장부 없이 위치를 잃은 컨트롤러가 끝난 태스크를 통째로 다시 돌린 것이 관찰된 가장 비싼 실패</div>
+    </div>
+    <div class="spine">
+      <div class="box human pill"><b>사람: 요청</b></div>
+      <div class="down">↓</div>
+      <div class="stage"><h3>1. brainstorming (지금 이 대화의 방식)</h3>
+        <div class="row">
+          <div class="box agent"><b>분류</b><small>탐색 / 소규모 / 설계급</small></div><span class="arrow-r">→</span>
+          <div class="box agent"><b>질문 한 번에 하나</b><small>접근법 2~3개 비교</small></div><span class="arrow-r">→</span>
+          <div class="box human"><b>절마다 승인</b><small>승인 전 구현 금지</small></div><span class="arrow-r">→</span>
+          <div class="box doc"><b>설계 문서</b></div>
+        </div></div>
+      <div class="down">↓</div>
+      <div class="stage"><h3>2~3. 격리된 작업 공간 + writing-plans</h3>
+        <div class="row">
+          <div class="box code"><b>git worktree</b><small>main에서 구현 금지</small></div><span class="arrow-r">→</span>
+          <div class="box doc"><b>계획</b><small>2~5분 단계, 파일 경로, 인터페이스, 실패 테스트, 검증 명령. "TBD" 금지</small></div>
+        </div></div>
+      <div class="down">↓</div>
+      <div class="stage"><h3>4. SDD: 컨트롤러가 태스크마다 반복</h3>
+        <div class="row">
+          <div class="box agent"><b>착수 전 모순 검사</b><small>태스크 쌍마다 표로 기록</small></div><span class="arrow-r">→</span>
+          <div class="box agent"><b>구현자 (새 에이전트)</b><small>brief 읽고, 테스트, 커밋, 자기 리뷰. 하위 에이전트 금지. 모델 명시 필수</small></div><span class="arrow-r">→</span>
+          <div class="box agent"><b>태스크 리뷰어 (새 에이전트)</b><small>명세 준수 + 품질 둘 다 판정. 보고를 믿지 않음</small></div>
+        </div>
+        <div class="row" style="margin-top:8px">
+          <div class="box code gate"><b>수정 차단기</b><small>1~3라운드 같은 구현자, 4~5라운드 강한 모델 새 구현자, 이후 컨트롤러가 판정해 장부에 기록</small></div>
+          <div class="box store"><b>장부에 완료 기록</b><small>커밋 범위, 리뷰 결과</small></div>
+        </div>
+        <div class="loop">↻ 다음 태스크. 컨트롤러는 직접 고치지 않음</div></div>
+      <div class="down">↓</div>
+      <div class="box agent center"><b>최종 브랜치 전체 리뷰 (가장 강한 모델)</b><small>지적이 있으면 수정 에이전트 1개, 재리뷰 1번. 두 번째 수정 물결 없음</small></div>
+      <div class="down">↓</div>
+      <div class="box human center"><b>5. 사람이 고름: 병합 / PR / 보관 / 폐기</b><small>함께 "내가 대신 내린 결정" 전체 목록(틀렸을 때 비용 포함)</small></div>
+    </div>
+    <div class="panel">
+      <h2>실행 중 사람에게 묻는 건 4가지뿐</h2>
+      <div class="box human"><b>멈추고 묻는다</b><small>1. 되돌릴 수 없거나 파괴적인 행동<br>2. 보안에 민감한 행동<br>3. 작업 공간 밖 영향(병합, 공유 브랜치 push, 게시)<br>4. 모든 길이 추측뿐인 망가진 계획</small></div>
+      <div class="box agent"><b>그 외는 결정하고 기록</b><small>장부에 "결정 / 이유 / 틀렸을 때 비용"</small></div>
+      <div class="note">도입 배경: 스스로 정할 수 있던 질문 하나에 한 세션이 거의 9시간 멈춤(#2077)</div>
+      <h2 style="margin-top:14px">비용 규칙</h2>
+      <div class="box code"><b>역할별 모델</b><small>받아쓰기형 구현은 가장 싼 모델, 통합은 표준, 설계와 최종 리뷰는 가장 강한 모델</small></div>
+      <div class="box code gate"><b>리뷰는 싼 모델 금지</b><small>haiku 리뷰어: 심어둔 결함 10개 중 0개를 올바른 심각도로 지적</small></div>
+      <div class="note">지시문에 이전 이력을 붙이지 않음(4.2만 자 중 99%가 이력이던 사례)</div>
+    </div>
+  </div>
+  <div class="panel bottom">
+    <h2>보안 표면</h2>
+    <div class="row">
+      <div class="box code"><b>Hook 1개</b><small>세션 시작 때 로컬 스킬 파일 하나를 읽어 넣기만. 네트워크 없음, 도구 호출마다 도는 Hook 없음</small></div>
+      <div class="box beyond"><b>한계</b><small>통제 대부분이 프롬프트(스킬 문서). 도구 호출을 막는 Hook은 없음</small></div>
+      <div class="box beyond"><b>과거 약점</b><small>브레인스토밍 시각화 서버가 v6.0.0 전까지 인증 없음. 다른 페이지가 이벤트를 주입 가능했음</small></div>
+    </div>
+  </div>
+</body></html>

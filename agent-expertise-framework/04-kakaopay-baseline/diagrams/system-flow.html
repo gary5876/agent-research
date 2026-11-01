@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>카카오페이 바닥선 에이전트 시스템 흐름</title>
+<!--
+  원본: ../14-kakaopay-baseline-and-target.md (A~J는 그 문서의 영역 번호)
+  수정할 때: 상자 문구만 바꾸면 됨. 배치는 CSS grid로 고정.
+  PNG 갱신: diagrams/render.sh
+-->
+<style>
+  :root {
+    --human-bg:#FFE8CC; --human-bd:#D9480F;
+    --agent-bg:#DBE4FF; --agent-bd:#364FC7;
+    --code-bg:#E9ECEF;  --code-bd:#343A40;
+    --doc-bg:#FFF9DB;   --doc-bd:#E67700;
+    --store-bg:#D3F9D8; --store-bd:#2B8A3E;
+    --beyond-bg:#F3F0FF; --beyond-bd:#7048E8;
+    --line:#495057;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; padding:24px 28px; width:1600px; background:#fff;
+         font-family:"Apple SD Gothic Neo","AppleGothic",sans-serif; color:#111; }
+  h1 { font-size:24px; margin:0 0 4px; }
+  .sub { font-size:14px; color:#555; margin-bottom:14px; }
+  .legend { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; margin-bottom:16px; }
+  .legend span { display:inline-flex; align-items:center; gap:6px; }
+  .sw { width:18px; height:14px; border:2px solid; border-radius:3px; display:inline-block; }
+
+  .grid { display:grid; grid-template-columns: 300px 1fr 330px; gap:22px; align-items:start; }
+  .panel { border:1.5px solid #ced4da; border-radius:10px; padding:12px; background:#fafbfc; }
+  .panel h2 { font-size:15px; margin:0 0 10px; }
+  .panel .note { font-size:12px; color:#555; margin-top:8px; line-height:1.45; }
+
+  .box { border:2px solid; border-radius:7px; padding:8px 10px; font-size:14px; line-height:1.4;
+         margin-bottom:8px; background:#fff; }
+  .box b { display:block; font-size:14.5px; margin-bottom:2px; }
+  .box small { font-size:12.5px; color:#333; }
+  .human  { background:var(--human-bg);  border-color:var(--human-bd); border-width:3px; }
+  .agent  { background:var(--agent-bg);  border-color:var(--agent-bd); }
+  .code   { background:var(--code-bg);   border-color:var(--code-bd); }
+  .doc    { background:var(--doc-bg);    border-color:var(--doc-bd); }
+  .store  { background:var(--store-bg);  border-color:var(--store-bd); border-radius:16px; }
+  .beyond { background:var(--beyond-bg); border-color:var(--beyond-bd); border-style:dashed; }
+  .gate   { border-color:#C92A2A; background:#FFF5F5; }
+
+  /* 가운데 흐름 */
+  .spine { display:flex; flex-direction:column; align-items:stretch; }
+  .stage { border:1.5px solid #ced4da; border-radius:10px; padding:10px 12px; background:#fafbfc; position:relative; }
+  .stage h3 { font-size:15px; margin:0 0 8px; }
+  .row { display:flex; gap:8px; align-items:stretch; }
+  .row > .box { flex:1; margin-bottom:0; }
+  .row .arrow-r { align-self:center; font-size:18px; color:var(--line); }
+  .down { text-align:center; font-size:20px; line-height:26px; color:var(--line); position:relative; }
+  .down em { position:absolute; left:calc(50% + 16px); top:3px; font-size:12px; font-style:normal;
+             color:#333; background:#fff; padding:0 4px; }
+  .loop { font-size:12px; color:#C92A2A; margin-top:6px; }
+  .pill { border-radius:999px; text-align:center; }
+  .center { text-align:center; }
+
+  .bottom { margin-top:22px; }
+  .bottom .row > .box { margin-bottom:0; }
+  .feedback { font-size:13px; color:#5F3DC4; margin-top:8px; }
+  .side-link { font-size:12.5px; color:#333; margin:6px 0 0; }
+</style>
+</head>
+<body>
+  <h1>카카오페이 바닥선 에이전트 시스템 흐름</h1>
+  <div class="sub">바닥선 = 카카오페이 기술블로그 수준, 점선 = 그 이상. 영역 번호 A~J는 14-kakaopay-baseline-and-target.md</div>
+  <div class="legend">
+    <span><i class="sw" style="background:var(--human-bg);border-color:var(--human-bd)"></i>사람</span>
+    <span><i class="sw" style="background:var(--agent-bg);border-color:var(--agent-bd)"></i>에이전트(LLM)</span>
+    <span><i class="sw" style="background:var(--code-bg);border-color:var(--code-bd)"></i>코드, Hook(확정 실행)</span>
+    <span><i class="sw" style="background:var(--doc-bg);border-color:var(--doc-bd)"></i>문서 양식</span>
+    <span><i class="sw" style="background:var(--store-bg);border-color:var(--store-bd)"></i>저장소</span>
+    <span><i class="sw" style="background:var(--beyond-bg);border-color:var(--beyond-bd);border-style:dashed"></i>카카오페이 이상</span>
+  </div>
+
+  <div class="grid">
+    <!-- 왼쪽: 지식 -->
+    <div class="panel">
+      <h2>E. 지식 (모든 단계가 읽고 씀)</h2>
+      <div class="box store"><b>원본 저장소 한 곳</b><small>산출물마다 출처와 수정일. 정정은 원본부터 (춘시리)</small></div>
+      <div class="box doc"><b>규칙 파일은 짧게</b><small>상시 규칙만. 작업 지식은 Skill로 분리 (1편)</small></div>
+      <div class="box beyond"><b>구조화 인계 필드</b><small>에이전트 사이엔 요약본 대신 원본 경로 + 필드. 제약, 금지사항은 요약하지 않음</small></div>
+      <div class="note">요약 인계에서 금지 행동 54.2%, 필드로 넘기면 0% (11 §5-6)</div>
+    </div>
+
+    <!-- 가운데: 흐름 -->
+    <div class="spine">
+      <div class="box human pill"><b>사람: 요청</b></div>
+      <div class="down">↓</div>
+
+      <div class="stage">
+        <h3>A. 기획과 명세 (spec-kit)</h3>
+        <div class="row">
+          <div class="box doc"><b>원칙 문서</b><small>constitution</small></div><span class="arrow-r">→</span>
+          <div class="box agent"><b>명세</b><small>질문 최대 5개, 추천안 제시</small></div><span class="arrow-r">→</span>
+          <div class="box agent"><b>계획, 태스크</b><small>의존성 순서, 병렬 표시<br>1 태스크 = 1 검토 단위</small></div><span class="arrow-r">→</span>
+          <div class="box code gate"><b>일관성 검사</b><small>명세, 계획, 태스크 모순<br>심각 문제 0개여야 통과</small></div>
+        </div>
+        <div class="loop">↩ 산출물이 틀리면 직접 고치지 않고 명세로 되돌아감</div>
+      </div>
+      <div class="down">↓<em>통과</em></div>
+
+      <div class="box code center"><b>오케스트레이터 = workflow 스크립트 (J)</b><small>흐름은 코드가 쥔다. 태스크를 순서대로 배정, 위임은 1단계만</small></div>
+      <div class="down">↓</div>
+
+      <div class="stage">
+        <h3>B. 제작: 부서 에이전트 (맥락 경계로 나눔, 결론만 반환)</h3>
+        <div class="row">
+          <div class="box agent"><b>마케팅</b><small>초안까지. 외부 발행은 사람</small></div>
+          <div class="box agent"><b>개발</b><small>기능과 그 테스트를 같은 에이전트가</small></div>
+          <div class="box agent"><b>운영</b><small>추천까지. 적용은 사람 (Dr.Pym)</small></div>
+        </div>
+        <div class="side-link">조사가 필요하면 하위 에이전트에게 넘기고 결론 한 덩어리만 받음. 쓰기는 한 곳에서만</div>
+      </div>
+      <div class="down">↓</div>
+
+      <div class="stage">
+        <h3>C. 검사</h3>
+        <div class="row">
+          <div class="box code"><b>기계적 검사</b><small>테스트, 스키마, 원문 대조</small></div><span class="arrow-r">→</span>
+          <div class="box agent"><b>AI 리뷰</b><small>관점별 단계, 심각도 r/c/a<br><b style="display:inline;font-size:12.5px">승인 권한 없음</b></small></div><span class="arrow-r">→</span>
+          <div class="box doc"><b>결정 기록 양식</b><small>왜, 트레이드오프, 실패 시나리오, 위험도</small></div>
+        </div>
+        <div class="row" style="margin-top:8px">
+          <div class="box beyond"><b>검사 모델은 다른 계열로</b><small>같은 계열은 실수가 겹침 (11 §5-2)</small></div>
+        </div>
+        <div class="loop">↩ 기계적 검사 실패 시 오케스트레이터로 되돌아감</div>
+      </div>
+      <div class="down">↓</div>
+
+      <div class="box human center"><b>G. 사람 승인</b><small>판단이 필요한 것(비즈니스 로직, 새 패턴, 트레이드오프)과 되돌릴 수 없는 것(발행, 배포, 결제, 삭제)</small></div>
+      <div class="loop center">↩ 반려 시 명세로</div>
+      <div class="down">↓<em>승인</em></div>
+      <div class="box human pill"><b>실행: 발행, 배포, 적용</b></div>
+    </div>
+
+    <!-- 오른쪽: 감독과 제어 -->
+    <div class="panel">
+      <h2>D, F. 감독과 제어 = 하네스 (모든 단계)</h2>
+      <div class="box agent"><b>Supervisor</b><small>가벼운 모델, 옳고 그름이 아니라 진행 상태만<br>막히면 깨움(Nudge) → 안 되면 사람에게(Escalate)</small></div>
+      <div class="box code"><b>Hook</b><small>반복 한도, 토큰 상한, 금지 행동 차단<br>대문자로 쓴 지시는 확률, 어기면 빌드가 깨지는 건 보장 (1편 요지)</small></div>
+      <div class="box code"><b>권한</b><small>에이전트별 허용 도구 목록<br>식별자, 금액 같은 값은 코드가 주입 (MCP Toolkit)</small></div>
+      <div class="box code"><b>운영 안전장치 (H)</b><small>상태 변경은 한 곳, 공유는 자동<br>모든 자동 작업에 끄는 스위치, 중복 실행 방지</small></div>
+      <div class="note">제어(막기), 감시(기록), 개선(위반을 되돌려 줌) 3역할 (1편 하네스 표)</div>
+    </div>
+  </div>
+
+  <!-- 아래: 측정과 개선 -->
+  <div class="panel bottom">
+    <h2>I. 측정과 개선 (첫날부터)</h2>
+    <div class="row">
+      <div class="box beyond"><b>실행 기록 전량</b><small>공식 OpenTelemetry로 에이전트 호출 트리 시각화</small></div><span class="arrow-r">→</span>
+      <div class="box beyond"><b>평가 세트 20개</b><small>같은 예산의 단일 에이전트 기준선과 비교, 토큰 기록</small></div><span class="arrow-r">→</span>
+      <div class="box code"><b>도입 전후 비교</b><small>검사 코멘트 반영률, 리드타임, 실패 유형(명세, 어긋남, 검증)</small></div><span class="arrow-r">→</span>
+      <div class="box code"><b>실패를 규칙으로</b><small>새 Hook, 새 검사 항목. 프롬프트가 아니라 구조로 막음</small></div>
+    </div>
+    <div class="feedback">↻ 추가된 규칙은 오른쪽 하네스로 들어감. 하네스는 실패를 자산으로 바꾸는 장치 (1편 요지)</div>
+  </div>
+</body>
+</html>
