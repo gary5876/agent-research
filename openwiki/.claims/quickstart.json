@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:1b65df2919c65135bf3c65b77dbfc7efc35f130b89bb1ee4ff274da82d405a68",
+  "pageVersion": "sha256:b7e94c49a3b85b8879ec07ec3973faeeccaaa3f039be72f85a4173cdbbbb84ed",
   "claims": [
     {
       "id": "claim_7faca76aff3a4db4bc6665df1e9283d4",
-      "statement": "CLAUDE.md at the repository root contains only an OpenWiki-managed block that points to the generated openwiki/ directory as optional context and instructs not to hand-edit generated pages; AGENTS.md contains that same block plus a documentation convention section requiring Status/Layer header tags on new research documents.",
+      "statement": "CLAUDE.md at the repository root contains only an OpenWiki-managed block pointing to AGENTS.md, and AGENTS.md contains the OpenWiki-managed block plus a section on working in the repository that names index.md as the first file to open and lists the folder rules, frontmatter, hand-maintained lists, and the work pipeline.",
       "evidence": [
         {
-          "resource": "repo://AGENTS.md#L1-L22",
-          "version": "repo-lines-v1:sha256:97f1b6d68a13722bf0644fa1b52bdb050bcdfad4f7ce6cb74d246c3cb90f8d2b:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVmMTgwZjljMTI2OTAzYmNjMzMxYWE5NTQ1NmU0OTQ0NGE3ZDRkMDExZThhMmE4M2Y1ZGM4NzAyMzkxODEyZDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZmMmIzNmI1YTUwNmIwZTEzZGYyM2NmZTdmMGQ2N2I5MGFmODRjMGVjOGY0NTliZWY4YjkxMzY0MGNjYjJiMzQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+          "resource": "repo://AGENTS.md#L14-L34",
+          "version": "repo-lines-v1:sha256:9a57607b178f60a2f371da715c1223c9091f03d80dc22c020be0f7113fa532e6:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI4YmEzZDE3ZWRiOTFkMzUwOWYwNGQzZGM4NmJjYzc3NTJlYzVmOTg3OWI0NmZiZjlhMWEwYWViYmU0YjNjYzYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE3MTg1NDhiNGIwY2I4ZWI4NmJlMzM0NGY5ODE0YmQ3YTJlOTMyMTQ5Y2FmM2E4ZGYzY2QxMjFiNmIwNjA2ZGIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY5MzkxMmNkM2MzM2VkZmQyM2QzNzY0ZTE3YWIyOTc0N2IzNzkzNzQyMzZjNjRhNzZiMGE1ZmZlNDhhZDM4MGUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
         },
         {
           "resource": "repo://CLAUDE.md#L1-L7",
@@ -17,18 +17,28 @@
       ]
     },
     {
-      "id": "claim_478210324b414132ba0d219272e48eda",
-      "statement": "The source material in agent-expertise-framework/ is organized into four numbered subfolders (00-data-lake, 01-narrow-interface, 02-self-improvement-loop, 03-orchestration-and-enforcement), each covering one factor of the four-factor model, under a root synthesis document (08-agent-implementation-schema.md); this wiki currently documents only the 00-data-lake and 01-narrow-interface material.",
+      "id": "claim_6d69ada928cd4c3c87b50fa5c3ff6c0b",
+      "statement": "index.md's generated block lists notes by topic with status, layer, and summary, the sources folders, the experiments, and a next-steps list of open decisions and notes with open questions.",
       "evidence": [
         {
-          "resource": "repo://agent-expertise-framework/README.md#L5-L33",
-          "version": "repo-lines-v1:sha256:f475b3a8c2bf1677b2adee96e92ea237bbfb2290b33251fce33ed9834a48818e:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ3YzA2YzU2MWQ1YzMyNzM0MzY4NTI2OGE0NmIzMzkxZjM5OThlZWU4OTBkMmJlNTFmMGQyMWNjNGE1M2FlNmQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRlNWE4YmM4YzQ3OTRlMjcyODY5MjBhOWIwMzViOGY0ZTU2OWY3MDVkZWZlOWJkNDExYTY3ZDZmOWRlMGU1YjMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA0MjUwMjllNWJhMTE3ODM4ZWQ3OWJiOTk0NDM4NjYwMzVmZWZlYmZlZWNmNzJmZTE1ZjA2ZGIzMWM2NjM0NGUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU2M2I4ZjQ4ZjNjMDcxZjY0YzZmMWVjNmE1YjJkMzYzNjQ3MTg2ODBmZDI2ZGU1MmE3NmE4YTAyNjFkNDY0OGQifQ"
+          "resource": "repo://index.md#L31-L118",
+          "version": "repo-lines-v1:sha256:835c43a1e5594d8b8aceab2d2745f23f4865cc22cb8a72c5f8bac70d1a2c5a1c:eyJzZWxlY3RlZExpbmVDb3VudCI6ODgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQwZTEwYTgzYzE0MTM4YTg2NmE0YjdjMjQ0MmQwMWJjYzc3MDhiY2ViZGFmOGMyMTE1ZWZkYzA1YzU0NTQ2MjIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFmN2UzZGVmZTQ2ZDI2OWRlNDU4NWI1OGRmN2ZkYjJlNDIwODY3ZTZmMzljNWZhZWE1MTllOTY5Njc3ODg1ODAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZlODNiNGE1YTRmYWNmMzEyNDIzYWY5NzgzZDUyYjViYWJkMGI2MzRlOTY5MDg4MmNhMGNhNDFlMTkxOGU4YTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_62046fb881f6448b8241f653c7877729",
+      "statement": "index.md defines layer 1 as original records, layer 2 as design, layer 3 as implementation, and layer 4 as generated output, and asks readers to check layer 1 originals before citing layer 2 designs.",
+      "evidence": [
+        {
+          "resource": "repo://index.md#L18-L29",
+          "version": "repo-lines-v1:sha256:90bedc6a11a315a03ccff8a35ec55f7f928c6a861110a4f3a2c297a7b81cbfc0:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdjOWY4OGJkYWUxYmU3ZDY4N2E3ZTUxOTlkYjliNTBlYmUyNzEwMGFhMzIyOGRkOTBkZDY3YTY5N2YwZDZhZTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk2NzZiN2M2MGFiMTkwYzEwOTQ3ZWI5NGUyOWMzMDI3MTg5ZmZiNTc2MWMyYWQ4ODc5MTE1YTk0Mjk3YTg5OWMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVmMDRlNzk0NjlhOTZjNDQ1YTAzMjI3YjBjMWEzNTU1MTM1NDRjMmI4Y2VkNzZjNDlkNmFjYWY2MWNkOWRmOWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE2M2FkMDk1NDc3ZWNmZjgxMGNmNTQyZDA2YTVmZDFkMTFkZjBiMjFhOTU1YjkwNTc4ZGY5NWNmMzJjY2YyYTQifQ"
         }
       ]
     }
   ],
   "verification": {
     "by": "openwiki/0.4.3",
-    "at": "2026-09-05T20:17:03.290Z"
+    "at": "2026-11-01T16:09:17.598Z"
   }
 }

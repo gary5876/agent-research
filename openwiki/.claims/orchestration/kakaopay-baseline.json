@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:8511cb02b02cdd604a7eda4f25718bcd938a962ec6b4cbffa7f59238ad4202a5",
+  "claims": [
+    {
+      "id": "claim_5e9432448c6545018e443f8d97a347ec",
+      "statement": "notes/13 collected the KakaoPay blog's 164-post list and read 24 AI, LLM, agent, and operations automation posts from original HTML instead of WebFetch summaries, because an earlier WebFetch summary had dropped details and introduced content not in the original.",
+      "evidence": [
+        {
+          "resource": "repo://notes/13-kakaopay-tech-blog-study.md#L13-L19",
+          "version": "repo-lines-v1:sha256:88faaeec350c6b654b644ee21dc0e2a1f8c26d6061cd9614db06c8a158b17e3e:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYWE0YjQ4ODc3ZmIzODkxYzYyNTU5ODgyYWFiYTFjNzI1OWMxNDlkMWU1NmM4MjM0YzVmNDZiN2NmMGU0ODQ0OCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZDViYjhjMjFiNmYxOTIwMWJlMmRjMDdmOTYzMTBmYjk5N2Y2Yzc0MGZiNGE0ZTFiY2E3Yjk1MzYzYjM5NzE0ZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNmY1ZGQ1MDJmNDQwZDcyZDZmNzViOTAyMTVjNzRhMTAwOGVlOTFmNWEwYzI2YzI2OTU3OThjMGY5NjJjNWYxZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZjQxYTJjMzk5NWE3NmI2MjRkYzk4YjE1MzUyZmZlMGQzMTAyZjBjMzkwMjUyOTNlYmYxMTczNjJmYjRmMmFjZiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_e821e9a6222f4a6184c68069b40ed9d4",
+      "statement": "Across the posts, AI recommends and drafts while people approve and execute, and only one project built a supervisor-style multi-agent system, which its author recorded as slow and unstable.",
+      "evidence": [
+        {
+          "resource": "repo://notes/13-kakaopay-tech-blog-study.md#L61-L73",
+          "version": "repo-lines-v1:sha256:76f06302b8fecdf3f93185d41ce931dff9aa7afc85e11e64ae3baa99932e8e08:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE1ZjIxMmEwOTE4YTMyNWM0YTczMTI4MjM0ZjU2NmJiYzdmMzVkOTIzNzAyNjk2YmZiNzk1MDI4MDRkMGRkY2QiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZjYzRjNzY5ZGExNjM0YjhkYjAxMDJjYzAyNDJmODMzODRmNDQ4ZGI5ZjNjNWZhZWRkN2MxNzRlNWU2YTI0MjEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE0YjVlZTY3M2MxNWQ3ZWVhMDhmNjE1NmJhMzQ5M2ExZTIxY2Y3NzVmOGE4MjhjNTAyMWI2YzAxNDA4NTk2NjUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAwZWFlMmExMmYxMDA4YzNjMmM4OTdmOTQzMmU2MjVhYjhmNTRjOTUwYTVmMmE5OTZkYTkzOGExYWE2NWE2ODAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_16f51e5d4ca6499fb02b34392f543555",
+      "statement": "notes/14 defines the baseline as what KakaoPay actually operates, treats hackathon posts as reference only, and allows going beyond the baseline only where KakaoPay content is missing or weak and external evidence exists.",
+      "evidence": [
+        {
+          "resource": "repo://notes/14-kakaopay-baseline-and-target.md#L19-L24",
+          "version": "repo-lines-v1:sha256:bbf8c984426aae4e951f7544bfa59225d00c221ee557c61ed4581bf8728660e7:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNDZlNjNlOWJhOWE1ODA5YmUyMTg4M2RmZmM2MWZhZGIyNDAzNWU3YmI2MmVjMmE0MGEwN2UwMzdjN2JjNjdiNCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNThmZmFmMTVlYTBhMjZjZTk3YTFhYjgwYWY1ZDNiMGNhMWZiNWVmMDcyYmUxZjQ5ODRkOWMzOWExOGIxZWE4MCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNTIyOTM0ZWY0ZTczZDA3NzhhMmY0MDI3MDg2ZjBmMzNhZmJjZWUwYjRmMmRmNWE4MzI2NTEyYTRjNTIxYjZhMiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYmZhZTM4ZDYyZGI3MWEyNmIxM2NkMzkyZGEwYWVkYWIzMjM1Yjg3OTMwMzQwZTBlY2Q1NjJjYTExMGU0MWQwNyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_f7ab89d5b75a4874bbcc1669bc76cc04",
+      "statement": "notes/14 replaces the persona split, the five-roles-per-department idea, and whole-diff review with role specifications and permissions, process stages, and per-file review, citing measured persona ineffectiveness, handoff context loss, and long-input degradation.",
+      "evidence": [
+        {
+          "resource": "repo://notes/14-kakaopay-baseline-and-target.md#L103-L111",
+          "version": "repo-lines-v1:sha256:6597eba55a301f07231fe1a445d4f2a82ee347bd7754edb17faa988f022d1caa:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiODQwYjFhM2Y2ZDBjNjk3NWUxZDI5NDJkMjVmZDgwNTEwODI4NGZhYmNiZGEyMDg3MjJkYTY0ODk4MTIzNTRjNyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMGE1ZWUxMjBiZjQwYzk4MDg3YzYxZmY0Yzc5ZDI2NDM4ODM4ZDc1NjJmODM4ODgyNDYxNGU2ZWM1YWJmZTFkZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTE4OTY5MTAzNTRmNzNhZWM5YjMyYzkyMTJhODY1MjNhZmYxNjMxMjExNmQwZGFlMTkyMDBmZTlmZjA0ZDQ1MyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMzFmOTE5YWM3NDYzM2YwZWNmZjAzN2M1YWQ0MWJhNDQyMmExOTg2YWI5OTU3MDU5Y2I5YTE0ZjhkMTM2OTNjOSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_89b1f35844344649a5133795dc71336e",
+      "statement": "The diagram render script captures the flow diagram HTML to PNG with headless Chrome.",
+      "evidence": [
+        {
+          "resource": "repo://notes/diagrams/system-flow/render.sh#L1-L7",
+          "version": "repo-lines-v1:sha256:824099d142c4ce27fe4a1ccd2d2edc183d236ec5d3ab34d5b3271e20fe27ec2f:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTgwNzZkM2QyOGQyMWUwMjAxMmIyMGVhZjdkYmY3NTQwOWE2Mjc3MTM0NDM5MDI1ZjI4MmUzNjhlMzMwNWFiZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNWFlMWI0ZDM5Mjg4MjZhMDhmYTQ1OGE4MDUxZWFlNTE1NTYyZWNjOWU1MTdjNDczMDkyMGNmOWJmMzRkOTM5MCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_5aa3c630bb664313adc0dc0564f004a7",
+      "statement": "Which department task to build first and which actions are irreversible remain undecided in notes/14.",
+      "evidence": [
+        {
+          "resource": "repo://notes/14-kakaopay-baseline-and-target.md#L113-L116",
+          "version": "repo-lines-v1:sha256:6b7531966b4b766fe8422239cf36984112405e32af07a6da49129a1b836fab73:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYWE3NGJmMGMxNTZiNmI5ZTUyM2Q2ODQyNmZjM2Y3MGE3NzgwYjUwNmZmMTE0Zjc1YzJjMjE3YjNjYWJjMDk5ZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiY2M0ZDYzNjdmM2E2ZWIzZDgyMDM4NjYwMjQyMDc0MjI0NDQyNmQxNmQwOWU1MGY1YWI2N2ViYzA4MDViMjJiNyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNGRjY2ZmZWQ0ZGQ1ZTFmZDZmYTczYWQzMjYyZTNjYTU3ZDhiNWNiZTRkZDhlYjQwNTU4Y2QzZGIyY2UyOTk3ZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.4.3",
+    "at": "2026-11-01T16:09:17.598Z"
+  }
+}

@@ -15,6 +15,29 @@ GENERATED_PATTERNS = [
 ]
 
 
+def is_assigned_page(file_path: str) -> bool:
+    """Allow the one exception the rule intends: OpenWiki's own page loop.
+
+    During a local OpenWiki run the host must write each assigned page itself.
+    Allowed only when openwiki/.run.json is in the generating phase and the file
+    is a planned page whose job is still pending. Claims sidecars, indexes, and
+    any page outside the plan stay blocked.
+    """
+    match = re.search(r"(^|/)(openwiki/[^.][^/]*(?:/[^/]+)*\.md)$", file_path)
+    if not match or "/.claims/" in file_path:
+        return False
+    try:
+        with open("openwiki/.run.json", encoding="utf-8") as f:
+            run = json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return False
+    if run.get("phase") != "generating":
+        return False
+    wiki_path = "/" + match.group(2)
+    return any(p.get("path") == wiki_path and p.get("status") == "pending"
+               for p in (run.get("plan") or {}).get("pages", []))
+
+
 def main() -> int:
     try:
         data = json.load(sys.stdin)
@@ -24,7 +47,7 @@ def main() -> int:
     tool_input = data.get("tool_input", {}) or {}
     file_path = tool_input.get("file_path") or tool_input.get("notebook_path") or ""
 
-    if any(re.search(p, file_path) for p in GENERATED_PATTERNS):
+    if any(re.search(p, file_path) for p in GENERATED_PATTERNS) and not is_assigned_page(file_path):
         reason = (
             f"Blocked: '{file_path}' is OpenWiki-generated content. "
             "Never hand-edit openwiki/*.md or openwiki/.claims/*.json "

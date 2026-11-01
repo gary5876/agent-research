@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:4796c3644a063683dd2d7cb76d20b3b44c6ec419d065387209b3813bc06e7094",
+  "claims": [
+    {
+      "id": "claim_2b9cf7f14dbd4a58b54194c02e235cff",
+      "statement": "The 2026-11-02 restructure was driven by five problems in the element-based folder tree: mixed classification axes, colliding folder and document numbers, four hand-maintained indexes, scattered next steps, and mixed material types.",
+      "evidence": [
+        {
+          "resource": "repo://notes/09-repo-structure-and-pipeline.md#L17-L26",
+          "version": "repo-lines-v1:sha256:17047cfee4445982d48f2dde4cd6649a5326a60cbbfdd60da876483dc51ea769:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY5OGJhY2U0NDRkNTZjMzhmYTg0ZmViMzUwMTM1ZDA1ODhhZmNkMWE4NjhmZWYxMjhhMjI5ZjMyYjc2ZThkMzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM3ODQ1ZGRiMzdhOTBjYzg0MjI4NWNkMmFkMzM4OTk3MzkzZDc1MWQ4MDBjYjBhNzYyNDc4ZjA3ZTFlOGFiZmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFhMDk5NDU1MTVmMzhkOGZjYjBjMjkwNGM0Y2IwOGJkOGI1ZGU1ODc2ODEzZWQ1MTIxODNiZmUyZjA3NDE1ZmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE0MjdlN2Y3N2NhYWVmYWU0ZWI4M2JkZTQxMjU2M2VmMTU5YTUxMDVmYWNlNDI5YTg4ZjIwN2Q0YmY3OTBjNmIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_6c72d23ef444407a83ff591faa4a186f",
+      "statement": "Notes live in notes/NN-slug.md with permanent numbers, per-item external notes in sources/<topic>/ are written once and not edited, runnable code goes in experiments/<name>/, and only decisions.md and JOURNEY.md are maintained by hand.",
+      "evidence": [
+        {
+          "resource": "repo://notes/09-repo-structure-and-pipeline.md#L69-L91",
+          "version": "repo-lines-v1:sha256:36b2a363286d3f3a24824b37d2a90210f85f58936f63268989a3f9e2d6c0cf3a:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYwYWQ1NjI0NjFkZGU0MTk3NmY0MmNmMzU5NmMxYTgxZGE3YjFjMGJhNjk3NTYzNTI5MDI5MTU2NTZiZTE2YmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEyZmNhNTM4MTkyYWRlYWM4MWVlYjdiMzQwNjEyYTAwOTlmOTc2M2QwYzRiZTQwY2EzMWQzYzgwZTQ5MGY2NWIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjgwYzMyOWVlMWRkYmFmYjlmNjUwZDYwNDYwYmUxZDliNTg3NDhiNWEzNDFjZmJiMzBiOTVkYjUxZWE4MzViMGMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI4NjU4ZWEwZTViYTIxOWEzYTRmZjg5ZjhjOTRlMTkzMmFiMzZhNTBkOTFjOGRkNWFiYzI4ZDNmZWZiYTY3ZDIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5b1989726cbc470fbff3b135449cc827",
+      "statement": "Allowed topic and status values are defined only in TOPICS and STATUSES in scripts/build_index.py.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/build_index.py#L20-L31",
+          "version": "repo-lines-v1:sha256:5e09af125620c879ad0c9d0b2690512010e70d3f6df6e704865ef79d61f12f17:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE2OWI0OWJjMWMyOGViZDFjOWViZTY2OGM5NWRjZjc4ZDRiMjYwODM0ZTExYzA3ZTY1ZTU3NTJjM2M1NDI1MDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM2NWI2NDkwYzg0ZWI0ZmMyZmJlN2ZkOTlmZTgyNTRmNmMzNjk1NTdiM2NkMDUzODAyZDhjNzM4ZmM3MWEyNjMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjIxNDRiNDA3OTU1ZGNkZTI0YzIyZTFkZTU2MTliZGZlMzlkNzFlNjFhNTdlNDlhMDRlMDQ0NWQxMjVhNTI4NzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFkMWI4NDRmZmM1NTJlODlkNWZiOGNhNTJhY2JkYTgyOTBjYTZmNzJjODIxZjIzYmM1OGM2OGNlMTYxODA2ZDMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_32d82368a567474e9e015a3990f5d092",
+      "statement": "build_index.py regenerates only the marked block of index.md, producing per-topic tables from frontmatter, a sources/ folder table with linking notes, the experiments list, and a next-steps list counting open decisions and remaining open-question bullets per note.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/build_index.py#L71-L145",
+          "version": "repo-lines-v1:sha256:e666743c35d2c66e23481d25c281be967b60abe565dd61958ccf700259c55999:eyJzZWxlY3RlZExpbmVDb3VudCI6NzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdmYzcxMTVjMWVkOGU2OGE0NmEwZGRhNDE0N2EwZjQzODM2N2RlYWMyYjZjNjE4YTllN2E3MjU2OWY1M2E4MmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZmOWYzNDlhMDM4ODE5ZGI2MDcyNTU3NDcwMWY3OTQ3YzJjN2Y5Njk5ZDVjMzk0NzJiZGQ2OWNjNGU4NmVmMWEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM0OWQwMjdmYjg0MmViMzRhZTg1YjE4MDcwNjY5NTY0MjUyZmEyYmI5NGYzODc4ODkxNTU5YWRlNTIxMzM3NDYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_4ba139786c434f68bc40612d7538cfce",
+      "statement": "check.py validates frontmatter, relative links, and index freshness, and checks only lines added since HEAD (staged diff when anything is staged) for middle dots, semicolons outside code, and banned words read from the user's global CLAUDE.md.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/check.py#L1-L33",
+          "version": "repo-lines-v1:sha256:c81664b301bbe1dec319769f592f6f2d928de47218afd0196a025c1172406c4f:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ2ODJjYmRiNGM4YjA3NTE4YmY0ODZjNTg5OTBmYzM5MTc4M2FhMjBhOTE2YmZiMjdhZDIxMWViMWQ1YzM2NDIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZiNTJjNWQxZDdmZWFmYWNhOThjM2E4Yzc0ZGQ3M2YxMTc3ODQ4ZTk4N2ViNjVjNWI0MjAzZmEyMjU2YWUyYTQifQ"
+        },
+        {
+          "resource": "repo://scripts/check.py#L99-L143",
+          "version": "repo-lines-v1:sha256:21dca2943a2f7766aff17e2e19e724484272cc49b262eb529bd13ff123e403fd:eyJzZWxlY3RlZExpbmVDb3VudCI6NDUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM3MjJhNjIzY2IyMzM1NmVjYTdhZjk1MGRlMThmYzYwODRhZDQzYzczZjAyZjdlNTY2OWE1OGE2NzYwYjEyNzEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg1ZGJkMDUxYjllYzA2MjViNzBkZmJkZmUyZWMyZWM4NDgwMGQ0Yzg1ODY5YTg5MDY0NGJmNjlhMDQ3ZDczNWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBmOGVkODBiOTcyZWU0M2QyMTdmMWYxNTVkYzQ2MWYyY2VhNThiNmY0MTIyNWZiMmQ3NWJiYjRjMTVlOTBjMmEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_a1476af101084c59b0bd51d63f0137c9",
+      "statement": "The nine-step work pipeline runs from registering a question through research, verification, write-up, close-out, index and check, local commit, local OpenWiki regeneration, to a separately confirmed push.",
+      "evidence": [
+        {
+          "resource": "repo://notes/09-repo-structure-and-pipeline.md#L93-L103",
+          "version": "repo-lines-v1:sha256:ef1b40df1f14be7e16a161b572a5992587f95b6a39f916e3c42317ea9dc17536:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBlMjNmMDYwMjI0Yjk4YTA4MWJkZDQwOTVlOWNhYTE0NDNkODg3ZjYxNGEzMzBjMWY4MTgxZDExZDU1NWNiNjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJhODgwMGU2NDI2MzMyNzJiNTc4NjkyYWYyM2FjMTNlNGMzOTVlZGRjMzQ1NTRhMGUwMDAwOTRiYWMwNWNhNWQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNiMzAzNDU3NDRiNzZjMDUzOWQwMzQ0N2YyMzAxZTQ1ZGIzNmU0NTRkZjBlM2IzNjhjN2ZiOTk3ZjlkN2I4ZGYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjlhMmVjZDgxNWE0NDI3ZDdjNmRlOWVkODJkZjBiMjQ5YjI0NzlmYTU4OTU1YjY0ODhhNWZhNDNjMTg3ZjJmZWYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_809802d6fed84f80971e925514933750",
+      "statement": "OpenWiki is regenerated only locally in a Claude session, with no CI schedule or model API key.",
+      "evidence": [
+        {
+          "resource": "repo://decisions.md#L33-L33",
+          "version": "repo-lines-v1:sha256:8cb3c8d1d0eb1d5131674ae659100e84c21752e8ed0cf792a1f22197463651ca:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOGNiM2M4ZDFkMGViMWQ1MTMxNjc0YWU2NTkxMDBlODRjMjE3NTJlOGVkMGNmNzkyYTFmMjIxOTc0NjM2NTFjYSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOGNiM2M4ZDFkMGViMWQ1MTMxNjc0YWU2NTkxMDBlODRjMjE3NTJlOGVkMGNmNzkyYTFmMjIxOTc0NjM2NTFjYSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZWE4OTdhNmRlN2YxNjgxYzhmZjM3YjZkMTYxODE2NzM2YjM3MDI5YWJiYjhiNGE0MWZiMGZiNDhjYTU0ZDIwZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://notes/09-repo-structure-and-pipeline.md#L102-L102",
+          "version": "repo-lines-v1:sha256:bcf0c456a3c98d633ac7fbf4adff046696786d79ca891feeb750f9d474e80a95:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYmNmMGM0NTZhM2M5OGQ2MzNhYzdmYmY0YWRmZjA0NjY5Njc4NmQ3OWNhODkxZmVlYjc1MGY5ZDQ3NGU4MGE5NSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYmNmMGM0NTZhM2M5OGQ2MzNhYzdmYmY0YWRmZjA0NjY5Njc4NmQ3OWNhODkxZmVlYjc1MGY5ZDQ3NGU4MGE5NSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNzg0MWViMzg1NjFkNjQ4YjI3MmE2ODBiMTc3MzRmYWFhNzkzYjZhNGI1NGY3YWI5ZmM4NGJlMzY2MWI1ZDI4NyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOTJjOTkyOWE3NTVkNjY0ZWU5NjUyMGRlYTY0ZmQ4N2U1MzQwOTM4YWU4MWQ2NWVhZTRhNzUzYTQ4NjM0NTRiYyJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.4.3",
+    "at": "2026-11-01T16:09:17.598Z"
+  }
+}

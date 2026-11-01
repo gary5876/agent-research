@@ -5,10 +5,10 @@ description: A recorded failure case where an agent mistook a fact it could have
 tags: [incident, instruction-clarity, ambiguity, agent-behavior, case-study]
 verified:
   - by: openwiki/0.4.3
-    at: 2026-09-05T20:17:03.290Z
+    at: 2026-11-01T16:09:17.598Z
 sources:
-  - id: openwiki-source-b79d2acf76395402d990f331
-    resource: repo://agent-expertise-framework/01-narrow-interface/02-instruction-clarity-incident.md
+  - id: openwiki-source-aca08c45512c61226d0b2b18
+    resource: repo://notes/02-instruction-clarity-incident.md
 generated: { by: "claude-code", at: "2026-08-30T15:41:00.038Z" }
 ---
 

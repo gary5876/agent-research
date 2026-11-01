@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:96f7929e87b042adaec9ab71826ee20878c386b80b6d8e67965f16f39d0a6e47",
+  "claims": [
+    {
+      "id": "claim_ad47699c6e054f2ba269c4bb7ac68240",
+      "statement": "notes/06 states that the core of a manager agent is verifying returned results before accepting them, and records that three of six delegated research tasks returned a wrong conclusion or premise, with negative conclusions and inherited premises the most frequent failures.",
+      "evidence": [
+        {
+          "resource": "repo://notes/06-orchestrator-pattern.md#L13-L28",
+          "version": "repo-lines-v1:sha256:a0082888802d220377fdb23bffde90527c11995efb8db12da7c0411ab5d69890:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZhNjc5NDg0YTA3NjEzMTgwODRmOTNmZTAwZTIyYThjMTVkNjgwNmY1NmFmMWVjZjc2MzJlN2U3NDg0MjExNDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRlMTYyN2NkMjEwYzgyYjQ3NWIyMzhiMzgyOThmNzNjNDY0Y2QyMWYyZWVkMmFiNzNlMTUxNTUwY2M2OGFjNGMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjFkNjc2Y2U0NDg2MTVlZWI3ZjFiNTYzOTNkNDE1OTI4Yzc2OWM4NTI1MDJiMDJiMmIxMjQ1ZGU4ZmZmMDkyODEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjMxMDc0OWM3ODE3NWVmMTY0NGYxNWE4NDk1NGNhMzgxZjVhYWI5NTJhNWU1MzFiY2FhNzAxMTQyNzJlYWYzZjUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5ed199466d9f4c7cb49edc7ba6afc6bd",
+      "statement": "The extracted pattern has five stages (decompose without summarizing requirements, dispatch, monitor by notification, verify with independent tools, reconcile by fixing documents and extracting rules), with verification marked as the most important and most often skipped.",
+      "evidence": [
+        {
+          "resource": "repo://notes/06-orchestrator-pattern.md#L30-L50",
+          "version": "repo-lines-v1:sha256:68a8d9af2daf6b3967772601895567bedc8e004c548ed9c6a309db68d841cd56:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIzNjExOTQ5MjNiMmUyYzk2N2Y4ZGE2ZGQwZTViMDNlYjFmYmYxNmQ4NmUzMWIwZmM2ZmQ4N2M0ZjIzMDdkMzIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE1Y2MwMTQ5NDk0MmRjNzI3MWFhNDRjMjExMWU3Yjg3YTM5MzBmZWI1MGIxMWM1YzczMTUzNzU5ZjcyYjIyMDMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI3YjJhN2E4MTNiMjVjNzQ2MTk1NDE1MjhjZWZlYzI1NTEwMDNlMzEzNjE4YWJmZDVlYzgzZDJhNTAwNTc1NGUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM2YjQ2NjU3NjVmY2Y1NTBlNDg0NjYwOTBiYmM4Y2JjZmFiODZiMGJhMTBjOWZmOTExOWZlZGQ5NjE2OGQ4OWQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b398a46d1e2b4188a05bbdec4f6ea27c",
+      "statement": "notes/06 records that true parallel dispatch, retry of a crashed subagent, and direct subagent-to-subagent communication were never exercised.",
+      "evidence": [
+        {
+          "resource": "repo://notes/06-orchestrator-pattern.md#L101-L105",
+          "version": "repo-lines-v1:sha256:91bd84d8fb638f209a61db541c85abe955c3f65125a935a24e312ae82ca0fe71:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZGQyMjZlMTNmNGQ4NDY1MGIyZDlhY2JjZDc1MjZhZWU3ZTA3YzEwNTQ5OTA1NGIxZjcxY2IzMTA0MDA3NjAzNiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDlmMWZjNmM5Y2VjNjlmNDJhMzU0NjBkYzgyODEwMzEwN2U5MmZjMDIwZWFmZmM2NjE0MWJlYmNmZDZkZWU5ZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNDRiYWNkM2QyNTA4MWZmZjM3ZDQ3YmU1NjdlZTBmZjcwMzlhYWM4ZmZkN2RmMDE4MTQxZTQ5MmY0MmU4N2U4YyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDJjNjM5YmI3ZTI2OGI0NDUwNzg5YmQ2YWVkYmI5NGE0NTRjOWY1YjhkODY0YjczMTY2YjEzM2NjNmY3ODljYiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_43eea562a9084655bd5a11daeb102cc7",
+      "statement": "Four worker agents are defined: researcher and verifier with web, Bash, and Read tools, doc-writer with file editing tools only, and supervisor on the haiku model with read-only tools.",
+      "evidence": [
+        {
+          "resource": "repo://.claude/agents/doc-writer.md#L1-L6",
+          "version": "repo-lines-v1:sha256:931921e692543ed7e8c993d2446d112773f54838f97e5548e61ba4acde9b0064:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjUyZDcxMTEwM2Q1MGE0Mzc4MzBjNmZiY2QwNGZiNGJhYjQ5YTBmODJmNmQyNmQxYzc5MWM2ZTg0ODhkZDA5MCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjUyZDcxMTEwM2Q1MGE0Mzc4MzBjNmZiY2QwNGZiNGJhYjQ5YTBmODJmNmQyNmQxYzc5MWM2ZTg0ODhkZDA5MCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYzUyNDc0MzU1MDkwNzA5NDk4MGQ0NGU2NDU5YTQ4ZmY3MTJkM2EyYWZlMmQ5MWFhOWMxZGQ3Zjk1NjE5MmZmMyJ9"
+        },
+        {
+          "resource": "repo://.claude/agents/researcher.md#L1-L6",
+          "version": "repo-lines-v1:sha256:3424cbb7698c26ee3240f471bad955c303ae2d675f9feafe5601f61e2233bfa9:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjUyZDcxMTEwM2Q1MGE0Mzc4MzBjNmZiY2QwNGZiNGJhYjQ5YTBmODJmNmQyNmQxYzc5MWM2ZTg0ODhkZDA5MCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjUyZDcxMTEwM2Q1MGE0Mzc4MzBjNmZiY2QwNGZiNGJhYjQ5YTBmODJmNmQyNmQxYzc5MWM2ZTg0ODhkZDA5MCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMTdiZDg5MjA2NmVmNmZkMjI4NDVkZGQ2ZTM5N2VmYWFhNThiYTEwZDQxZmQyYmM5NGQ5NDM0ZDIwM2FkMWQ5MSJ9"
+        },
+        {
+          "resource": "repo://.claude/agents/supervisor.md#L1-L6",
+          "version": "repo-lines-v1:sha256:3c6f00809191bd572ca67903949ca473651d827bcdba418721c3723c6626b506:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjUyZDcxMTEwM2Q1MGE0Mzc4MzBjNmZiY2QwNGZiNGJhYjQ5YTBmODJmNmQyNmQxYzc5MWM2ZTg0ODhkZDA5MCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjUyZDcxMTEwM2Q1MGE0Mzc4MzBjNmZiY2QwNGZiNGJhYjQ5YTBmODJmNmQyNmQxYzc5MWM2ZTg0ODhkZDA5MCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNTg0OGExOGExODA0MTc3MmNiMDJiNDU1NzQ2MWI0MDMyZTA5MzM5ZTE2NDQ1YzQ0OWIzZTkzZWE2YmNmMjIxNiJ9"
+        },
+        {
+          "resource": "repo://.claude/agents/verifier.md#L1-L6",
+          "version": "repo-lines-v1:sha256:c1e9eb1eb2432077963d99ea103c54e7b4942c7bc02a07b8522de87a1985c5ca:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjUyZDcxMTEwM2Q1MGE0Mzc4MzBjNmZiY2QwNGZiNGJhYjQ5YTBmODJmNmQyNmQxYzc5MWM2ZTg0ODhkZDA5MCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjUyZDcxMTEwM2Q1MGE0Mzc4MzBjNmZiY2QwNGZiNGJhYjQ5YTBmODJmNmQyNmQxYzc5MWM2ZTg0ODhkZDA5MCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNWQ3YjEyYWY2Y2JhOGYwYjY4OGQ2MTdjMmQ2ZDEwNzE4Nzc3NjQyNmUxYjE5MjYwYmU5MzcyZGQxM2I0NDY0NiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_17fdad92b889471a922bc6f17fc54c4e",
+      "statement": "The verifier must re-check through independent tool calls and answer only CONFIRMED, REFUTED, or COULDN'T VERIFY, and the supervisor's loop thresholds are unvalidated guesses.",
+      "evidence": [
+        {
+          "resource": "repo://notes/06-orchestrator-pattern.md#L133-L138",
+          "version": "repo-lines-v1:sha256:ef9d2b28811f49af9462f6a3ffacf07b91e0f06177adfda57ab20d2a205b360b:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTZkOTg2OTAyMjg0NDE3ZTFkM2RkOTllMzFmN2MwNDNkZTlmN2ZiNTVmMDJiNDlhNDcyZWRhZDAxZDU3NWI3ZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMmFmZTgwNTY4ZGMxYWE2MDdhYTA1MGFkNDY0OTdmMjg1MWJhYjBmNWExMTgxYjhlOWMyZGMxMWZjZWQ1MjAwMSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYjE4ZGY2MGU0NWI2ZjdhYmI3ZmVkNmQ5MWZhNDQ2NTk4YjUzZmE1MTJlZjE0OWNjNTBhYzE5ZmIyYzRmZjFjZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYjMwNGUwOTA4ODA2MzQyOTgxZjAzOTcwM2E5MmExZmVjODlhYTI1NjE2ZGZiNzA4YWI0ZDFmZjM0YzIxNmM4MCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_9ebeaf89d2f94612a87807e973c402eb",
+      "statement": "The researcher agent was first used on 2026-11-02 for the restructure's prior-art survey, while verifier, doc-writer, and supervisor remain definition-only.",
+      "evidence": [
+        {
+          "resource": "repo://index.md#L28-L28",
+          "version": "repo-lines-v1:sha256:0ab4af2578cfae72a6d4e6805f0e1b4f3a9de6c7418d00196cc8bfb42872543b:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMGFiNGFmMjU3OGNmYWU3MmE2ZDRlNjgwNWYwZTFiNGYzYTlkZTZjNzQxOGQwMDE5NmNjOGJmYjQyODcyNTQzYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMGFiNGFmMjU3OGNmYWU3MmE2ZDRlNjgwNWYwZTFiNGYzYTlkZTZjNzQxOGQwMDE5NmNjOGJmYjQyODcyNTQzYiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiODU4MDliMTdjMDE3OTY0ODJiNWU2ZjM3ZDA4NDM5ODU1N2I2ZTUxYTQyY2ZhMDRlZjA2NzUxY2MxOTZlOTAyMyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYjFmOWZlMmZjYWQxMmExYTg2MjNkMDFjM2IzZTUyMWFmOTdiOGYyNTY2YTJlYmY1MTc1NjllZjQwOTQ2NWQxMiJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.4.3",
+    "at": "2026-11-01T16:09:17.598Z"
+  }
+}

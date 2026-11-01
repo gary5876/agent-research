@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:53ef44919f0cd8e0da14b680dfc02f15e2ac99874bb6131cb9bd59d3fb6ffe4f",
+  "claims": [
+    {
+      "id": "claim_cc1d9ed8dff7479ebbab77914ae8b2b3",
+      "statement": "notes/10 tags every source with its year and an evidence grade, warns that WebFetch-read quotes may differ from originals, and points to notes/11 for current re-verification.",
+      "evidence": [
+        {
+          "resource": "repo://notes/10-orchestration-evidence-2023-2025.md#L13-L28",
+          "version": "repo-lines-v1:sha256:d6ef0134d819d8682b961345a5ebaefd29841ddcfde312c509fddcc18182445c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0ZTNhNWY4ZTFjOTE1OTQwNDY4MWIwZWNlOTZlODMxMGRjMzA3ZjNhNDI0MGJjODM5NzlhMDQ5ZDU2NDBlMWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU4NWYzMjNiZGYyYjIzNWJmNzdmY2Y1Zjk0YTk0YmE5ZDVmOTllY2Q2YWVmZGU3MjE0MmIyODJkYjRjMjkxMjQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk0MjZjN2U0YzRmYmIyNGIwZjc4MjYzYWRlZWNmZWYyMTBhZWNmYWQxMDU4NWQxNTFmZGM4ZDBhOGVjNDIyOTYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_eb32d118393247abb305e848f757739b",
+      "statement": "notes/11 marks items re-read from the original by the main session and separately marks items seen only through search summaries as unverified.",
+      "evidence": [
+        {
+          "resource": "repo://notes/11-orchestration-current-2026.md#L13-L20",
+          "version": "repo-lines-v1:sha256:b37ed09fbd78eff9bbb3ef747aae7e52307bf797e8ffc714e61d5ec6975b2a1e:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTRlM2E1ZjhlMWM5MTU5NDA0NjgxYjBlY2U5NmU4MzEwZGMzMDdmM2E0MjQwYmM4Mzk3OWEwNDlkNTY0MGUxZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMGUzYTIyZGNlNTJjYzBhMmMwMGFhZWJjN2Q5OWQyNDBhNjQxYzQzNTljYzIwYWY1MDc4NjJmZmVhZmI3YjQ2NyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZmJhNTEwNzEzMjJkMzYyNjc3M2ZjM2NmNmQ1N2Y0ODAwMGMyMGQzNDYwNDUzNjVkMTcyZDU2ZmMxZGRmNWJlNSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMDAxZjJlYzE3NTkzYzEwNTRlYjQ2MzY3ZDg0NTNlZjI0YTE3M2NlOTZiNzExN2Q5MWY5YTY4ZDQ0ZmVmOGIwMSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_d182409a1a12458587b667eda238bee9",
+      "statement": "notes/11's 2026 verdicts keep 'start with a single agent', strengthen the warning against splitting by job role, weaken the harm of self-correction for some reasoning models, and keep handoff information loss and persona ineffectiveness.",
+      "evidence": [
+        {
+          "resource": "repo://notes/11-orchestration-current-2026.md#L24-L38",
+          "version": "repo-lines-v1:sha256:a4dd40a3ae83261010998971a74b9ed610500064ed2abaccde53dbb3bf054c0a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhMGFkZTI1YmY2MTEyMzg1MTliNzYxM2QzODVjNTI0Yzk3OTc0MDIxNzU3MGRkNjBmNmEwZmIzZWIzOTRlOGYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYzZjc5YmJjZWI1YmE1Yjg2NWQwOTUyMGRkM2ZhYmJjMDgxNjk4MTk4YzdmMjc3ZjA3OTIxNTNjOWExMzRjM2UiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAwMWYyZWMxNzU5M2MxMDU0ZWI0NjM2N2Q4NDUzZWYyNGExNzNjZTk2YjcxMTdkOTFmOWE2OGQ0NGZlZjhiMDEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAwMWYyZWMxNzU5M2MxMDU0ZWI0NjM2N2Q4NDUzZWYyNGExNzNjZTk2YjcxMTdkOTFmOWE2OGQ0NGZlZjhiMDEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_f4ee8ae913c14d37b18a7e4b5a9939e5",
+      "statement": "notes/11 lists circulating figures that must not be cited because their sources could not be traced.",
+      "evidence": [
+        {
+          "resource": "repo://notes/11-orchestration-current-2026.md#L315-L321",
+          "version": "repo-lines-v1:sha256:1f82b95c1faf0c2041d9f31a4a35935ea07eafb0c6088278038fe8696fd580e6:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjJjZDEzMzY5NDY2ZTFjYjk5NWNlMWNmMTkzYTkwYjJkYWMzNzE2NTI5OGQ3NDE4MTFhMzEwNTYxYTNjNmQ2OSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDYxYzlmNWM3YzRjYTZlMjVjY2Y2YWJiYTMzZWNlOTFmYTQyZTQ2YmJiOGJjYzdiYzIzMzVhNzdkYmRmMjEyMyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMDAxZjJlYzE3NTkzYzEwNTRlYjQ2MzY3ZDg0NTNlZjI0YTE3M2NlOTZiNzExN2Q5MWY5YTY4ZDQ0ZmVmOGIwMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjdhOGY1Y2E4NmZiOTEyYjc3Mjk4YTg5OWZmNGUyMzQ3ZmJlZGQzNWNlOTE3ODUzMjE0OGI2MjVjMWNiZmMzNCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_37b83bb9e0ad4c37a24bb963e8bc41f8",
+      "statement": "notes/12 reinterprets the five per-department roles as process stages: planning goes to the orchestrator or code, production stays with one context-holding agent, review starts with mechanical checks, monitoring becomes Hook or code rules, and documentation becomes a shared store passing paths.",
+      "evidence": [
+        {
+          "resource": "repo://notes/12-orchestration-application.md#L51-L62",
+          "version": "repo-lines-v1:sha256:27c72f3bebfedfd85e32e5d378cb55996fd8bf50e1f7374861c76f3752d0c40d:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkxMGFmNGU2ZmY3MzQ5ZDlkMDEwMmQ3MGZmMTc4ZWQyZDJlZGYyYzcwOWEyNTkwNjQwZDgzNzY2ZGI1YjgyNjQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQwMDkyZDYxMDkwMjhlZGU5ODdmYTY0MTYyNWNjODZmNGZiYjAyZmNjN2EyYzc1NGYxNzE5OWI4MTQ2ZjQ5ZTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVlMTNiMDI3NmY0NmJjMGZhM2Y3NmMwNjg5MGU1YTg5NzRkY2M3YmI1NWE5ZDJhMTc0ZTQzYWZkNmFlZGM5MmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU5MDg1ZjYyOTkxZWVlMjNiYjU4NTEzYmNmYjk1YzM2ZWFmMGJiYTIzNjllZDNhMWUyYmNkZWQ3YzYwOWFkZjAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_1a7ee0507b554fdda1b74fd6e5a2751a",
+      "statement": "notes/12 recommends starting with one task in one department as a single agent with tools, measured on about 20 real requests against a same-budget single-agent baseline, expanding only when results improve.",
+      "evidence": [
+        {
+          "resource": "repo://notes/12-orchestration-application.md#L98-L106",
+          "version": "repo-lines-v1:sha256:eb0af2c16dfcf3ab39d3158a5a9793b8d25ce3a633c7d94d8e8e3d70eac31d57:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWY3MDA0ZDA5YjcwY2U2ZThiZjdhYWM1ZmJjNDE0MjA3N2QzMzllNmE2Mjg2MGIzMTRlODUxNGIzZWE5ZWY0NSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOGI0NjVkYWQ0ZjA0ZjU2M2UyY2Q1NDA5YzRkODFkNTI3NmRjN2IzNTlhZDA4YTExZmMyMmZjYmE2ZGFiMTU5MyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiM2Y2ZGU2ODU1M2U2YWI4YWM1MzFiMjc0ZGY1NWEzMDU0YWMwNDBiYjg5ZGEzMjgwYTU3NDU0ZjVkM2M4NmI4NCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiY2QxZjk5YTU2NzcyYjgyNDVjOWZhN2QxOTM0ZmQ5ZjViNWVjOGRlNmU1MDFmMGQzYzRkMDc4NWU0M2YyNzVlOCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_6a64910797c946a4bde2995d72485ef0",
+      "statement": "When notes/10 and notes/11 disagree, notes/11 is followed.",
+      "evidence": [
+        {
+          "resource": "repo://decisions.md#L27-L27",
+          "version": "repo-lines-v1:sha256:56604aabf4684cf40b03ce6158c8129bc5822bca46950f7533e1da180b98d427:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTY2MDRhYWJmNDY4NGNmNDBiMDNjZTYxNThjODEyOWJjNTgyMmJjYTQ2OTUwZjc1MzNlMWRhMTgwYjk4ZDQyNyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTY2MDRhYWJmNDY4NGNmNDBiMDNjZTYxNThjODEyOWJjNTgyMmJjYTQ2OTUwZjc1MzNlMWRhMTgwYjk4ZDQyNyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMTRmOTZhNzc3OWI0MWUwMjc0YThiOWVmODE3MTI0NzQ2ODIxNDZmYjU5NzU4NTRkNjNiZDdkYTBkNDc2OTg3OCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMTYxZTE0NTMxMGNiMWFiZTkwZWY5ZjgwOTc5ZWE3ZTdkOGQ0NjdhMGE5NGY0OTA5N2NjMzRiZDhmZTcyOTY2MCJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.4.3",
+    "at": "2026-11-01T16:09:17.598Z"
+  }
+}

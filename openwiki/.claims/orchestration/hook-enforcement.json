@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:e34835fa681a6326657105db03abd6075cfea6a7a7b5367a67981243c6fe5a9f",
+  "claims": [
+    {
+      "id": "claim_b33029ffabb140b181cce739170de311",
+      "statement": "notes/07's core principle is that rules which must hold should be enforced by Hooks rather than prompts, and it ties this to the instruction resolution gate's earlier conclusion that judgment left to the model's reasoning recurs as failure.",
+      "evidence": [
+        {
+          "resource": "repo://notes/07-harness-and-hook-enforcement.md#L15-L17",
+          "version": "repo-lines-v1:sha256:bb1d46d0031ea95e6d5267d3d226b9d8f0cd115b126e66450d9b3bdd1a965136:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNmE2Nzk0ODRhMDc2MTMxODA4NGY5M2ZlMDBlMjJhOGMxNWQ2ODA2ZjU2YWYxZWNmNzYzMmU3ZTc0ODQyMTE0MCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjZlMTEzODM0MDk2Y2ZjZGNhODdmN2FiYTFiZTczYzQ4NTBhNjY5Mjk3ZDNjNjkyODAxYjJhMWQ3NTIyNDEzZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYzNlN2RhNzljYjZiNDg1N2EyMTc1NDViNTM0OWQ3NzU2ZDAwMGNjNDY4ZTkyMmUxYmM4MTA4ZWY4ODI1NmZlMiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMWZjYWI0NjU5MDE3NjM0NTkzZDgyZmRlMzdjM2UzN2RkNzhkOWYyMzU2NzdlYTA2MDU5MDViNDUyMmY1MmQyOCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_22aeca7a7ffe494ea0337b5e0523e6df",
+      "statement": "A 2026-09-27 correction notice in notes/07 states that its KakaoPay quotations and summaries in sections 1 to 4 contain errors found by comparing against the original HTML, and directs citations to sources/kakaopay/ai-agent-1.md instead, while sections 5 onward remain valid.",
+      "evidence": [
+        {
+          "resource": "repo://notes/07-harness-and-hook-enforcement.md#L11-L11",
+          "version": "repo-lines-v1:sha256:a67771c350e9d61864e26572dc936e478d1b3cd42cdaf2c77fb1ec26bb34ea80:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTY3NzcxYzM1MGU5ZDYxODY0ZTI2NTcyZGM5MzZlNDc4ZDFiM2NkNDJjZGFmMmM3N2ZiMWVjMjZiYjM0ZWE4MCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYTY3NzcxYzM1MGU5ZDYxODY0ZTI2NTcyZGM5MzZlNDc4ZDFiM2NkNDJjZGFmMmM3N2ZiMWVjMjZiYjM0ZWE4MCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNDVhNmI3NzE1YTM1YjNlM2U0MzBmNjg5ZTU4NjM1NjlmZmM0MDkyMDQzZmYwN2NiMjFmMjY1YjY3M2FhZTFiZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYzNlN2RhNzljYjZiNDg1N2EyMTc1NDViNTM0OWQ3NzU2ZDAwMGNjNDY4ZTkyMmUxYmM4MTA4ZWY4ODI1NmZlMiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_e59ddaf75487424e83dd8fa78c456d24",
+      "statement": "block-openwiki-generated-edits.py denies Edit, Write, and NotebookEdit on openwiki/.claims/ and openwiki Markdown files, and is registered in the committed .claude/settings.json with a command that first changes to the git top-level directory.",
+      "evidence": [
+        {
+          "resource": "repo://.claude/hooks/block-openwiki-generated-edits.py#L12-L16",
+          "version": "repo-lines-v1:sha256:7f51974343a26a7a7263dc4856f7d4c97bfaa26e2a42db702002f277edde5199:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiM2I2ZWQzM2Q4MTdhNmUwYmRhNzM0NTRhNmNlNGE5ZDdkMTQ4MzNhZWQ0ZTMyNDhiMzRmYzc5N2YzYTQ3YjQ2MSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNDlmYWE1OTg0OGEyNDIzYTM0NDA1Y2Y2YWYwZWRjNzhmMzE4YTMyODE3N2E5ODEyMzMzOTcwNTFiYTVjNDliMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYzMwNzExNDU3YmIwNjdiNWQ3OWU4NTkzYjA3MDZlMGMwMDVmZTBkMjRmMjA3ODY5ZmEwZGRjMzY0Yzg3MmQ2NSJ9"
+        },
+        {
+          "resource": "repo://.claude/settings.json#L1-L16",
+          "version": "repo-lines-v1:sha256:267eadbd23ed4dcce5d5c2198f302664e24598239c4aac3033eac70d96000594:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2ZmIwOGZkYTFhY2I5NTdiNjExNmJkMzc4MTFhMWZlNDFhMDE2MTFjMDYzMWVkYmY3ODZkNjg4OWEyN2E1NWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_1ffcac8d2e324a229cbd5a7b069fa7c7",
+      "statement": "The generated-edit block allows a write only when openwiki/.run.json is in the generating phase and the target is a planned page whose job is still pending.",
+      "evidence": [
+        {
+          "resource": "repo://.claude/hooks/block-openwiki-generated-edits.py#L18-L38",
+          "version": "repo-lines-v1:sha256:3969cd1a916161edbab1289ec395acf03beeb4dc81946f159faa1f4f36da14ee:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI0NTE1ZmE0ZTNlODY0ZTRhMTA1NWVmMzVkMzdjNzBlMGE4MjM5Zjk3N2NiMzQ0OTQ3MjE5YjE2ZjI3ZGE0MDUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVlNTc0MWIxNjBkNjUzY2MxMmUyMDAzNTUzN2JhODFhZjQwZDhlOWExNjI1ZjdhZDdkNDNjMDg2MDExZmMzODAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQzZDE3MWRlNzU0MzFhMDIxYTBkOTRmYTc2ZmFiZjBkNzEzOWM4OThjMWEwYjQ0YjQzY2E2MDkwM2ZhMWI4NDUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU0OGQ3NDgzZDA2MGYxNzIyZTI0NTM2ODg4MzM0MjU2YjU0OTBlOGJiZTg2OTgyMDY3NmNhOWVhZjM1MDljYzkifQ"
+        },
+        {
+          "resource": "repo://.claude/hooks/block-openwiki-generated-edits.py#L50-L50",
+          "version": "repo-lines-v1:sha256:f634d101c6c77672f522d7e8c785e86ba4e2aff35458781e5d372c57ab9cc497:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjYzNGQxMDFjNmM3NzY3MmY1MjJkN2U4Yzc4NWU4NmJhNGUyYWZmMzU0NTg3ODFlNWQzNzJjNTdhYjljYzQ5NyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjYzNGQxMDFjNmM3NzY3MmY1MjJkN2U4Yzc4NWU4NmJhNGUyYWZmMzU0NTg3ODFlNWQzNzJjNTdhYjljYzQ5NyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNzQ3OTUyNDhmNmY2N2NjMjVkZGYwZjI0MWJmNzk4MDVmODRjNmQ5ZTAzODQ4Mjk4YjQ3ZDNmNmY2ZmQ1ZWI4OCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiN2VjMjgzMzIxYzdlOTQ2NDlhYTRmYTM1YzQwMWJjYzBhOWVkNmU1OTllNDVmZTZkM2JjNGZkMzZlOWY4MjQ5YyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_86597baab5694fa5830e708bf32cca21",
+      "statement": "The original Hook command used a relative script path that failed when the shell's working directory drifted, and was fixed by prefixing a cd to the git top-level.",
+      "evidence": [
+        {
+          "resource": "repo://notes/07-harness-and-hook-enforcement.md#L159-L163",
+          "version": "repo-lines-v1:sha256:973a92c1ee98c22370d459806cebc3468a7e63eb512a2b7961d99cc6b3913dcc:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZmQwMGYwN2EzZGRjNmVhZjZlMWM4NzEyNWJlNWI5NjBiZjRiYmJkZTEyOWE5YjBkMDZiZWVjMDU1NWIzNWE0OCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjMwNzM5ZmEzMDhkMGE3OWNhZDUyZGJlYTNiYzJlY2UyMTgxM2U4MDlkZDQyMTI3YzBjYTk1M2UyZmE2Yzg5NCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNjg0MWU3YjQ2ODc5Y2I4NTFhNGFkMjk3OGZjZmU2NGIxYWQ5ODhmYTgyN2JmMTNiY2NjOGM0ZmM2NDBiZTIzOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMmQ0ZTY1MGY3NmI0MzM2MTJjNmRkZTczZjlmMjBiZWFhMzE2NTU3MGE3Yjg2Yzc5NWVlYmFhMDExNjNhYTQ4OCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_c51792b690f6478d9ff7483111e26e25",
+      "statement": "check-before-commit.py runs scripts/check.py for Bash commands containing git commit and denies the call with the check output on failure, but .claude/settings.json does not yet register it.",
+      "evidence": [
+        {
+          "resource": "repo://.claude/hooks/check-before-commit.py#L15-L37",
+          "version": "repo-lines-v1:sha256:13948599321368c3375308fa9f498ebdb22940a172778bdf2617d6b9d190106b:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFiMzk3OTMzYTI0YTgwMWVlOTIzMzI3YmQ2OWEwMTA0OWMwNzc5MTUwMjFjZjJlYzM5ZGRhNGY4MWFhODM3ZTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFjY2NmMDdlODU4ODFlM2VjODBhOGFiNzc0ODQ4YzBmODc4NmViZmVhYzIxY2UxNDllMWI0NWUzODQxYzAxZmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUyOWQ2N2FlMzljZDAxYjllZDZkN2Q1N2JlYTFhYjhiYjRlMzNiZTVjZTM0ZGIxNTdjZWZmNzEzNTEzMjY4ZTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA1NzIyYjhjNGYyODMxYTA4YTZmZjE2OGQxNjUxMTRiNmZkYmFjZjk4NDIxNTM2NjI3NzY5M2JkY2IzYmQwMjAifQ"
+        },
+        {
+          "resource": "repo://.claude/settings.json#L1-L16",
+          "version": "repo-lines-v1:sha256:267eadbd23ed4dcce5d5c2198f302664e24598239c4aac3033eac70d96000594:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2ZmIwOGZkYTFhY2I5NTdiNjExNmJkMzc4MTFhMWZlNDFhMDE2MTFjMDYzMWVkYmY3ODZkNjg4OWEyN2E1NWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.4.3",
+    "at": "2026-11-01T16:09:17.598Z"
+  }
+}

@@ -1,24 +1,24 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:58c21d5fd8c2850cdee2cea028c4a94016c3cdb318de1effd97f9fe8c2482478",
+  "pageVersion": "sha256:e5167308dff34095064a4927606f2bb6321e8a99b63b275149462a7c07a4be37",
   "claims": [
     {
       "id": "claim_caa768187ce144baaee0c2bfc4b9da5d",
       "statement": "The design distinguishes two kinds of ambiguity: lookup-resolvable (answer exists in the world, fixable via context or tools) and judgment-required (answer is the user's own preference/priority), and the layer's purpose is to keep these from being conflated.",
       "evidence": [
         {
-          "resource": "repo://agent-expertise-framework/01-narrow-interface/03-instruction-resolution-gate.md#L12-L17",
-          "version": "repo-lines-v1:sha256:8156c2adad0e168a60dc536c5e778afaead0c9d2a223c9bc5706b20afa3de943:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOGVkOGMyYjJmYzNjMjcxN2M1OTU3ZGQ4MDFkYWQ3NTA4YTA0OGYzOWY4OGNmMTIwYzNhNzMwMTUzMGJkN2MyMSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMTU4NzY3ZDQyMzcxNzFlNjJhZDQ1YzI4OGFiMDhkMGIxY2JmMmZlMzJkZTU0NTM0M2MxNWMxYTBmZDUxY2JkZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDRiYjIzNTRjYTk4OTBkYzgwZjJkOTliYjY2MWJkYzA0MjQwOWI5NGI2MWE2ZGNiNDhjMGQzMWRiNWY3MWUzMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTE4MjU5ZjFmYTAxYzkxMjc4YTViZjY4OTI5MzVhNzNhMTlmMmVlYzRhZWFmNzY5OTQ5YzVhMmNhZGU4NWMzMSJ9"
+          "resource": "repo://notes/03-instruction-resolution-gate.md#L18-L23",
+          "version": "repo-lines-v1:sha256:8156c2adad0e168a60dc536c5e778afaead0c9d2a223c9bc5706b20afa3de943:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOGVkOGMyYjJmYzNjMjcxN2M1OTU3ZGQ4MDFkYWQ3NTA4YTA0OGYzOWY4OGNmMTIwYzNhNzMwMTUzMGJkN2MyMSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMTU4NzY3ZDQyMzcxNzFlNjJhZDQ1YzI4OGFiMDhkMGIxY2JmMmZlMzJkZTU0NTM0M2MxNWMxYTBmZDUxY2JkZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDRiYjIzNTRjYTk4OTBkYzgwZjJkOTliYjY2MWJkYzA0MjQwOWI5NGI2MWE2ZGNiNDhjMGQzMWRiNWY3MWUzMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZDM0ZWY0YzhkODU0OGMyYWViZGQ4YzNmNDFiMTU3NTE3YzViNzlhMmVhNTNkOWFjOTRhYWMxZTYxMjkxZTRhMyJ9"
         }
       ]
     },
     {
       "id": "claim_91ebd97dddf44591959d8ad584cd8ef0",
-      "statement": "The proposed pipeline extracts slots from the user utterance, checks conversation context/memory first, attempts a tool lookup if no value is present, and only generates a confirmation question after a lookup attempt fails/returns multiple candidates or if the slot was never lookup-eligible.",
+      "statement": "Since the 2026-09-21 revision the pipeline is a loop: it loads the domain's slot schema, fills slots from context, searches lookup-type slots and asks with search results as options when unresolved, builds options for judgment-type slots, re-searches slots whose clues were just filled, and confirms the assembled prompt before execution, while a lookup-type slot can only be asked about after a search attempt.",
       "evidence": [
         {
-          "resource": "repo://agent-expertise-framework/01-narrow-interface/03-instruction-resolution-gate.md#L19-L31",
-          "version": "repo-lines-v1:sha256:c7cec277d07d9448f71f98c58abb071471ea1388d2286e0ac440a6d94332cf1c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwYzk0MGYxY2M2NjkzYmI0NjU3NDdhMWJlZTNmZDNlZGRmMjUxOWJmNDg1NTA3ZTBlYWI4NjQ0NTI2ZDRmMGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg5NWYxNzdmYWEwOWVmNGFmNDZmNTcwNjA5ZjlkZTM2ZjdkZmIwZDgwOThjYzZjYzkwODNjZThhMjg5NDdkODQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNkOThiYWRkZTMyNThhYjE3ZjhkYmI0MjY3OTc2NGNmMzYzNGI4M2IyNzhiM2I4NmMyOTAzNDJlZDkyOTM3M2QiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjczMjMwZmMzMDdiNWM4MGZkZGU2NzM0YTllMzE2NWEwNWZlMjA0NjdkY2Y2NTFjZGRiMWY3MDNhNzE5Yzc2NWIifQ"
+          "resource": "repo://notes/03-instruction-resolution-gate.md#L25-L47",
+          "version": "repo-lines-v1:sha256:3a4359090925e77146f8d496b698c08c97cac2bacd338498c191b97d966df29e:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmMWVjNjAzYzg4MzVkNWJlNzEwOTE4MDBjYWViMmRkMTY0YmZjYmJiZTliMGVjNzhjMDE3MTNjNDgzZTVlNTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNmNTRhYmI5ZDQzNWE4YTAzZmVkZDQ0NmFiMzI0N2YzMzBkMzdlOTI4NmQ2YmVhOTU5NDk0MjA4NTU1NmM2YmEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNkOThiYWRkZTMyNThhYjE3ZjhkYmI0MjY3OTc2NGNmMzYzNGI4M2IyNzhiM2I4NmMyOTAzNDJlZDkyOTM3M2QiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNiOTRjZjg2ODhmOGUyMGI5NTVjZDAyYTg3Y2RiNjI5ZmM3NDNiZjZlMmY4MjYwNGE0ZTQ4OWVjZGM3YWNmOTgifQ"
         }
       ]
     },
@@ -27,8 +27,8 @@
       "statement": "Revisiting the incident shows the actual failure was not a wrong comparison between looking up and asking, but that the comparison/deliberation step itself never ran and an empty slot value went straight to question generation reflexively.",
       "evidence": [
         {
-          "resource": "repo://agent-expertise-framework/01-narrow-interface/03-instruction-resolution-gate.md#L35-L35",
-          "version": "repo-lines-v1:sha256:1fff8c38b2fca0c130f874f314243c5c739e295a3a3addec956cf2e42ff8bab7:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWZmZjhjMzhiMmZjYTBjMTMwZjg3NGYzMTQyNDNjNWM3MzllMjk1YTNhM2FkZGVjOTU2Y2YyZTQyZmY4YmFiNyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMWZmZjhjMzhiMmZjYTBjMTMwZjg3NGYzMTQyNDNjNWM3MzllMjk1YTNhM2FkZGVjOTU2Y2YyZTQyZmY4YmFiNyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNzMyMzBmYzMwN2I1YzgwZmRkZTY3MzRhOWUzMTY1YTA1ZmUyMDQ2N2RjZjY1MWNkZGIxZjcwM2E3MTljNzY1YiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOTY0MjE4OWY5OTYyYTg4YWMwNmQ0ZTM0YmQzZDRmYzAzNTM4ZTU4YmQzMTE4YmNjZmE3Y2I1ODgyYmEyMDg5YiJ9"
+          "resource": "repo://notes/03-instruction-resolution-gate.md#L75-L75",
+          "version": "repo-lines-v1:sha256:1fff8c38b2fca0c130f874f314243c5c739e295a3a3addec956cf2e42ff8bab7:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWZmZjhjMzhiMmZjYTBjMTMwZjg3NGYzMTQyNDNjNWM3MzllMjk1YTNhM2FkZGVjOTU2Y2YyZTQyZmY4YmFiNyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMWZmZjhjMzhiMmZjYTBjMTMwZjg3NGYzMTQyNDNjNWM3MzllMjk1YTNhM2FkZGVjOTU2Y2YyZTQyZmY4YmFiNyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMTE3NDc5MThhZTU2NzA5MWFiOWZjZWJjMWE3ZmRlMGRjNGYyNzkwOTJiMjY0Y2UwMTUzNTc2ODg3YjZiOTgwMyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOTY0MjE4OWY5OTYyYTg4YWMwNmQ0ZTM0YmQzZDRmYzAzNTM4ZTU4YmQzMTE4YmNjZmE3Y2I1ODgyYmEyMDg5YiJ9"
         }
       ]
     },
@@ -37,8 +37,8 @@
       "statement": "Because the skipped step was the deliberation itself, the design concludes the layer must be a structural gate enforced outside the model's reasoning process (e.g., a question-asking tool call is only permitted if a lookup-attempt record already exists for that slot) rather than a checklist the model is expected to follow.",
       "evidence": [
         {
-          "resource": "repo://agent-expertise-framework/01-narrow-interface/03-instruction-resolution-gate.md#L37-L39",
-          "version": "repo-lines-v1:sha256:5a933a50006285796d4767fa9507097461119be95df08db871d9a7d7e321c7a4:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOTEzZjkzOTQ0NWU3MzQyNWY3NWMxNWIxN2NjMDA5OTY5ZDQxNjVhMmFmMmUwMGM0MGNlNDA5MjQ5NDQwZmVkMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMzUzZWVmYWFkMDRmY2RhZjVkNDJkNzlkMDI4ZWI0NGVmNWM4Y2JlNzdlZmIwYjZjYTQxNzJmNGEzMzgxZDhhNCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYTFlMDhiMzI0NWM4ODQ1OGZjYzA0Y2QzZDkyOWJiODQyNTVjMzk3NjI5NTQ2MDE1NmVjNTUxNWNjMGUzZDVjZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOTg5ZDY3ZWY2NDM2YWM1OTcyNTE3NGI2ZWMxM2YyYjQ5MDRmMmI0MTFlNjRmYTYzMWEwNDAyNjgyMjBlOWZjZSJ9"
+          "resource": "repo://notes/03-instruction-resolution-gate.md#L79-L81",
+          "version": "repo-lines-v1:sha256:4cd43f314d2fbceeae833768e61f1479929eb2c4533a535590643f6fa16e81b3:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMzUzZWVmYWFkMDRmY2RhZjVkNDJkNzlkMDI4ZWI0NGVmNWM4Y2JlNzdlZmIwYjZjYTQxNzJmNGEzMzgxZDhhNCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZWQ4ZTYzOTM2YWM1ZmJhZTM4ZmVjOGJmZTFhYjE5OTIzYzYwYzFkNTlhODU4NzZlMWFiZTNjYWVhMDgyZTllYyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTY0MjE4OWY5OTYyYTg4YWMwNmQ0ZTM0YmQzZDRmYzAzNTM4ZTU4YmQzMTE4YmNjZmE3Y2I1ODgyYmEyMDg5YiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzllZDhhYTc3NThlZjQ1N2ExODdlNGMzYTkzY2E1NjE3MjU4ZmFiOGM3MjNhYzM3MGVlMDRhMzA0ZmM5NTE2YyJ9"
         }
       ]
     },
@@ -47,24 +47,68 @@
       "statement": "Applying the pipeline retrospectively to the incident: the GitHub account slot was classified as lookup-resolvable via existing conversation memory, and a gh api call against 28 starred repos narrowed to exactly one match (langchain-ai/openwiki), which would have let the pipeline proceed without asking the user.",
       "evidence": [
         {
-          "resource": "repo://agent-expertise-framework/01-narrow-interface/03-instruction-resolution-gate.md#L43-L46",
-          "version": "repo-lines-v1:sha256:d00535a0ce6fe6ac915712fe0c836963783741f48f07617d0522327cce7d6111:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZWIyNzNlMTdkMWQxYjZiNzc4ZTliODIzN2Q2NDdhNjgzNDY3ZDVlNmRlM2Q3ZWIwZjA5N2FlNGQzZDg5NTAzOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMTk0M2JhN2U5NmJhOWVlN2Q4N2MyZjc3ZmZhMTMwNWRkYTc3OTBkODliNDc2ZGMyNDAyY2M0MWVkYzgwZjZmNyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTg5ZDY3ZWY2NDM2YWM1OTcyNTE3NGI2ZWMxM2YyYjQ5MDRmMmI0MTFlNjRmYTYzMWEwNDAyNjgyMjBlOWZjZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzIzYTRiY2Y4MTJlMmVkOTE0Njk2YmNjMDNmYzJhNmQ3OTI5OTU0OGU0MmI3MzQ2NzNmZWQ4OGIyODdmY2Q5ZSJ9"
+          "resource": "repo://notes/03-instruction-resolution-gate.md#L92-L95",
+          "version": "repo-lines-v1:sha256:d00535a0ce6fe6ac915712fe0c836963783741f48f07617d0522327cce7d6111:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZWIyNzNlMTdkMWQxYjZiNzc4ZTliODIzN2Q2NDdhNjgzNDY3ZDVlNmRlM2Q3ZWIwZjA5N2FlNGQzZDg5NTAzOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMTk0M2JhN2U5NmJhOWVlN2Q4N2MyZjc3ZmZhMTMwNWRkYTc3OTBkODliNDc2ZGMyNDAyY2M0MWVkYzgwZjZmNyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOWVlY2NiZDZkZDVlYmI3NzljY2MyNzlkZTQ0OWY2NzI5OTIwOWVjOWVmZTAzYjA3MTVhNjgyMDBiNDMwMmMwNCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzIzYTRiY2Y4MTJlMmVkOTE0Njk2YmNjMDNmYzJhNmQ3OTI5OTU0OGU0MmI3MzQ2NzNmZWQ4OGIyODdmY2Q5ZSJ9"
         }
       ]
     },
     {
       "id": "claim_d33abb693ab046c9887957c17ff26b8e",
-      "statement": "Two open questions remain unanswered by the design: how to catch a lookup that resolves to a single wrong candidate, and how to generalize a rule for classifying whether a slot is lookup-resolvable rather than relying on post-hoc, incident-specific classification.",
+      "statement": "The two original open questions (catching a lookup that resolves to a single wrong candidate, and classifying whether a slot is lookup-resolvable) now have design answers in the confirmation step and schema slot types, but neither has been implemented or tested.",
       "evidence": [
         {
-          "resource": "repo://agent-expertise-framework/01-narrow-interface/03-instruction-resolution-gate.md#L52-L53",
-          "version": "repo-lines-v1:sha256:885b65274ea2c9b34324a934560cfbfbc47c8a6737101b2f026dafb0211708f1:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYjAwNDM0YmM2ZTYxODRmNGRmYWMxNGNkMmE1YjZmMGE2ODQxZTk5Y2VlNjY2ZTFmZTgzYWQ0YWI5Zjg1ODRmNCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZGRiZWU5YjliYzBlMmExMWJkZTcxMDAxZDdjZTBhYzljYjU3ZWFhY2VjOWU4NTlkYjJhZjkxOGZlZjFjMTE3OSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMWM2ZTkyZWZiZDY3NDQ2MjBlYjljNDc0NTk3MGZhOWIxMTVmZTkyYWM2YzI1ZjJmZjEyMzdkOTY2NjQ0NjgzNCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMGQ0NWIyMWMwNWNiNjVmNjE1MDg0ZWUyMmQ5Zjc3MmNkMjcxZmU3ODcyYjBhMWUwOTBiN2U1ZWRkNWNmOTBmMyJ9"
+          "resource": "repo://notes/03-instruction-resolution-gate.md#L103-L103",
+          "version": "repo-lines-v1:sha256:d89c3cb6771e3ba5c0711fcaba99fc44d403100e561b4ad0a49c0188424eb6f3:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZDg5YzNjYjY3NzFlM2JhNWMwNzExZmNhYmE5OWZjNDRkNDAzMTAwZTU2MWI0YWQwYTQ5YzAxODg0MjRlYjZmMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZDg5YzNjYjY3NzFlM2JhNWMwNzExZmNhYmE5OWZjNDRkNDAzMTAwZTU2MWI0YWQwYTQ5YzAxODg0MjRlYjZmMyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiM2FjNjZmNWUyNzUxMDRmMTI1MDNjMzM5MWNmMjU0OTI1NzM2MmFiYzAxZWE1NWIxODQxYjVmYzBjMjBlNWNkOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZjg4YjA2ODc0NDJiNzA2NDI2NTU4NmI4YmNmZjVlNzdmNWMwNDNjODUyYjRhZDk5MzNjZTllZTZmNDBmMzkyZSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_25d5e4c8e2d1488abb9438a22cf35235",
+      "statement": "Slots are predefined per domain, each tagged with a type (lookup or judgment), a lookup or option source, and dependencies, and the design treats knowing a domain's slot list as that domain's expertise.",
+      "evidence": [
+        {
+          "resource": "repo://notes/03-instruction-resolution-gate.md#L49-L71",
+          "version": "repo-lines-v1:sha256:06e4b7a00dda05df80c1076fff4b44b5aca9cb2b61cceb7e123ef04cec55991d:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0M2U2MGM1MmU1OWI0ZmJjODgxNWI5OTYxZjQ4YjcxZmIzODNjMDFjYzIxMTVjZWI0NTkwMDUxZDU1OWJiY2MiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRlYzRmYzBkMDlmZGVjZDg4MjVlM2Q5OWQ5MmQyMTlkNWQxNDBkOTIyOGY3ZWQwMTg1N2NiYjhhZTVkN2UzYWIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY1MTcyOWJiM2YwMWZhYTZiODgzYTIwZDU1ODgwZDYwYzkxOTA2OTE5NzgwYTExNTg4ZmI5MmQ3NDhkMTc1NmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjExNzQ3OTE4YWU1NjcwOTFhYjlmY2ViYzFhN2ZkZTBkYzRmMjc5MDkyYjI2NGNlMDE1MzU3Njg4N2I2Yjk4MDMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_79e6779716fc41ae89b6fa64c6faf9b3",
+      "statement": "After the loop the assembled prompt is shown once with each slot value's origin, to catch wrong unique lookups, and a question cap with visible defaults is proposed to limit question fatigue.",
+      "evidence": [
+        {
+          "resource": "repo://notes/03-instruction-resolution-gate.md#L83-L88",
+          "version": "repo-lines-v1:sha256:7b067456c185bec01ba7e239c1348f3bdf9a38b7cecfce2afea1b065a5ff31d9:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTM3YTAwMWQyYjVjZGI4OTRlMDZkZTYwZDkzM2IxYzA0MDY3OTBjYmMyYzkzMTA1ZTUzMjY4ZjJiNDc5MDcxYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDNlOWZlZDUyNThiZGU3MmMzNDE1MWY2MTJjM2IyMWFiMTEzM2QxMTY0Mjc2MzU5MDZkMTQwNjI1M2QzOTVlYiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDE4NDRjOWI2ODU5MzVmOGQ1ZjMzMjZkMTJhZGYzZTcxODgwZTg3OTM5NTA2MGMzNGJhMmQxYzkzNzM2OTAzNiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOWVlY2NiZDZkZDVlYmI3NzljY2MyNzlkZTQ0OWY2NzI5OTIwOWVjOWVmZTAzYjA3MTVhNjgyMDBiNDMwMmMwNCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_dfba1915e92d42eca812638b479173c6",
+      "statement": "notes/03's proposed question cap conflicts with the 2026-09-28 decision to keep asking until a clarity standard is met instead of capping questions.",
+      "evidence": [
+        {
+          "resource": "repo://decisions.md#L23-L23",
+          "version": "repo-lines-v1:sha256:262392b2c9d1ee3a2287b456c7cbd7c0f24d7c2ef75631a7f64d115ff380bff6:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMjYyMzkyYjJjOWQxZWUzYTIyODdiNDU2YzdjYmQ3YzBmMjRkN2MyZWY3NTYzMWE3ZjY0ZDExNWZmMzgwYmZmNiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjYyMzkyYjJjOWQxZWUzYTIyODdiNDU2YzdjYmQ3YzBmMjRkN2MyZWY3NTYzMWE3ZjY0ZDExNWZmMzgwYmZmNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMjVhNjlhZWYwNmM5ZmI0ODI3NjAwOTM1N2Y4YTg4ZDg4N2RjZjY0MThjOWFhY2RiOGY3MTk2NDA5ZTI4M2YxOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMTRmOTZhNzc3OWI0MWUwMjc0YThiOWVmODE3MTI0NzQ2ODIxNDZmYjU5NzU4NTRkNjNiZDdkYTBkNDc2OTg3OCJ9"
+        },
+        {
+          "resource": "repo://notes/03-instruction-resolution-gate.md#L88-L88",
+          "version": "repo-lines-v1:sha256:43e9fed5258bde72c34151f612c3b21ab1133d116427635906d1406253d395eb:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNDNlOWZlZDUyNThiZGU3MmMzNDE1MWY2MTJjM2IyMWFiMTEzM2QxMTY0Mjc2MzU5MDZkMTQwNjI1M2QzOTVlYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDNlOWZlZDUyNThiZGU3MmMzNDE1MWY2MTJjM2IyMWFiMTEzM2QxMTY0Mjc2MzU5MDZkMTQwNjI1M2QzOTVlYiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzBlOWMxOGZkYjgwNzQzMWFmODliMGY5OTM3MzA2MWQ0YTEzMzlmOGJlOGRhNDdmNTU5MzUxNzBlOGFiNjA4MiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOWVlY2NiZDZkZDVlYmI3NzljY2MyNzlkZTQ0OWY2NzI5OTIwOWVjOWVmZTAzYjA3MTVhNjgyMDBiNDMwMmMwNCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_77915d6e733245619cceb1e5caf6aaec",
+      "statement": "Remaining open questions are who writes slot schemas and from what evidence, how to detect a wrong domain identification, and what the question cap and default order should be.",
+      "evidence": [
+        {
+          "resource": "repo://notes/03-instruction-resolution-gate.md#L104-L106",
+          "version": "repo-lines-v1:sha256:f88b0687442b7064265586b8bcff5e77f5c043c852b4ad9933ce9ee6f40f392e:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTdlNTBiNzE2NjAwNWZlM2UyMDYyMWI1M2FiYmZkMjE1MmYwMjM1ZDg1ZmFiNTNlMWU5YzQ3YTJkMmFiNmQ5ZSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYzZmNmMzZTY4N2M2ODlkN2U3ZThlYjczODJiYTVkMDQwZmZmZjQ0M2RkNTJlZDIyMmVkODMyNTc4YzAyNDAxNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMDUyNWZjNmM0ZWVhNDQyOWM1NDhlNTVmYmUxOTQ3ZTFiNDUyNjNhZGUxM2Q0ZWI5Y2M5ZjQ0MWU2MzQwMGFmMyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMGQ0NWIyMWMwNWNiNjVmNjE1MDg0ZWUyMmQ5Zjc3MmNkMjcxZmU3ODcyYjBhMWUwOTBiN2U1ZWRkNWNmOTBmMyJ9"
         }
       ]
     }
   ],
   "verification": {
     "by": "openwiki/0.4.3",
-    "at": "2026-09-05T20:17:03.290Z"
+    "at": "2026-11-01T16:09:17.598Z"
   }
 }

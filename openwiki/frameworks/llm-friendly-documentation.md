@@ -5,16 +5,16 @@ description: A 12-principle framework for writing documentation that an LLM can 
 tags: [methodology, documentation, hallucination, llm, framework]
 verified:
   - by: openwiki/0.4.3
-    at: 2026-09-05T20:17:03.290Z
+    at: 2026-11-01T16:09:17.598Z
 sources:
-  - id: openwiki-source-6a8850bd107a3ccc222eec42
-    resource: repo://agent-expertise-framework/00-data-lake/00-llm-friendly-docs-framework.md
-generated: { by: "claude-code", at: "2026-08-30T15:41:00.038Z" }
+  - id: openwiki-source-e0cc2c2d18c808eccd64247a
+    resource: repo://notes/00-llm-friendly-docs-framework.md
+generated: { by: "claude-code", at: "2026-11-01T16:09:17.598Z" }
 ---
 
 ## Starting point
 
-This is the original methodology that opens this session's line of inquiry: a set of principles for reducing hallucination by how documentation is designed, written before any of it was tested against a real codebase. It was later tested against three cloned open-source projects (Apache Amoro, Iceberg, Paimon); that validation and its resulting revisions are recorded in [Validating the Framework: Where Agent Expertise Comes From](framework-validation-research.md).
+This is the original methodology that opens this session's line of inquiry: a set of principles for reducing hallucination by how documentation is designed, written before any of it was tested against a real codebase. It was later tested against three cloned open-source projects (Apache Amoro, Iceberg, Paimon). That validation and its resulting revisions are recorded in [Validating the Framework: Where Agent Expertise Comes From](framework-validation-research.md).
 
 ## Core statement
 
@@ -28,7 +28,7 @@ A human reader understands "logs in via Kakao OAuth" without elaboration. An LLM
 
 ### 2. Write "why," not just "what"
 
-"We use Redis" says less than "Redis is for session/temporary state only; it never stores permanent data, authorization info, or business data, because entries can expire via TTL." Stating the purpose, what is deliberately excluded, and the reason prevents the LLM from making a plausible-but-wrong design decision, such as "there's a Redis, so let's use it for caching."
+"We use Redis" says less than "Redis is for session/temporary state only. It never stores permanent data, authorization info, or business data, because entries can expire via TTL." Stating the purpose, what is deliberately excluded, and the reason prevents the LLM from making a plausible-but-wrong design decision, such as "there's a Redis, so let's use it for caching."
 
 ### 3. Separate current state from target state
 
@@ -36,7 +36,7 @@ Because both documentation and code enter the model's context together, a docume
 
 ### 4. Glossary
 
-Calling the same concept User/Member/Account/Student interchangeably causes an LLM to treat them as different concepts. Build a term-mapping table, and explicitly list terms that are *not* used (e.g., "Member is not used; use User").
+Calling the same concept User/Member/Account/Student interchangeably causes an LLM to treat them as different concepts. Build a term-mapping table, and explicitly list terms that are *not* used (e.g., "Member is not used. Use User.").
 
 ### 5. File structure as "responsibility," not "listing"
 
@@ -81,9 +81,10 @@ Task → search related docs → search related code → confirm current impleme
      → re-verify doc/code agreement after the change
 ```
 
-**Documentation is the knowledge that tells an LLM about the project; the verification system is the mechanism that stops it from inventing that knowledge freely.** In a large project, the core of suppressing hallucination ultimately comes down to a structure that makes the LLM say "I don't know" when it doesn't know.
+**Documentation is the knowledge that tells an LLM about the project. The verification system is the mechanism that stops it from inventing that knowledge freely.** In a large project, the core of suppressing hallucination ultimately comes down to a structure that makes the LLM say "I don't know" when it doesn't know.
 
 ## Related pages
 
 - [Validating the Framework: Where Agent Expertise Comes From](framework-validation-research.md) — testing and revising this framework against real open-source projects
 - [Instruction Clarity Incident](instruction-clarity-incident.md) — the symmetric problem (how instructions should be given to an LLM, rather than how documents should be written for one)
+- [Agent Implementation Schema](agent-implementation-schema.md): where this framework ended up, merged with the four elements into a general schema (source now at `notes/00-llm-friendly-docs-framework.md`)

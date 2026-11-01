@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:389562f6cf0b9fb0494202871cc9952ad0eca18fa84c927fa9193a3325d032bf",
+  "claims": [
+    {
+      "id": "claim_7b958aab9ff246959073bb06eb94f6d0",
+      "statement": "notes/15 indexes three original-source surveys in sources/master-orchestrator covering master internals, Jarvis-named systems, and 13 open-source orchestrators on Claude Code, and contains no design judgment yet.",
+      "evidence": [
+        {
+          "resource": "repo://notes/15-master-orchestrator-research.md#L13-L21",
+          "version": "repo-lines-v1:sha256:a53f7eff50c6f42b1de3d10ff9851fd560153410511ceddc4fa97c7fbe28ddc7:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNGRiMDUzNjg3NWExZThiOGM4MjFkY2U5N2ZjZjE3YTc5NTgzYTBjNDZjNDg4N2QyN2U3ZjE3ZDg0ODVmNDg2YyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNWMyYThiYzdlZTIxMTliYjc4NzcwNjQ5NjIyNDdkZWY3ZTdjNTRkZDAzMjQ4ZWY4NzQ1MTRlNjQwMTZjM2JhMyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMDQ4OTg1NmIyOGVlYWZmNjJhYzMzZjFhMjg4YWJiMmMyY2JiZjk1MzJkNGNhNWViNDg0NzQ1MDVkZGEyMWE2ZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZGUxMDc1ZDhkN2Q2NmNkODRjZGQ3ZDM3MDUyOThhYjMyNTIwM2YwYzNkYWI2NjhjMjcxZDYwNjdkZmRhNDhhZiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_adde36d3f09c4b06a56cd3aacd9fedef",
+      "statement": "The three surveys agree that the master plans, delegates, checks, and reports without doing the work, that progress belongs in files or event logs, that completion is judged by artifacts and separate verification, and that retries and replans need numeric caps.",
+      "evidence": [
+        {
+          "resource": "repo://notes/15-master-orchestrator-research.md#L23-L29",
+          "version": "repo-lines-v1:sha256:201e1e7710442c2822e010fda84d2e9786565a5938637b778e9667f5fcf6d2de:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNGJlZmQ2ZWUwYWVlMTFlMDhiYjRhMjA5ZWIzOTRlNTVlZDFlMjg5MTMyZDVjMTVhNmQyOGE3MzY5M2RiOTdjYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZDRhYzA1Mjc3YTdhMzgwNWIyNzE5YzU0N2UyNmZiNTExYmY5MTU3Yzk5YTYwYzQyZTNhMGNjM2I5OTM3YjdjMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYTMyMjMwZjI1ZGZmYWZhYmVmZGI1NWQ0Y2QxN2Y4M2ZmNGY3MThlYjM4ZDNhZGExYjE2ODM3YzM0NDY4OTYxMiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMzg5OWU4YTc1YjFhNzUyOWE4ODU2MDYxYjVhNjNjNjcyY2FlZGQ1YTNiNDJiZmQ1OTQzNTZlOTYyYTkxMTdjYyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_7c8432ca83f240b79841f8c66fc91749",
+      "statement": "No independent measurement of department-style masters was found in any of the three surveys, and open-source performance numbers were almost all self-reported or unsupported.",
+      "evidence": [
+        {
+          "resource": "repo://notes/15-master-orchestrator-research.md#L31-L31",
+          "version": "repo-lines-v1:sha256:3271da00798eacbfe9613f6938770b1e2b0e78e298b39750a2b33bb3394505ba:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMzI3MWRhMDA3OThlYWNiZmU5NjEzZjY5Mzg3NzBiMWUyYjBlNzhlMjk4YjM5NzUwYTJiMzNiYjMzOTQ1MDViYSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMzI3MWRhMDA3OThlYWNiZmU5NjEzZjY5Mzg3NzBiMWUyYjBlNzhlMjk4YjM5NzUwYTJiMzNiYjMzOTQ1MDViYSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYmU2MDAwNDY2Y2VkMzBjYjhiYTM1YzUwYWU2OWRlNWZkNzM0Yzc4ZjQyYzA5NWVmMTQ0MGEwZTZjYzI3YTJhZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOGY0MDljNzhjMDE4ODAzZmQyOTM1NjMxNTAyMTU4YzYyNmRkYWNiNTRjMzg4OGUxOWI3Nzg1OTYxNzMzYjFiZSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_0879fa49c0b24c049fa335b0440b2460",
+      "statement": "In superpowers' subagent-driven development the controller never implements, keeps a per-plan ledger file, delegates through a brief file and a five-part instruction, accepts short four-state reports, and judges completion from git diff and review.",
+      "evidence": [
+        {
+          "resource": "repo://notes/16-superpowers-study.md#L31-L44",
+          "version": "repo-lines-v1:sha256:2fff96a07b85d8fc62f87de3ea7bd98b886d63f15e21289a7da133fd244357b1:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwMDk5YmNkMjc2NDQzNDE2M2YwN2FmM2I1Nzg3MTllMTk3ODRlNDQ3MTZhYzQ0MzVlODRhM2M3OGY2NTg4NTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc5ZTNlMjA0ZTNiM2EwYmEwNDY5ZGQ0YzRjYjE0YWNmNzM4ZTFlNDNiMmMwZWM1ZmQ4YTgzYjRhMjIyNzJmMjEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA3YjExOTU1OTlmMmM2YmY4NmVlNTgzZDVhNDgxYjY5YWJkODM5YTQxNDFlOWNiNWI5MzYxZDllZWQ3ZDNhMzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNlNWViZjhmMTFlYzcyMDQ5YzExMTA1NzFmZjM0OThmODgwYjZmZmZmZjE2ZjI1NTk2NTk2MDFjN2Q4YTQ2ZDQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_ae8dbf2e74854c0895032f7855e5ba3e",
+      "statement": "notes/16 lists seven items to adopt for the master design, including the ledger file, the report contract, reviewer rules, a five-round fix cap, and mandatory per-role model assignment.",
+      "evidence": [
+        {
+          "resource": "repo://notes/16-superpowers-study.md#L70-L78",
+          "version": "repo-lines-v1:sha256:782ba78a83b811f78ec3eff07eba6a5ae6db0f62173a2ba53baa37ac981bb4f4:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDM2MDYyZWUyMjdjZmRmODE0ZDJhNGQ5Y2QzNjc1NTViZDY2NDQ0OGJiZWUxZTU0MWUwY2QyMTRhYTQzNmNiZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZTE3MzAzMjJlZmM1NDg0Y2U2NDVmNzMwNzVlYmIzNTQ3NzA0NmFlMjZkNmU0NGZjMmJlOTk5OGQzODZjM2I2MyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZjkwOGEyYmE4ZWQ1YzUxMmVhMTQ1MzliMmYzMDBiZjFiOTBkODExNWNhMGJkZmExYWNlYjIyNjM4YjUwMTVlNiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTg1MTQ3ZTk1NTJjMzg1ODRlZmZiZDI1ODZlMjQ5YzFhYTQ2YWYzMDhlYWIwY2JhMTM2ZWIxYmQwNTJjN2IwYiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_474ab30af3cc40179eef4cf29f2fdc28",
+      "statement": "Five direction-level decisions are open in decisions.md, covering mid-run ambiguity handling, the master's role and authority, implementation location, the first department task, and the evaluation set source.",
+      "evidence": [
+        {
+          "resource": "repo://decisions.md#L13-L17",
+          "version": "repo-lines-v1:sha256:c5f05702bb453819d6927295007cd7832f0188baa33a8633ec1ff4dfea512e0a:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2FjOGJjYTJhMGI3ZmRhMGFjNjIzY2UzYzhmY2M3YzRiMWRjNTlmNDVlZWUzODNhM2ZjZmI2MGY2ZjUwODUxNCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYWUzMjNmZjIwODRhYTNiMjBhOTgxODk4NjJlYTA1MDIwZDM4M2ZmYjkxOGIyMTZhZDE0YWMyNTU5OWJiYjNiOSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMjVhNjlhZWYwNmM5ZmI0ODI3NjAwOTM1N2Y4YTg4ZDg4N2RjZjY0MThjOWFhY2RiOGY3MTk2NDA5ZTI4M2YxOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjMzMWMzMDc0ZThhMmEzNDc1ZDRhYTEyMTljMzM5ODRhNTIxMjU0MWFiNzllMjczNzdiOThhZDk0ZjcyN2JmOCJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.4.3",
+    "at": "2026-11-01T16:09:17.598Z"
+  }
+}

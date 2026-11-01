@@ -135,6 +135,10 @@ venv를 `experiments/eval/.venv`에 새로 만들고(Python 3.12.14) `requiremen
 
 그라운딩 실패는 이 테스트가 원래 잡으려던 것(근거가 사라진 Claim)을 정확히 잡은 결과다. OpenWiki를 로컬에서 다시 생성하면 Claim이 새 경로를 가리키게 된다. 04, 05 문서와 `experiments/eval/README.md`의 "30개 evidence", "30 passed"는 09-06 재편 전 기록이다.
 
+같은 날 OpenWiki를 로컬에서 다시 생성했다(14개 페이지, 새로 쓴 것 8개). 그 뒤 `test_grounding.py`는 95개 전부 통과했다.
+
+재생성 중 하나를 더 고쳤다. 생성 위키 수정을 막는 Hook(`.claude/hooks/block-openwiki-generated-edits.py`)이 OpenWiki 자신의 페이지 쓰기까지 막고 있었다. 09-06 재생성이 `interrupted`로 끝난 것도 이 때문이었을 가능성이 있다. 이제 `openwiki/.run.json`이 생성 단계이고 대상이 계획에 있는 대기 중 페이지일 때만 쓰기를 허용한다. Claims 파일, 생성 색인, 계획 밖 페이지는 그대로 막힌다.
+
 ## 열린 질문
 
 - `sources/` 노트가 "쓴 뒤 고치지 않는다"를 지키는지는 지금 규칙으로만 있고 검사하지 않는다. 고친 이력이 생기면 Hook으로 막을지 정한다.

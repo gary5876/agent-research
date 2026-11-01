@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:9201cfef390d1b1927b02712aee1468c79f37ef0aede208b85f526a1b29915fb",
+  "claims": [
+    {
+      "id": "claim_4e2f2a53c4164af1a1b076ef78c4aab7",
+      "statement": "notes/08 was written after the repo's own catalog design repeated the same mistake three times (a duplicated Layer table, a sha256 drift detector that was dropped after critique, and a heading-number rule that a real document violated) because existing principles were not consulted.",
+      "evidence": [
+        {
+          "resource": "repo://notes/08-agent-implementation-schema.md#L17-L25",
+          "version": "repo-lines-v1:sha256:908a366235940bdf64e31152b6861213ceed7acf4f441cd8e58cfdfd2dc4e034:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjNjMTFiMTc4MzY5ZTBiYmVhNTA3MTUzNjA4MzMwY2Y2NTg4YTNjODJiZjc1NDhiZDg0NWI4ZTRhYzU1MGEyMSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTliZmI1M2E1NGVjZDJjMTBjYmQzOTkxMjIzOGJiZjA4NDAzY2JlZmMxZjdjOTIyZDU5NDJhZjMyNzdmMGU3ZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNDIzYzNlYmY1MzE0NTIzODhlNGY4MTc5MTYxNmJlMGE5MmM1NmU1NDJmYzhhNGY4ZWY5OWI5YjNmMjFlNDc2NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiM2NkMWI0NTA5MDE5NjNlYzhmNzIyMjYxYjY0MTZmNTVjZDdmZjUxZTMxMTYyODYzZDlhZWQ1MDc0MWQxNjQ5ZCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_cf64289beb9f44fcb44282778790a762",
+      "statement": "The schema places the coherent data lake on Context, the narrow interface and safe response filter on Skills, and treats failure-derived rules as a general procedure (failure, one-line diagnosis, one Never rule) whose content differs per agent.",
+      "evidence": [
+        {
+          "resource": "repo://notes/08-agent-implementation-schema.md#L36-L45",
+          "version": "repo-lines-v1:sha256:e7ee59e90d7a5f9fbaad8216062c2a9c18655bb2a8360502317f1fc01035f7d0:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJmNjQ5MDhjY2YyMmVlZDcyM2NiY2I4ZjNlZmRkMGJlMmQyNGY5OGIwM2Q2MGU4NTljYTczN2ZhMmYwNmY5YjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQzMjNjNGJmOTc1MDg2OTU4YTQ0NzRmMWY4OWE4YThhYzE5M2Q0M2FhODgyOTQ1YzBkYmU5NmYwZTFjNjdmMTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU4NWIzODFkNTZiZWU3OTI1NTAyNDE2NDNjODQ3NjQ0ZGNlZjZiZDhlMTEwNDFhM2FlMDZiOGYyOGE4ZTA5ODkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYzdkZmNiNDI0MGZkNTdmNzFjMTdlMTc0YWNjYTQ0MmNlZWE3MWQ5YzE0ZTI5NDIwYjRjMDY0M2I3N2M4YWMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_dcce3aa7345e495aa7f2c14aab02e1b3",
+      "statement": "The schema requires each knowledge unit to carry its own classification and requires the put and find operations to share a single definition of a knowledge unit.",
+      "evidence": [
+        {
+          "resource": "repo://notes/08-agent-implementation-schema.md#L40-L41",
+          "version": "repo-lines-v1:sha256:371bc7b952d66f13129ecbc314fa6c03b44e3d73d0b57cd2adf7209f02cc1a5a:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYzk4MDUzZjY3YzIzOGUyYjMwMTQzZjEyMGZhOGZiNjNjZjQ5YzVmMzhlZWZlNzE1OTVkNGYyNjRjNDQwYzYxNSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiODZmOWJiOGFhZDMxNWU1NzExYmExY2Y1ZDAzYTUxNmFlMTczNzExNmFkOTEwMDNiNmJhYjQyNWEyOTdiNzMwNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDg2MDY5NDUwMzk1NGU4MjRjN2JkMjBjMzdlYThjZmFjMWRjM2YzMWRiMmMzODMwZDE3ZjIxZjllYzA2ZGZhZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODExN2IwMDQwODI5MTlhMDg3ZThmN2VlMDMwMjM3YjFiZjk5OWIzNTQwZDQ5MWZiMjRhNThhN2E3MDIxYmQyNCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_ed9876fb5c6f456fb118a2f0cb7efd4c",
+      "statement": "notes/08 limits itself to the schema and explicitly defers applying it to this repository to notes/09, so schema and instance are not designed in the same document.",
+      "evidence": [
+        {
+          "resource": "repo://notes/08-agent-implementation-schema.md#L47-L49",
+          "version": "repo-lines-v1:sha256:e9a30d57b27c79364411d8b7a7db6faf05ea0394e988572c8db75db5d6c3777f:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOWZiNDllMTZhNWUxOGQ0NjA2MGM3Y2UwMWU0YmU0MDE3OGQyYTFkNTM4ZjhhM2I3MzQ1ZThiZDU3ZWRlM2M1NyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOGNmM2NmNTlkYzUzZjgwY2E4Mzg0NDI5MDUzYTQwNWJjMWY5NDQ1OTVmNDVkNDI1MWJjOGQ0ZTM0ODE3YTM0MCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNmVlOTE2ODliNTIzYzc1NTNkOTVkYmY5ZTg0YWQ3NzVjOTIyZDIyYWU0MDRkNDdlZGQ4YjIzOTI1YzdkNmQ1ZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMGQ0NWIyMWMwNWNiNjVmNjE1MDg0ZWUyMmQ5Zjc3MmNkMjcxZmU3ODcyYjBhMWUwOTBiN2U1ZWRkNWNmOTBmMyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_62c065339ffe48b1b01008fad35a6972",
+      "statement": "notes/09 instantiates the schema by putting classification in note frontmatter, keeping allowed values only in scripts/build_index.py for both indexing and checking, separating originals in sources/ from derived notes, and turning restructure failures into check.py rules and a pre-commit Hook.",
+      "evidence": [
+        {
+          "resource": "repo://notes/09-repo-structure-and-pipeline.md#L60-L67",
+          "version": "repo-lines-v1:sha256:5a3c232cbb549980ef1b6f88f66ce9d19f7ab3e09eb77be7f5651f69aa280ef2:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWMzZDExYjhlNzk1YTM3NWUxZjFiNzY3ZDYzYjYwYTQxYzk4MjZkMzBiZGY0YmI5NzkzMjdlNDRlZDk1NDg3NCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZTJiNDM1NmY4YTVkOGY2ZjFiMWQxYzk1YTQ5NjYyOWM0N2JhMWQ4NGYyMzQ2NzNhZGE3Nzc3MTFhN2NhYTYxZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMjZmZTMwMTQyOTRjYTc1M2JiYTJhODJkOGJjMzUxNDI4MjVmMDg4YTNmYTExMWQxOTlmOTA3ZjIzMWI0N2U0NCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYjAyY2I2YWI0NGQwODE4MTA0NDAzMGU1ZDM2M2Y4NjI5NTY5ZTc4ODZkYTZkN2E0YTgxODU1NmE5ZDVjYzFmZSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.4.3",
+    "at": "2026-11-01T16:09:17.598Z"
+  }
+}

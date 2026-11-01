@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:6abadde23ae1f775d0561a21636b0776de2910fdd076ad4c005e122ac08d7d3e",
+  "claims": [
+    {
+      "id": "claim_49d1db08207047608bb9de9372b35c31",
+      "statement": "The self-improvement loop requires every quality failure to be attributed to one of five fixed categories (grounding, interface over-exposure, sensitive data, repeated mistake, unknown fifth element) before the loop can continue, with criticism coming from an external scorer rather than model self-reflection.",
+      "evidence": [
+        {
+          "resource": "repo://notes/04-purpose-and-self-improvement-loop.md#L133-L149",
+          "version": "repo-lines-v1:sha256:0c5ea72e372947d142fc089ab0c61c9a7bceba411e25cde3fc8c4ed88993bd45:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFmZDMzNWUwOGJhZjNhYzA1NmU5OTc0NzA2ODk2Zjc1N2NjMTk5ODA5MTkxNGUyNzk3MGQzMWMzODM2NWY4OWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEwMTk1ZmRjMjI0MDBmZDg2ODY2ODk1OWMzYzZjNmJhOTNhOTUzNzllNWZjZDY1OTRhN2VkMjk5YTY3MTMyZGUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ4NGQ1YTdmOWVmNjNkN2ZmMzRmZDYyNzgzOTcxNTZmMTI5YjU1Y2U5ODFjMjJlZTRlYzg2Y2ZjNjczNGExYWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk5ZDgzZmIwN2U4MDU0NTdhN2JiZjFiYTIwZjgxOTZiZDg0ZDg2Yjk4NTQ1ZDFjMzg4NThhZTZiYTk1NTkwNTMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_50b9139ab3174bd389186e5b1b0fda9f",
+      "statement": "notes/04 extracts seven Never and Ask-first constraints from incidents in a single session and flags that sample size as an open generalization question.",
+      "evidence": [
+        {
+          "resource": "repo://notes/04-purpose-and-self-improvement-loop.md#L69-L80",
+          "version": "repo-lines-v1:sha256:2b672574e7ce045314518bdb872d74459dbfd2d5c925312b9fe57dffca9d2df9:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJhNmRkNDgxOWJlNWUzYjAwNThiODI3YTE0MzQyZTgzOWE1NTY0ODVlY2I2NGY5ZWUxM2ExNDIyNWZiZTg4Y2IiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBiNTAxYTY3NGY4MzY5MDk2N2Q5MTM3MDNiN2EyYmI5YmU0MjM2YzZkNDk2ZDgxNTRiNDk0OWYxMDBhYjk1MzgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhmZTkwNTJiNDdkOTU2YmE1ZDM1NmUwMGM1OGQwZTcyYTQwNjBkMzVlMTgxZjgwNTRhYzcyYTY0Zjg2Yzg1MmEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5abe6c796d5b435ea3e8a9ffb16ee45b",
+      "statement": "notes/05 adopts pipeline option A (CI gate with DeepEval and Promptfoo) as the first stage and plans to expand toward option D (the full loop), rejecting C for shipping bad responses before catching them and B for its weakly maintained gateway dependency.",
+      "evidence": [
+        {
+          "resource": "repo://notes/05-pipeline-options-and-plan.md#L44-L53",
+          "version": "repo-lines-v1:sha256:6cb83a987084809a7687dc3e256f84c010f1435055b4e80ce1d0a10cd5be5931:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMyYTJjMGQ0Y2QzZTBhZjk5OWM5ZWIyNWRhMDBlODM0YmZiMzRlZjY1ZmZiZDkxY2MxOTJiMWM4NzViYWRhNWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA1M2FlMWMwNzRjNThkYTZhMGVhNDYzNWVmYzRhZjNjMjhmMjM3YWJhZmNiMzliZjBiNzkzNGFlODIwOTY1OTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImEyMDdiY2VkN2U1MjZmM2UxY2Y1ZWUxOGFhZGEzOTkyMTY0Zjg1ZTI4OGMyYjc5YzYwN2E4MjJhNjllZjMwM2MifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3f59ac4e5b8b4eeeabd579c0107e3c9c",
+      "statement": "Of the eight staged steps in notes/05, only step 1 (grounding metric and filter comparison harness) is marked complete.",
+      "evidence": [
+        {
+          "resource": "repo://notes/05-pipeline-options-and-plan.md#L54-L65",
+          "version": "repo-lines-v1:sha256:df08b55cd37d4cf150e0373e2f212930edf1ac4bb9847102fcbff2a9f8154ca7:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQwZmMwM2Y4NzVhMWQxYmY0NmE4MTEzNzA5MDQ2NjAwYTFlNmU1YzA2MDFlMjEyN2JlYzE2YTk3NTM0NjMzNzYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdhM2FhMDBjZjBjYzJmZDM0M2ZhNWE4YThhMDlhNjkyZjFmYzVkMTU0Y2I4YzNkYTQ1NWY5Y2RlZWFhYTQ0ZDUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJhYjMyMjFiYjEyMWMxMzMzNGYyZTA3NWNiMThhNzE2MTU5NTU3MjlhZjE2MTQzN2ZmM2Y0MGU5OWQ1ODE0NjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFlYzhiZTU0MGUwY2RjYTFlMjU3ZDBkZmY4NTdjYTNiNDRlYWM0MDJkZWI3NTg2YmVjZDRkOGExNGEyOGIxNzgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_d77f463876ac4452a2100da464d61478",
+      "statement": "The grounding metric parses repo://path#Lstart-Lend evidence and fails only when the file is missing or the line range is out of bounds, without checking content hashes.",
+      "evidence": [
+        {
+          "resource": "repo://experiments/eval/grounding_metric.py#L17-L64",
+          "version": "repo-lines-v1:sha256:48cf4089dc5d64d12e206761a58dbe0288bfa2eeffffcf6c9c155af09d93be28:eyJzZWxlY3RlZExpbmVDb3VudCI6NDgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJjYmY1MjQ3ZjJhM2JjNmJlZjQyMTBjOTQyMzhmNGNmMTM0MGE4MzIxODNmYjU4NjUzMzc0MjdkYjk0N2RkYmEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNiMGQ1Y2IwYjlkOWRhOTYwYjBmODlmOGM0NjE5NmJkNjdmOWNlM2NiZGUwYzU2ODkwZGNmZjQyNjAxYjI1ZTciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ0MzNhMDY5YTZkYjcxYWZkMTFkZjA3NDBhNzkwOTY3NWQ4NDFkYWFkMGIzNDAzODZkZmU4YzA1MjI4OTNjNzEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImIwMzI1MGI0NDE0YTUwZWI5MTU2MmI4NjI4NzExMmU0ZjViMGIzYTU4ZTg1YzQ2ZDlkYzQ3NGVjNTk1ZGE0MWYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_afe43da4ad544ca5aa741768bff84877",
+      "statement": "test_grounding.py turns every evidence entry of every Claim under openwiki/.claims into a separate pytest case, and both eval modules resolve the repo root as two directories above their own file.",
+      "evidence": [
+        {
+          "resource": "repo://experiments/eval/grounding_metric.py#L17-L17",
+          "version": "repo-lines-v1:sha256:bcbf5247f2a3bc6bef4210c94238f4cf1340a832183fb5865337427db947ddba:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYmNiZjUyNDdmMmEzYmM2YmVmNDIxMGM5NDIzOGY0Y2YxMzQwYTgzMjE4M2ZiNTg2NTMzNzQyN2RiOTQ3ZGRiYSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYmNiZjUyNDdmMmEzYmM2YmVmNDIxMGM5NDIzOGY0Y2YxMzQwYTgzMjE4M2ZiNTg2NTMzNzQyN2RiOTQ3ZGRiYSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNDQzM2EwNjlhNmRiNzFhZmQxMWRmMDc0MGE3OTA5Njc1ZDg0MWRhYWQwYjM0MDM4NmRmZThjMDUyMjg5M2M3MSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYWY4NGI3Yzk1MjYzYTA3ZGY4ZmI0MzBkYTI2N2ZjMmM2ZGUyMmI1NzkxMGQxM2M2OWRiMGE0Nzc3ZGM2MzM5NiJ9"
+        },
+        {
+          "resource": "repo://experiments/eval/test_grounding.py#L19-L40",
+          "version": "repo-lines-v1:sha256:23a1e9ec4d093a916efd059f30933d9542fd6f78ae1a4ad46f474c65f79e9d67:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJjYmY1MjQ3ZjJhM2JjNmJlZjQyMTBjOTQyMzhmNGNmMTM0MGE4MzIxODNmYjU4NjUzMzc0MjdkYjk0N2RkYmEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjllOWMxMzVlY2Q0ZTEyNDE0MDRjN2RhNzYyMjE5NTEwYjExYTlmODdlZmVlYTRmMDc1NTRiZjM3YjAzOWE4NzQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA3MDk2MmY1NWZjMjFkYTQxZTc0NzYyNDY5NGEzMDUyYTE5NWFiMmZlZDk0ZDk4OGI4NzVmNDYxYTE3MWQwNmQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_9ae3be50b1994971a1f545dcd0bfa6f4",
+      "statement": "Response filter backends implement a single ResponseFilter.scan interface and compare_filters.py runs every backend listed in BACKENDS, currently a regex baseline and Presidio.",
+      "evidence": [
+        {
+          "resource": "repo://experiments/eval/compare_filters.py#L14-L18",
+          "version": "repo-lines-v1:sha256:8aa8022bebb193f4b03c5025fb9216c27bd188c07b706e8f86b2a1fc9c50a89a:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNDUwYjUyOTRhMGRhMGQ4NjcwOTE1OWZlNzI4NzQ3YWUzYmMyMmYzYjc2YTk1ZTdkNTViNmVmNWZhMmUxMGE4ZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMTQxZDczNzc5NjNkYzhlNzlmMTI5MzdiN2I1OTE1NTRiNGRlMjJjNzZiMGNiZGMzN2MyM2NjNmYyZTlhOTBlZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYjBiYTgwMDcwZGM0MjYxMzQzYjNmOGE4Y2YzNDYxZjg2MTVjNTZjMDQ3YTZlNDk5YWU1ZDE2NTQ5NDdlNDhiNCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYmE1MTFmZWViZWMwZDE1NTA2ZWFiYTVmNDA3NTM1ZDQzMDU4MDQ5NDg3OGI3MDQxNTNlYTYyNDc4YjQ4YTAyMCJ9"
+        },
+        {
+          "resource": "repo://experiments/eval/filters/base.py#L26-L31",
+          "version": "repo-lines-v1:sha256:9e3d15cad46e254de1d53b0c8802236e7e8ca1726b8896eaed243a5a6dcc254b:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWYxMzA1MzY4MzIxZTYxZmJiZWE1ZjA1ZTcxYjRhZWViODg1OThjZDI5MGU3YjcwZWYxOTE4ZDM3NjgxMmI2ZSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMWI2MzRmYjk2Y2JjNDdiNmIyMTRmYjE1ZmI5N2JmODdkMWZkMTQ5NTJmMGY5NmY1NjBmMzFhY2U5NjZlNDYwOSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZGRhYmVlN2RjNWJlYTI1MjdkNTgzZDRhMTFmY2QyMjg0YTEzNjJkNDdlNzA2MDExY2ZjNDEwZWVjZDNjMzE3OSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_abb4ad2782e34f14bad5cfe95a4e7d6d",
+      "statement": "On 2026-11-02 the filter comparison reproduced regex recall 0.75 and Presidio recall 1.00 with no false positives, while the grounding test failed 21 of 24 cases because Claims still cited pre-restructure paths.",
+      "evidence": [
+        {
+          "resource": "repo://notes/09-repo-structure-and-pipeline.md#L133-L134",
+          "version": "repo-lines-v1:sha256:b3da947934eb6c07d86bc1b36b04bf9156ab604200015b1c26276a14e23b9794:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjZiOGY4OTE3Zjg5ZmYxZDhlNWVmY2E3ODVkNDZiNTM1NGEwY2ZmZWU5NzgwNDc2MDA0MGYyZTFmYjI0NjU3OCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiODZkYTZlN2Q5MTBjNDUyNzEwMDY0NTg0Y2I4MmUxZTEwNDU4ODM0YzUwNDlkYTU3MDUyM2FkMGU4MTNkZGI4MiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZGM5MDIzOTY0MDRmZTZmMmM3M2Y5Y2JjOGM2NmYzNjJiZTY5NjBhYzdmOTc5YWVmZGNhYTljMDY2NWQwOGYzNSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODA2YTI5MjM5ODgyNTUyZWZjZDQxZjg3MDlhYjRjNGM2NTFjMTBlNWNhMmVjY2RiMWViZDQ3NDY5M2Y4YzUwMyJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.4.3",
+    "at": "2026-11-01T16:09:17.598Z"
+  }
+}

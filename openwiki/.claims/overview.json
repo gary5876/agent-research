@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:67ca238a0b34fcfa76fb5c6b2aa34bc5243845e95136f191a6447888b648aa37",
+  "pageVersion": "sha256:75ca63d58242f42ed9593559066f5b3616836362ce87aa57578cc4b76fda6814",
   "claims": [
     {
       "id": "claim_af198f52c7ea4e27922354938774366d",
@@ -11,10 +11,50 @@
           "version": "repo-lines-v1:sha256:1217fe8aff83c5e31c83d562c6e21d66cc6745e870d49c737cf8a32df7c39ef3:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2ZmIwOGZkYTFhY2I5NTdiNjExNmJkMzc4MTFhMWZlNDFhMDE2MTFjMDYzMWVkYmY3ODZkNjg4OWEyN2E1NWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
         }
       ]
+    },
+    {
+      "id": "claim_a6c6a4f915124b19aaefa24bf660c5ec",
+      "statement": "The README describes the repository as research on building agents with expertise that moved from LLM-friendly documentation to designing a master agent, and states that the worker agents and Hooks apply the repository's own designs to itself.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L1-L10",
+          "version": "repo-lines-v1:sha256:b7a0dc9f464cc24f649b92c925b547a91025e07aaffa8320de81fe57a1599add:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNmZGVhOWE3ZmVjZmQwMGNmNDFiNjZkZTQ0ZDNhNzJkZjFmYjg3ZDcwZWFlZTgwNWM2Y2M3MjhlYmVmN2ZhZDYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE5NDgwMmNmY2JiMGU4MDg0YTUyOGUzZGUxMTlkOTMxYzFmOGYzMWFkYjUwYWM1NDI2ODQ1NGUwY2FmMTNlM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_98a206a5e233417b9c635eab53afdd6b",
+      "statement": "JOURNEY.md summarizes the work from 2026-08-30 to 09-30 in date order, from documentation principles and the four elements through Hooks and worker agents to KakaoPay baseline research and the master agent.",
+      "evidence": [
+        {
+          "resource": "repo://JOURNEY.md#L14-L21",
+          "version": "repo-lines-v1:sha256:62ab124d01256a44f609582cae07df8ce435940dc3508de14415cf89c2a74d00:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOThhNGNmNjFiNmRlZWI2NmVjZjAyMzVhMzUwNmVlY2M5OTZhMGE3MmRlYzY2OTRhODFmYjgxY2MxMjE0ZjM5NyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2QyNGI4YzcyZThiZjRlY2JjNThiYmNhYzhmZWY1Mzk2NzI0ODEwNGIxMGZlNDYyMTJhNGNjYWYxNTdhNWNjMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTZhNDAwZjIzZDJkZDc2YzYwZjk1YzQ1OTkzYWFjYjYzN2ZlMzk1NTYyZDhlNWM0N2IyZTQxYTk4NTgzMWFmYiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOTg4ODY3NGViZWYzMWQ1OTI1NWU0YzBlZDk5ZmVkODcxYTIxZTA0ZWI0ZDc4YjViZGM5NDYzMTJjNjQ1MWZiYSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_1e3d2e5efbd34c91beaf172c36c2aea5",
+      "statement": "The repository's core goal is recorded as building an agent with expertise, with document design treated as a means for agents to find information quickly and accurately.",
+      "evidence": [
+        {
+          "resource": "repo://decisions.md#L23-L23",
+          "version": "repo-lines-v1:sha256:262392b2c9d1ee3a2287b456c7cbd7c0f24d7c2ef75631a7f64d115ff380bff6:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMjYyMzkyYjJjOWQxZWUzYTIyODdiNDU2YzdjYmQ3YzBmMjRkN2MyZWY3NTYzMWE3ZjY0ZDExNWZmMzgwYmZmNiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjYyMzkyYjJjOWQxZWUzYTIyODdiNDU2YzdjYmQ3YzBmMjRkN2MyZWY3NTYzMWE3ZjY0ZDExNWZmMzgwYmZmNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMjVhNjlhZWYwNmM5ZmI0ODI3NjAwOTM1N2Y4YTg4ZDg4N2RjZjY0MThjOWFhY2RiOGY3MTk2NDA5ZTI4M2YxOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMTRmOTZhNzc3OWI0MWUwMjc0YThiOWVmODE3MTI0NzQ2ODIxNDZmYjU5NzU4NTRkNjNiZDdkYTBkNDc2OTg3OCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_849b29d2b96f49f2bb6c6262405c114f",
+      "statement": "Since 2026-11-02 the repository splits material into notes, sources, and experiments, with topic and status in each note's frontmatter, replacing the element-based agent-expertise-framework folder tree.",
+      "evidence": [
+        {
+          "resource": "repo://notes/09-repo-structure-and-pipeline.md#L13-L26",
+          "version": "repo-lines-v1:sha256:bf1970310e73dc983c36a1b265701c51dd88d1d0c6de832689d517a698f8d938:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZhNjc5NDg0YTA3NjEzMTgwODRmOTNmZTAwZTIyYThjMTVkNjgwNmY1NmFmMWVjZjc2MzJlN2U3NDg0MjExNDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM3ODQ1ZGRiMzdhOTBjYzg0MjI4NWNkMmFkMzM4OTk3MzkzZDc1MWQ4MDBjYjBhNzYyNDc4ZjA3ZTFlOGFiZmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNmZTk5ZjI0OGYzZmM4MjdjNjM2ZjQ5ZjIzYjFhZDQ3M2RjYzNkMjYyM2I1MmJjMjM3NTA4YjIwNThlNDA1OGIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE0MjdlN2Y3N2NhYWVmYWU0ZWI4M2JkZTQxMjU2M2VmMTU5YTUxMDVmYWNlNDI5YTg4ZjIwN2Q0YmY3OTBjNmIifQ"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.4.3",
-    "at": "2026-09-05T20:17:03.290Z"
+    "at": "2026-11-01T16:09:17.598Z"
   }
 }
