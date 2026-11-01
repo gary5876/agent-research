@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """PreToolUse hook: block Edit/Write/NotebookEdit on OpenWiki-generated content.
 
-Converts the prompt-only rule in agent-expertise-framework/04-purpose-and-
-self-improvement-loop.md §5 ("Never hand-edit openwiki/*.md or
+Converts the prompt-only rule in notes/04-purpose-and-self-improvement-loop.md §5 ("Never hand-edit openwiki/*.md or
 openwiki/.claims/*.json") into a deterministic Hook, per
-agent-expertise-framework/07-harness-and-hook-enforcement.md.
+notes/07-harness-and-hook-enforcement.md.
 """
 import json
 import re
@@ -29,8 +28,8 @@ def main() -> int:
         reason = (
             f"Blocked: '{file_path}' is OpenWiki-generated content. "
             "Never hand-edit openwiki/*.md or openwiki/.claims/*.json "
-            "(agent-expertise-framework/04-purpose-and-self-improvement-loop.md §5). "
-            "Edit the source doc in agent-expertise-framework/ instead and let OpenWiki regenerate."
+            "(notes/04-purpose-and-self-improvement-loop.md §5). "
+            "Edit the source doc in notes/ instead and regenerate OpenWiki locally."
         )
         print(json.dumps({
             "hookSpecificOutput": {

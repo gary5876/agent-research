@@ -1,29 +1,10 @@
 # agent-research
 
-에이전트 전문성은 어디서 나오는가에 대한 연구 노트. "LLM이 읽기 좋은 문서를 어떻게 쓸까"에서 시작해서, 지시문 해석 오류 사례, 자기개선 루프, 오케스트레이터 패턴, Hook을 통한 강제까지 이어지는 기록이다.
+전문성 있는 에이전트를 어떻게 만드는가에 대한 연구 저장소. "LLM이 읽기 좋은 문서를 어떻게 쓸까"에서 시작해 지시문 해석, 자체개선 루프, Hook을 통한 강제를 거쳐, 지금은 여러 에이전트를 조율하는 마스터 에이전트를 설계하고 있다.
 
-## 뭔가 찾고 있다면
+- 무엇을 어디서 찾는지: [index.md](index.md)
+- 지금 열려 있는 결정: [decisions.md](decisions.md)
+- 지금까지 걸어온 길: [JOURNEY.md](JOURNEY.md)
+- 이 저장소에서 일하는 법: [AGENTS.md](AGENTS.md)
 
-제목으로 뒤지지 말고 [CATALOG.md](CATALOG.md)부터 열 것. 연구 문서는 각 문서 자신의 상단 태그로 확인하는 법을, 코드/설정/생성물처럼 태그를 가질 수 없는 자원은 목록으로 안내한다.
-
-## 시작점
-
-순서대로 처음부터 읽고 싶으면 [agent-expertise-framework/README.md](index.md)가 전체 문서 인덱스다. 순서대로 읽으면 아래 흐름을 따라가게 된다.
-
-1. LLM 친화적 문서 작성 원칙 수립 (`00`)
-2. 그 원칙을 Apache Amoro/Iceberg/Paimon 세 오픈소스로 검증 (`01`)
-3. 반대 방향 — 사용자가 LLM에게 지시할 때 생기는 오판 사례 (`02`)
-4. 그 사건을 재료로 만든 요구사항 해석 게이트 설계 (`03`)
-5. 자체개선 루프 설계 + 실제 구현한 그라운딩 metric/필터 (`04`, `agent-expertise-framework/02-self-improvement-loop/eval/`)
-6. 루프를 실제로 연결하는 파이프라인 옵션 비교 (`05`)
-7. 오케스트레이터 패턴 — 이 프로젝트 자신이 수행한 분해→위임→검증 과정을 역추출 (`06`, `.claude/agents/`)
-8. 프롬프트만으로는 안 지켜지는 규칙을 Hook으로 강제한 사례 (`07`, `.claude/hooks/`)
-9. `01`의 4요소와 `07`의 Agent 해부학을 하나의 일반형(agent 무관 스키마)으로 종합 (`08`)
-
-## 이 저장소 자체가 실험 대상
-
-`.claude/agents/`의 4개 서브에이전트(researcher/verifier/doc-writer/supervisor)와 `.claude/hooks/`의 PreToolUse Hook은 위 문서들이 설계한 내용을 실제로 이 저장소에 적용한 결과물이다. 즉 연구 결과를 논문처럼 정리만 한 게 아니라, 이 저장소의 워크플로 자체에 반영해뒀다.
-
-## openwiki/
-
-`openwiki/`는 OpenWiki가 위 문서들로부터 자동 생성한 근거 기반 위키다. 손으로 직접 수정하지 않고, 원본 문서(`agent-expertise-framework/`)를 고치면 재생성되는 방식으로 관리한다.
+이 저장소는 연구 대상이기도 하다. `.claude/agents/`의 워커 에이전트 4개와 `.claude/hooks/`의 Hook은 여기 문서들이 설계한 것을 이 저장소 자신에게 적용한 결과다.
