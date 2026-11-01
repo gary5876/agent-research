@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:75ca63d58242f42ed9593559066f5b3616836362ce87aa57578cc4b76fda6814",
+  "pageVersion": "sha256:7b7a0e8f0cfda40501e943ddf84296a6d4e4166e4d6bcd164ab1f346592d0fc9",
   "claims": [
     {
       "id": "claim_af198f52c7ea4e27922354938774366d",
@@ -37,7 +37,7 @@
       "statement": "The repository's core goal is recorded as building an agent with expertise, with document design treated as a means for agents to find information quickly and accurately.",
       "evidence": [
         {
-          "resource": "repo://decisions.md#L23-L23",
+          "resource": "repo://decisions.md#L24-L24",
           "version": "repo-lines-v1:sha256:262392b2c9d1ee3a2287b456c7cbd7c0f24d7c2ef75631a7f64d115ff380bff6:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMjYyMzkyYjJjOWQxZWUzYTIyODdiNDU2YzdjYmQ3YzBmMjRkN2MyZWY3NTYzMWE3ZjY0ZDExNWZmMzgwYmZmNiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjYyMzkyYjJjOWQxZWUzYTIyODdiNDU2YzdjYmQ3YzBmMjRkN2MyZWY3NTYzMWE3ZjY0ZDExNWZmMzgwYmZmNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMjVhNjlhZWYwNmM5ZmI0ODI3NjAwOTM1N2Y4YTg4ZDg4N2RjZjY0MThjOWFhY2RiOGY3MTk2NDA5ZTI4M2YxOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMTRmOTZhNzc3OWI0MWUwMjc0YThiOWVmODE3MTI0NzQ2ODIxNDZmYjU5NzU4NTRkNjNiZDdkYTBkNDc2OTg3OCJ9"
         }
       ]
@@ -51,10 +51,20 @@
           "version": "repo-lines-v1:sha256:bf1970310e73dc983c36a1b265701c51dd88d1d0c6de832689d517a698f8d938:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZhNjc5NDg0YTA3NjEzMTgwODRmOTNmZTAwZTIyYThjMTVkNjgwNmY1NmFmMWVjZjc2MzJlN2U3NDg0MjExNDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM3ODQ1ZGRiMzdhOTBjYzg0MjI4NWNkMmFkMzM4OTk3MzkzZDc1MWQ4MDBjYjBhNzYyNDc4ZjA3ZTFlOGFiZmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNmZTk5ZjI0OGYzZmM4MjdjNjM2ZjQ5ZjIzYjFhZDQ3M2RjYzNkMjYyM2I1MmJjMjM3NTA4YjIwNThlNDA1OGIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE0MjdlN2Y3N2NhYWVmYWU0ZWI4M2JkZTQxMjU2M2VmMTU5YTUxMDVmYWNlNDI5YTg4ZjIwN2Q0YmY3OTBjNmIifQ"
         }
       ]
+    },
+    {
+      "id": "claim_169af68837444143a1915d5aa341f6c7",
+      "statement": "notes/17 records the first news sweep after the restructure, covering 2026-10-01 to 11-02 with 17 design-relevant claims re-checked by verifier agents.",
+      "evidence": [
+        {
+          "resource": "repo://notes/17-orchestration-news-2026-10.md#L1-L13",
+          "version": "repo-lines-v1:sha256:c46f7b499a6772b69c4c945ba9771f9dc272b3e474e9d14aa220fad7889363e0:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY1MmQ3MTExMDNkNTBhNDM3ODMwYzZmYmNkMDRmYjRiYWI0OWEwZjgyZjZkMjZkMWM3OTFjNmU4NDg4ZGQwOTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlmNTZjYzRlM2VmYWJlMjQzM2ZiODk5M2RmNDk4YjJlODRkYTcwMTIzMGZmY2E5ZTI4YWE1MzNjYzEwYTg2NjQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFlOGIxYTJhM2I0ZDEzOTRhYWEyMGZmYzI5ZGFmZWU4ZDU4YTE1NzU2YTRmMDdiNTk5Yzg1NzY4MTc1MmM5OGIifQ"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.4.3",
-    "at": "2026-11-01T16:09:17.598Z"
+    "at": "2026-11-01T16:49:51.673Z"
   }
 }

@@ -115,7 +115,7 @@
   - [04-purpose-and-self-improvement-loop.md](notes/04-purpose-and-self-improvement-loop.md): 7개
   - [06-orchestrator-pattern.md](notes/06-orchestrator-pattern.md): 4개
   - [07-harness-and-hook-enforcement.md](notes/07-harness-and-hook-enforcement.md): 4개
-  - [09-repo-structure-and-pipeline.md](notes/09-repo-structure-and-pipeline.md): 2개
+  - [09-repo-structure-and-pipeline.md](notes/09-repo-structure-and-pipeline.md): 3개
   - [12-orchestration-application.md](notes/12-orchestration-application.md): 3개
   - [17-orchestration-news-2026-10.md](notes/17-orchestration-news-2026-10.md): 3개
 

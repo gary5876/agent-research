@@ -5,7 +5,7 @@ description: How research is added to and found in this repository since the 202
 tags: [workflow, repo-structure, index, lint, decisions, openwiki]
 verified:
   - by: openwiki/0.4.3
-    at: 2026-11-01T16:09:17.598Z
+    at: 2026-11-01T16:49:51.673Z
 sources:
   - id: openwiki-source-b59005f0f903d10c3bb60923
     resource: repo://decisions.md

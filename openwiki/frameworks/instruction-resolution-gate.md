@@ -5,7 +5,7 @@ description: A proposed interpretation layer that classifies ambiguity as lookup
 tags: [design, instruction-clarity, ambiguity, agent-architecture, gate]
 verified:
   - by: openwiki/0.4.3
-    at: 2026-11-01T16:18:55.385Z
+    at: 2026-11-01T16:49:51.673Z
 sources:
   - id: openwiki-source-b59005f0f903d10c3bb60923
     resource: repo://decisions.md

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:a5ac6c5abd3ecffe8795243cb097bf91439e567a2f05d23c8cf0f263afe34cd9",
+  "pageVersion": "sha256:df7b315a662a71ada8248e046838dca73f2458cc3c2564e4df9489230ac7b891",
   "claims": [
     {
       "id": "claim_caa768187ce144baaee0c2bfc4b9da5d",
@@ -87,7 +87,7 @@
       "statement": "notes/03's proposed question cap conflicts with the 2026-09-28 decision to keep asking until a clarity standard is met instead of capping questions.",
       "evidence": [
         {
-          "resource": "repo://decisions.md#L24-L24",
+          "resource": "repo://decisions.md#L25-L25",
           "version": "repo-lines-v1:sha256:5b1e79afb4a5ecefb05eaa9c8303f0ed5f04b5e5c3767a108aeb128cac92acd2:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNWIxZTc5YWZiNGE1ZWNlZmIwNWVhYTljODMwM2YwZWQ1ZjA0YjVlNWMzNzY3YTEwOGFlYjEyOGNhYzkyYWNkMiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNWIxZTc5YWZiNGE1ZWNlZmIwNWVhYTljODMwM2YwZWQ1ZjA0YjVlNWMzNzY3YTEwOGFlYjEyOGNhYzkyYWNkMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMjNiOTU1MmIyY2Q4YzE1OTlmYTM4MTQyMWExNjIzNTA4OTUxNGUzNDg5YTk4YWNjNDIyZTU0ZWZjZThkZjU4OCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMTAzMGFlMmYzOTE5Y2U2N2ZlNGQwZWRlODc4Njg3NDUxYWZhMmVlODlmMDY5NDJjMzg3YTRkNWJhM2ZhZjc1OCJ9"
         },
         {
@@ -109,6 +109,6 @@
   ],
   "verification": {
     "by": "openwiki/0.4.3",
-    "at": "2026-11-01T16:18:55.385Z"
+    "at": "2026-11-01T16:49:51.673Z"
   }
 }

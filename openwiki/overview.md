@@ -5,7 +5,7 @@ description: What this repository is and how it is organized. A personal researc
 tags: [overview, research-notes, agent-expertise, orchestration, openwiki]
 verified:
   - by: openwiki/0.4.3
-    at: 2026-11-01T16:09:17.598Z
+    at: 2026-11-01T16:49:51.673Z
 sources:
   - id: openwiki-source-f5a489e5822d87c0b8fc66ef
     resource: repo://.mcp.json
@@ -15,9 +15,11 @@ sources:
     resource: repo://JOURNEY.md
   - id: openwiki-source-733117321a85db437c83db32
     resource: repo://notes/09-repo-structure-and-pipeline.md
+  - id: openwiki-source-c14bb42577beb1d920ff82a4
+    resource: repo://notes/17-orchestration-news-2026-10.md
   - id: openwiki-source-23775c3de52f3ab95a13cb8b
     resource: repo://README.md
-generated: { by: "claude-code", at: "2026-11-01T16:09:17.598Z" }
+generated: { by: "claude-code", at: "2026-11-01T16:49:51.673Z" }
 ---
 
 ## What this repository is
@@ -34,6 +36,7 @@ This is not a software project. It is a research repository whose stated goal is
 | 09-21 | A layer that assembles vague requests into precise prompts | [Instruction Resolution Gate](frameworks/instruction-resolution-gate.md) |
 | 09-25 to 09-30 | Department-style orchestration, KakaoPay as the baseline, research toward a master agent | [Orchestration Evidence](orchestration/orchestration-evidence.md), [KakaoPay Baseline](orchestration/kakaopay-baseline.md), [Master Orchestrator Research](orchestration/master-orchestrator.md) |
 | 11-02 | Restructured the repository and its work pipeline | [Repository Structure and Work Pipeline](operations/repository-workflow.md) |
+| 11-02 | First news sweep through the new pipeline: October 2026 orchestration news, 17 claims verified, recorded in `notes/17` | [Orchestration Evidence and Design Judgment](orchestration/orchestration-evidence.md) |
 
 `JOURNEY.md` tells this story in date order, quoting the user's own words.
 

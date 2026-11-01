@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:4796c3644a063683dd2d7cb76d20b3b44c6ec419d065387209b3813bc06e7094",
+  "pageVersion": "sha256:426a3f911067e1a62baa8a57f5787b61661f095bf1d81884e8dde039fd9bdf99",
   "claims": [
     {
       "id": "claim_2b9cf7f14dbd4a58b54194c02e235cff",
@@ -71,7 +71,7 @@
       "statement": "OpenWiki is regenerated only locally in a Claude session, with no CI schedule or model API key.",
       "evidence": [
         {
-          "resource": "repo://decisions.md#L33-L33",
+          "resource": "repo://decisions.md#L34-L34",
           "version": "repo-lines-v1:sha256:8cb3c8d1d0eb1d5131674ae659100e84c21752e8ed0cf792a1f22197463651ca:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOGNiM2M4ZDFkMGViMWQ1MTMxNjc0YWU2NTkxMDBlODRjMjE3NTJlOGVkMGNmNzkyYTFmMjIxOTc0NjM2NTFjYSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOGNiM2M4ZDFkMGViMWQ1MTMxNjc0YWU2NTkxMDBlODRjMjE3NTJlOGVkMGNmNzkyYTFmMjIxOTc0NjM2NTFjYSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZWE4OTdhNmRlN2YxNjgxYzhmZjM3YjZkMTYxODE2NzM2YjM3MDI5YWJiYjhiNGE0MWZiMGZiNDhjYTU0ZDIwZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
         },
         {
@@ -83,6 +83,6 @@
   ],
   "verification": {
     "by": "openwiki/0.4.3",
-    "at": "2026-11-01T16:09:17.598Z"
+    "at": "2026-11-01T16:49:51.673Z"
   }
 }
